@@ -1,8 +1,8 @@
 import React from 'react';
-import { ReactComponent as SvgLogo } from '../../assets/images/logo/logo_circle_blue.svg';
+import { ReactComponent as SvgLogo } from '../../assets/images/logo/logo_white.svg';
 
 const Logo = () =>
-  <div className="absolute left-3 top-3">
+  <div className="flex flex-col justify-center items-center h-full">
     <SvgLogo className="w-32" />
   </div>;
 
