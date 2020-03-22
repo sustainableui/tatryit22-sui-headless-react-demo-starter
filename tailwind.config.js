@@ -1,4 +1,4 @@
-const { screens, colors, fontFamily, backgroundPosition, backgroundSize, fontSize } = require('tailwindcss/defaultTheme');
+const { maxWidth, spacing, screens, colors, fontFamily, backgroundPosition, backgroundSize, fontSize } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   theme: {
@@ -19,31 +19,24 @@ module.exports = {
       green: '#2cebad',
       'green-hover': '#0AB97B',
       gray: '#e6e6e6',
-    },
-    backgroundPosition: {
-      ...backgroundPosition,
-      'bottom-xl-ul': 'center bottom 1.5rem',
-      'bottom-lg-ul': 'center bottom 1rem',
-      'bottom-md-ul': 'center bottom 0.8rem',
-      'bottom-sm-ul': 'center bottom 0.6rem',
-      'bottom-xs-ul': 'center bottom 0.5rem',
-    },
-    backgroundSize: {
-      ...backgroundSize,
-      'fit-xl-ul': '28rem',
-      'fit-lg-ul': '23rem',
-      'fit-md-ul': '17rem',
-      'fit-sm-ul': '13rem',
-      'fit-xs-ul': '11rem',
+      'gray-hover': '#b7b7b7',
     },
     fontFamily: {
       ...fontFamily,
       'rustico': ['Rustico V2 Regular'],
       'futura': ['Futura Medium'],
     },
-    fontSize: {
-      ...fontSize,
-      '7xl': '5rem',
-    },
+    maxWidth: (theme, { breakpoints }) => ({
+      ...maxWidth,
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+      ...breakpoints(theme('screens')),
+    }),
+    extend: {
+      lineHeight: {
+        '24': '6rem',
+      }
+    }
   }
 }
