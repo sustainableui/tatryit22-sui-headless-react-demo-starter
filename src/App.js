@@ -16,7 +16,7 @@ const App = () => {
         hidden={hiddenSidebar}
         onToggle={() => setHiddenSidebar(!hiddenSidebar)}
       />
-      <CovidChat />
+      <CovidChat visible={hiddenSidebar}/>
     </div>
   );
 }
