@@ -4,7 +4,7 @@ import React from 'react';
 
 const ButtonLink = props =>
   <Link
-    to="#"
+    to={props.to}
     className="sm:hidden xs:hidden"
     onClick={props.onClick}
   >
@@ -19,6 +19,7 @@ ButtonLink.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   className: PropTypes.string.isRequired,
+  to: PropTypes.object.isRequired,
 }
 
 export default ButtonLink;
