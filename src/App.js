@@ -1,11 +1,24 @@
-import CovidChat from './components/common/CovidChat';
-import Navigation from './components/Navigation';
-import React from 'react';
+import React, { useState } from 'react';
 
-const App = () =>
-  <div>
-    <Navigation />
-    <CovidChat />
-  </div>;
+import CovidChat from './components/CovidChat';
+import Navigation from './components/navigation/Navigation';
+import Sidebar from './components/sidebar/Sidebar';
+
+const App = () => {
+  const [hiddenSidebar, setHiddenSidebar] = useState(true);
+
+  return (
+    <div>
+      <Navigation
+        onSidebarToggle={() => setHiddenSidebar(!hiddenSidebar)}
+      />
+      <Sidebar
+        hidden={hiddenSidebar}
+        onToggle={() => setHiddenSidebar(!hiddenSidebar)}
+      />
+      <CovidChat />
+    </div>
+  );
+}
 
 export default App;

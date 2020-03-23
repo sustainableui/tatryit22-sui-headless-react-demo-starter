@@ -1,4 +1,4 @@
-const { maxWidth, spacing, screens, colors, fontFamily, backgroundPosition, backgroundSize, fontSize } = require('tailwindcss/defaultTheme');
+const { fill, maxWidth, screens, colors, fontFamily, backgroundPosition, backgroundSize, fontSize } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   theme: {
@@ -39,6 +39,17 @@ module.exports = {
         '20': '5rem',
         '24': '6rem',
       }
-    }
+    },
+    fill: theme => ({
+      ...fill,
+      'black': theme('colors.black'),
+      'white': theme('colors.white'),
+      'blue': theme('colors.blue'),
+      'blue-hover': theme('colors.blue-hover'),
+      'green': theme('colors.green'),
+      'green-hover': theme('colors.green-hover'),
+      'gray': theme('colors.gray'),
+      'gray-hover': theme('colors.gray-hover'),
+    })
   }
 }

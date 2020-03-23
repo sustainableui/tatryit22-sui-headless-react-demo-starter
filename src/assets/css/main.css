@@ -6223,6 +6223,38 @@ video {
   fill: currentColor;
 }
 
+.fill-black {
+  fill: #000;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.fill-blue {
+  fill: #2e66ff;
+}
+
+.fill-blue-hover {
+  fill: #002AB9;
+}
+
+.fill-green {
+  fill: #2cebad;
+}
+
+.fill-green-hover {
+  fill: #0AB97B;
+}
+
+.fill-gray {
+  fill: #e6e6e6;
+}
+
+.fill-gray-hover {
+  fill: #b7b7b7;
+}
+
 .stroke-current {
   stroke: currentColor;
 }
@@ -15572,6 +15604,38 @@ video {
 
   .sm\:fill-current {
     fill: currentColor;
+  }
+
+  .sm\:fill-black {
+    fill: #000;
+  }
+
+  .sm\:fill-white {
+    fill: #fff;
+  }
+
+  .sm\:fill-blue {
+    fill: #2e66ff;
+  }
+
+  .sm\:fill-blue-hover {
+    fill: #002AB9;
+  }
+
+  .sm\:fill-green {
+    fill: #2cebad;
+  }
+
+  .sm\:fill-green-hover {
+    fill: #0AB97B;
+  }
+
+  .sm\:fill-gray {
+    fill: #e6e6e6;
+  }
+
+  .sm\:fill-gray-hover {
+    fill: #b7b7b7;
   }
 
   .sm\:stroke-current {
@@ -24926,6 +24990,38 @@ video {
     fill: currentColor;
   }
 
+  .md\:fill-black {
+    fill: #000;
+  }
+
+  .md\:fill-white {
+    fill: #fff;
+  }
+
+  .md\:fill-blue {
+    fill: #2e66ff;
+  }
+
+  .md\:fill-blue-hover {
+    fill: #002AB9;
+  }
+
+  .md\:fill-green {
+    fill: #2cebad;
+  }
+
+  .md\:fill-green-hover {
+    fill: #0AB97B;
+  }
+
+  .md\:fill-gray {
+    fill: #e6e6e6;
+  }
+
+  .md\:fill-gray-hover {
+    fill: #b7b7b7;
+  }
+
   .md\:stroke-current {
     stroke: currentColor;
   }
@@ -34276,6 +34372,38 @@ video {
 
   .lg\:fill-current {
     fill: currentColor;
+  }
+
+  .lg\:fill-black {
+    fill: #000;
+  }
+
+  .lg\:fill-white {
+    fill: #fff;
+  }
+
+  .lg\:fill-blue {
+    fill: #2e66ff;
+  }
+
+  .lg\:fill-blue-hover {
+    fill: #002AB9;
+  }
+
+  .lg\:fill-green {
+    fill: #2cebad;
+  }
+
+  .lg\:fill-green-hover {
+    fill: #0AB97B;
+  }
+
+  .lg\:fill-gray {
+    fill: #e6e6e6;
+  }
+
+  .lg\:fill-gray-hover {
+    fill: #b7b7b7;
   }
 
   .lg\:stroke-current {
@@ -43630,6 +43758,38 @@ video {
     fill: currentColor;
   }
 
+  .xl\:fill-black {
+    fill: #000;
+  }
+
+  .xl\:fill-white {
+    fill: #fff;
+  }
+
+  .xl\:fill-blue {
+    fill: #2e66ff;
+  }
+
+  .xl\:fill-blue-hover {
+    fill: #002AB9;
+  }
+
+  .xl\:fill-green {
+    fill: #2cebad;
+  }
+
+  .xl\:fill-green-hover {
+    fill: #0AB97B;
+  }
+
+  .xl\:fill-gray {
+    fill: #e6e6e6;
+  }
+
+  .xl\:fill-gray-hover {
+    fill: #b7b7b7;
+  }
+
   .xl\:stroke-current {
     stroke: currentColor;
   }
@@ -52980,6 +53140,38 @@ video {
 
   .xs\:fill-current {
     fill: currentColor;
+  }
+
+  .xs\:fill-black {
+    fill: #000;
+  }
+
+  .xs\:fill-white {
+    fill: #fff;
+  }
+
+  .xs\:fill-blue {
+    fill: #2e66ff;
+  }
+
+  .xs\:fill-blue-hover {
+    fill: #002AB9;
+  }
+
+  .xs\:fill-green {
+    fill: #2cebad;
+  }
+
+  .xs\:fill-green-hover {
+    fill: #0AB97B;
+  }
+
+  .xs\:fill-gray {
+    fill: #e6e6e6;
+  }
+
+  .xs\:fill-gray-hover {
+    fill: #b7b7b7;
   }
 
   .xs\:stroke-current {
