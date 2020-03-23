@@ -8,7 +8,7 @@ const ButtonLink = props =>
     className="sm:hidden xs:hidden"
     onClick={props.onClick}
   >
-    <button className="focus:outline-none h-full w-full bg-green hover:bg-transparent text-black hover:text-green">
+    <button className={`${props.className} focus:outline-none h-full w-full hover:bg-transparent`}>
       <span className="inline-block max-w-3/4 break-normal">
         {props.text}
       </span>
@@ -18,6 +18,7 @@ const ButtonLink = props =>
 ButtonLink.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
+  className: PropTypes.string.isRequired,
 }
 
 export default ButtonLink;
