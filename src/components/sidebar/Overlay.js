@@ -3,7 +3,7 @@ import React from 'react';
 
 const Overlay = props =>
   <div
-    className="absolute w-screen h-screen overflow-hidden z-40 bg-black opacity-25"
+    className="fixed w-screen h-screen overflow-hidden z-40 bg-black opacity-25"
     onClick={props.onClick}
   />;
 

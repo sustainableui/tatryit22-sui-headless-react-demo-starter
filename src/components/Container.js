@@ -1,10 +1,27 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
 
-const Container = props =>
-  <div>
-    {props.children}
-  </div>;
+import CovidChat from './CovidChat';
+import Navigation from './navigation/Navigation';
+import PropTypes from 'prop-types';
+import Sidebar from './sidebar/Sidebar';
+
+const Container = props => {
+  const [hiddenSidebar, setHiddenSidebar] = useState(true);
+  
+  return (
+    <div className="overflow-hidden">
+      <Navigation
+        onSidebarToggle={() => setHiddenSidebar(!hiddenSidebar)}
+      />
+      <Sidebar
+        hidden={hiddenSidebar}
+        onToggle={() => setHiddenSidebar(!hiddenSidebar)}
+      />
+      {props.children}
+      <CovidChat visible={hiddenSidebar} />
+    </div>
+  );
+}
 
 Container.propTypes = {
   children: PropTypes.array.isRequired,

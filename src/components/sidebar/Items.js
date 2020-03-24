@@ -7,7 +7,7 @@ import { ROUTES } from '../../config/routes';
 import React from 'react';
 
 const Items = props =>
-  <div className="grid grid-rows-5 h-full -mt-24">
+  <div className="grid grid-rows-5 h-full -mt-24 overflow-y-hidden">
     <div className="row-span-4">
       <div className="grid grid-rows-9 h-full">
         <div></div>
