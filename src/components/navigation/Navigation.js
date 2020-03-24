@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const Navigation = props =>
-  <nav className="absolute w-full grid grid-cols-9 bg-white shadow-xl h-24 text-lg font-rustico text-center xs:grid-cols-2 xs:bg-transparent xs:shadow-none xs:h-20 sm:grid-cols-2 sm:bg-transparent sm:shadow-none sm:h-20 md:h-16 md:text-sm lg:h-20 lg:text-base z-40">
+  <nav className="h-24 xs:h-20 sm:h-20 lg:h-20 md:h-16 absolute w-full grid grid-cols-9 bg-white shadow-xl text-lg font-rustico-regular text-center xs:grid-cols-2 xs:bg-transparent xs:shadow-none sm:grid-cols-2 sm:bg-transparent sm:shadow-none md:text-sm lg:text-base z-40">
     <Logo />
     <Link
       text="O službe"

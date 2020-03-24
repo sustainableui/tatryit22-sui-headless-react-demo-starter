@@ -5,8 +5,8 @@ import Container from './components/Container';
 import CovidChat from './components/CovidChat';
 import MainPage from './components/pages/main';
 import Navigation from './components/navigation/Navigation';
+import { ROUTES } from './config/routes';
 import Sidebar from './components/sidebar/Sidebar';
-import { cities } from './config/cities';
 
 const App = () => {
   const [hiddenSidebar, setHiddenSidebar] = useState(true);
@@ -21,23 +21,23 @@ const App = () => {
         onToggle={() => setHiddenSidebar(!hiddenSidebar)}
       />
       <Switch>
-        <Route exact path="/">
+        <Route exact path={ROUTES.DOMOV}>
           <MainPage />
         </Route>
-        <Route path="/mesta">
+        <Route path={ROUTES.MESTA}>
           <MainPage />
         </Route>
-        <Route path={[...cities.map(city => city.route)]}>
+        <Route path={ROUTES.MESTO}>
           <MainPage />
         </Route>
-        <Route path="/povinnosti-dobrovolnika">
+        <Route path={ROUTES.POVINNOSTI_DOBROVOLNIKA}>
           <MainPage />
         </Route>
-        <Route path="/o-nas">
+        <Route path={ROUTES.O_NAS}>
           <MainPage />
         </Route>
-        <Route path="*">
-          <Redirect to="/" />
+        <Route path={ROUTES.NOT_FOUND}>
+          <Redirect to={ROUTES.DOMOV} />
         </Route>
       </Switch>
       <CovidChat visible={hiddenSidebar}/>

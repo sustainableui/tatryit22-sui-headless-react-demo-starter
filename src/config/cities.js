@@ -1,4 +1,4 @@
-export const cities = [{
+export const CITIES = [{
     route: '/poprad',
     name: 'Poprad',
     email: 'poprad@podmesipomahat.sk',

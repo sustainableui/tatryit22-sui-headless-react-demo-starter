@@ -1,3 +1,5 @@
+import { CITIES } from "./cities"
+
 export const HASH_ROUTES = {
   O_SLUZBE: {
     pathname: '/',
@@ -19,4 +21,13 @@ export const HASH_ROUTES = {
     pathname: '/',
     hash: '#kontakt',
   },
+}
+
+export const ROUTES = {
+  DOMOV: '/',
+  MESTA: '/mesta',
+  MESTO: [...CITIES.map(city => city.route)],
+  POVINNOSTI_DOBROVOLNIKA: '/povinnosti-dobrovolnika',
+  O_NAS: '/o-nas',
+  NOT_FOUND: '*',
 }

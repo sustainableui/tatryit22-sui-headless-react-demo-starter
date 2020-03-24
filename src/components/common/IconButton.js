@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const ActionButton = props =>
+const IconButton = props =>
   <button className="focus:outline-none pointer-events-none">
     <img
       alt=""
@@ -11,10 +11,10 @@ const ActionButton = props =>
     />
   </button>;
 
-ActionButton.propTypes = {
+IconButton.propTypes = {
   onClick: PropTypes.func.isRequired,
   iconPath: PropTypes.string.isRequired,
   className: PropTypes.string,
 }
 
-export default ActionButton;
+export default IconButton;
