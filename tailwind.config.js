@@ -59,12 +59,17 @@ module.exports = {
       maxWidth: {
         '1/4': '25%',
         '1/2': '50%',
+        '7/12': '58.333333%',
         '3/4': '75%',
+        'paragraph': '910px',
       },
       fontFamily: {
         'rustico-regular': ['Rustico V2 Regular'],
         'futura-medium': ['Futura Medium'],
         'futura-bold': ['Futura Bold'],
+      },
+      borderRadius: {
+        'gradient-box': '30px',
       },
     },
   }

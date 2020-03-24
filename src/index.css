@@ -24,9 +24,12 @@
 body::-webkit-scrollbar {
     width: 0.8em;
 }
+
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
 }
+
 body::-webkit-scrollbar-thumb {
     background-color: #2cebad;
     outline: 0;
