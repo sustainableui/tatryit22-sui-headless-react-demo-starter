@@ -1,6 +1,8 @@
-import ContactItem, { TYPES } from './ContactItem';
+import { CITIES, CITY_INDEXES } from '../../config/cities';
+import ContactItemButton, { TYPES } from './ContactItemButton';
 
 import Facebook from './facebook/Facebook';
+import { GENERAL_EMAIL } from '../../config/';
 import Link from './Link';
 import PropTypes from 'prop-types';
 import { ROUTES } from '../../config/routes';
@@ -21,16 +23,16 @@ const Items = props =>
           to={ROUTES.O_NAS}
           onClick={props.onClick}
         />
-        <ContactItem
-          text="Poprad"
+        <ContactItemButton
+          text={CITIES[CITY_INDEXES.POPRAD].name}
           type={TYPES.LOCATION}
         />
-        <ContactItem
-          text="+421 911 222 222"
+        <ContactItemButton
+          text={CITIES[CITY_INDEXES.POPRAD].phone}
           type={TYPES.PHONE}
         />
-        <ContactItem
-          text="info@podmesipomahat.sk"
+        <ContactItemButton
+          text={GENERAL_EMAIL}
           type={TYPES.EMAIL}
         />
       </div>

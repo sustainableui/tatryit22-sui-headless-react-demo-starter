@@ -1,22 +1,29 @@
+export const CITY_INDEXES = {
+  POPRAD: 0,
+  HUMENNE: 1,
+  TRNAVA: 2,
+  PIESTANY: 3,
+}
+
 export const CITIES = [{
     route: '/poprad',
     name: 'Poprad',
     email: 'poprad@podmesipomahat.sk',
-    contact: '+421000000000'
+    phone: '+421 000 000 000'
   }, {
     route: '/humenne',
     name: 'Humenné',
     email: 'humenne@podmesipomahat.sk',
-    contact: '+421000000000'
+    phone: '+421 000 000 000'
   }, {
     route: '/trnava',
     name: 'Trnava',
     email: 'trnava@podmesipomahat.sk',
-    contact: '+421000000000'
+    phone: '+421 000 000 000'
   }, {
-    route: '/pezinok',
-    name: 'Pezinok',
-    email: 'pezinok@podmesipomahat.sk',
-    contact: '+421000000000'
+    route: '/piestany',
+    name: 'Piešťany',
+    email: 'piestany@podmesipomahat.sk',
+    phone: '+421 000 000 000'
   }
 ];

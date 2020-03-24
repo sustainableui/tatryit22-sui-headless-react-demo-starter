@@ -24,7 +24,10 @@ const Container = props => {
 }
 
 Container.propTypes = {
-  children: PropTypes.array.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object
+  ]).isRequired,
 }
 
 export default Container;

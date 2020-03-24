@@ -1,3 +1,5 @@
+import Arrow, { POSITIONS } from '../../../common/navigationArrows/Arrow';
+
 import DeliverySet from './DeliverySet';
 import Headline from './Headline';
 import Logo from './Logo';
@@ -16,6 +18,9 @@ const Hero = () =>
       <Headline />
       <div className="row-span-3" />
     </div>
+    <Arrow
+      position={POSITIONS.BOTTOM}
+    />
   </div>;
 
 export default Hero;
