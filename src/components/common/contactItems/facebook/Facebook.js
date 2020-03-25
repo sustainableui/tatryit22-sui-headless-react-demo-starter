@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Divider from './Divider';
 import { FACEBOOK_LINK } from '../../../../config';
-import IconButton from '../../IconButton';
+import IconButton from '../../buttons/IconButton';
 import iconPath from '../../../../assets/icons/facebook.svg';
 
 const Facebook = props => {

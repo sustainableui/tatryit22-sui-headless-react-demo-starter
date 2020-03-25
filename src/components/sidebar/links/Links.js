@@ -7,12 +7,12 @@ const Links = props =>
   <React.Fragment>
     <Link
       text="Domov"
-      to={ROUTES.DOMOV}
+      to={ROUTES.VITAJTE}
       onClick={props.onClick}
     />
     <Link
       text="O Nás"
-      to={ROUTES.O_NAS}
+      to={ROUTES.O_NAS_HASH}
       onClick={props.onClick}
     />
   </React.Fragment>;

@@ -12,5 +12,6 @@ export const ROUTES = {
   MESTO: [...CITIES.map(city => city.route)],
   POVINNOSTI_DOBROVOLNIKA: '/povinnosti-dobrovolnika',
   O_NAS: '/o-nas',
+  O_NAS_HASH: '/#o-nas',
   NOT_FOUND: '*',
 }
