@@ -33,7 +33,7 @@ const ContactItemButton = props => {
   }
 
   return (
-    <div className="row-span-2 flex flex-col justify-center items-center">
+    <div className={`row-span-2 flex flex-col justify-center items-center ${props.dense ? '' : ''}`}>
       <a
         target="_blank"
         href={getHref()}
@@ -47,7 +47,7 @@ const ContactItemButton = props => {
             src={getIconPath()}
             className="mx-auto"
           />
-          <span className={`${hovered ? 'text-gray-hover' : 'text-black'} block font-futura-medium pt-6 text-2xl`}>
+          <span className={`${hovered ? 'text-gray-hover' : 'text-black'} ${props.bold ? 'font-futura-bold' : 'font-futura-medium'} block font-futura-medium pt-6 text-2xl`}>
             {props.text}
           </span>
         </button>
@@ -63,6 +63,8 @@ ContactItemButton.propTypes = {
     TYPES.EMAIL
   ]).isRequired,
   text: PropTypes.string.isRequired,
+  bold: PropTypes.bool,
+  dense: PropTypes.bool,
 }
 
 export default ContactItemButton;

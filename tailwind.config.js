@@ -59,6 +59,7 @@ module.exports = {
       spacing: {
         '7': '1.75rem',
         '14': '3.5rem',
+        '26': '6.5rem',
       },
       minWidth: {
         'sidebar': '512px',
@@ -70,6 +71,7 @@ module.exports = {
         '3/4': '75%',
         'paragraph': '910px',
         'sm-paragraph': '460px',
+        'divider': '100px',
       },
       minHeight: {
         '20': '5rem',
