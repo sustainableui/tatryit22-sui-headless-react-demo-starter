@@ -4,8 +4,7 @@ import Headline from '../../common/section/Headline';
 import React from 'react';
 
 const Contact = () =>
-  <div className="grid grid-rows-12 h-full overflow-hidden">
-    <div className="row-span-2" />
+  <div className="grid grid-rows-11 h-full overflow-hidden">
     <Headline text="Kontakt" />
     <ContactItems />
     <Facebook />

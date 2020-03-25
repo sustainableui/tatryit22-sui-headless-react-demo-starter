@@ -19,9 +19,9 @@ const Circle = () =>
     <Link to={ROUTES.DOMOV}>
       <circle
         filter="url(#logoshadow)"
-        cx="45"
-        cy="0"
-        r="90"
+        cx="20"
+        cy="20"
+        r="60"
         className="fill-white"
       />
     </Link>
