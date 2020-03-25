@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const ButtonLink = props =>
   <Link
+    smooth
     to={props.to}
     className="sm:hidden xs:hidden"
-    onClick={props.onClick}
   >
     <button className={`${props.className} focus:outline-none h-full w-full hover:bg-transparent`}>
       <span className="inline-block max-w-3/4 break-normal">
@@ -17,9 +17,8 @@ const ButtonLink = props =>
 
 ButtonLink.propTypes = {
   text: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
   className: PropTypes.string.isRequired,
-  to: PropTypes.object.isRequired,
+  to: PropTypes.string.isRequired,
 }
 
 export default ButtonLink;

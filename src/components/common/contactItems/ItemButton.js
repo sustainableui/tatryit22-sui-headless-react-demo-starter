@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 import PropTypes from 'prop-types';
-import locationIconPath from '../../assets/icons/location.svg';
-import mailIconPath from '../../assets/icons/mail.svg';
-import phoneIconPath from '../../assets/icons/phone.svg';
+import locationIconPath from '../../../assets/icons/location.svg';
+import mailIconPath from '../../../assets/icons/mail.svg';
+import phoneIconPath from '../../../assets/icons/phone.svg';
 
 export const TYPES = {
   LOCATION: 'location',
@@ -11,7 +11,7 @@ export const TYPES = {
   EMAIL: 'mail',
 }
 
-const ContactItem = props => {
+const ContactItemButton = props => {
   const [hovered, setHovered] = useState(false);
 
   const getIconPath = () => {
@@ -56,7 +56,7 @@ const ContactItem = props => {
   );
 }
 
-ContactItem.propTypes = {
+ContactItemButton.propTypes = {
   type: PropTypes.oneOf([
     TYPES.LOCATION,
     TYPES.PHONE,
@@ -65,4 +65,4 @@ ContactItem.propTypes = {
   text: PropTypes.string.isRequired,
 }
 
-export default ContactItem;
+export default ContactItemButton;

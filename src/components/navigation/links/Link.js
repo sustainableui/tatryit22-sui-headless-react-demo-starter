@@ -15,7 +15,7 @@ const LinkComponent = props =>
 
 LinkComponent.propTypes = {
   text: PropTypes.string.isRequired,
-  to: PropTypes.object.isRequired,
+  to: PropTypes.string.isRequired,
 }
 
 export default LinkComponent;

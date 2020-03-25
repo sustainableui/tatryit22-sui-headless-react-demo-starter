@@ -12,7 +12,7 @@ const IconButton = props =>
   </button>;
 
 IconButton.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   iconPath: PropTypes.string.isRequired,
   className: PropTypes.string,
 }

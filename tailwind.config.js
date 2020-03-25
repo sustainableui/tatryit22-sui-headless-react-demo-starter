@@ -69,6 +69,7 @@ module.exports = {
         '7/12': '58.333333%',
         '3/4': '75%',
         'paragraph': '910px',
+        'sm-paragraph': '460px',
       },
       minHeight: {
         '20': '5rem',
