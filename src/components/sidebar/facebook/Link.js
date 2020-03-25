@@ -22,7 +22,7 @@ const Link = props => {
           iconPath={facebookIconPath}
           onClick={props.onClick}
         />
-        <span className={`${hovered ? 'text-gray-hover' : 'text-black'} block font-futura-medium pt-6 text-xl`}>
+        <span className={`${hovered ? 'text-gray-hover' : 'text-black'} block font-futura-medium pt-6 text-2xl`}>
           Facebook
         </span>
       </a>

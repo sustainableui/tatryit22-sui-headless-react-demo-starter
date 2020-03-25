@@ -4,7 +4,7 @@ import DeliverySet from './DeliverySet';
 import Headline from './Headline';
 import Logo from './Logo';
 import React from 'react';
-import Section from '../../../common/Section';
+import Section from '../../../common/section/Section';
 import backgroundPath from '../../../../assets/images/backgrounds/hero.svg';
 
 const Hero = () =>

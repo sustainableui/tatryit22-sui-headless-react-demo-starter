@@ -1,7 +1,7 @@
 import ButtonLink from './links/ButtonLink';
 import { HASH_ROUTES } from '../../config/routes';
 import Link from './links/Link';
-import Logo from './Logo';
+import Logo from './logo/Logo';
 import MenuButton from './MenuButton';
 import PropTypes from 'prop-types';
 import React from 'react';

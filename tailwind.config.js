@@ -35,6 +35,7 @@ module.exports = {
         'bottom-md-ul': 'center bottom 0.8rem',
         'bottom-sm-ul': 'center bottom 0.6rem',
         'bottom-xs-ul': 'center bottom 0.5rem',
+        'top-screen': 'top 100vh',
       },
       backgroundSize: {
         'fit-xl-ul': '19rem',
@@ -63,6 +64,9 @@ module.exports = {
         '3/4': '75%',
         'paragraph': '910px',
       },
+      minHeight: {
+        '20': '5rem',
+      },
       fontFamily: {
         'rustico-regular': ['Rustico V2 Regular'],
         'futura-medium': ['Futura Medium'],
@@ -70,6 +74,9 @@ module.exports = {
       },
       borderRadius: {
         'gradient-box': '30px',
+      },
+      zIndex: {
+        '41': '41',
       },
     },
   }
