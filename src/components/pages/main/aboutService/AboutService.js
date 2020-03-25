@@ -6,8 +6,11 @@ import Text from './Text';
 import backgroundPath from '../../../../assets/images/backgrounds/pattern_more_elements.svg';
 
 const AboutService = () =>
-  <Section backgroundPath={backgroundPath}>
-    <div className="grid grid-rows-8 h-full overflow-hidden">
+  <Section
+    backgroundPath={backgroundPath}
+    className="h-auto min-h-screen overflow-y-visible bg-repeat-y"
+  >
+    <div className="grid grid-rows-8 min-h-full">
       <div className="row-span-2" />
       <Headline />
       <Text />

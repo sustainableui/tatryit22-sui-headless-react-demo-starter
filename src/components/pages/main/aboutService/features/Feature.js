@@ -6,7 +6,7 @@ const Feature = props =>
     className={`${props.className} shadow-md rounded-gradient-box p-1 mb-5 w-full`}
     style={{ backgroundImage: 'linear-gradient(to right, #2cebad, #2e66ff)' }}
   >
-    <p className="bg-white rounded-gradient-box p-7">
+    <p className="bg-white rounded-gradient-box p-7 sm:p-3 xs:p-3">
       {props.children}
     </p>
   </div>;
@@ -14,7 +14,8 @@ const Feature = props =>
 Feature.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.array,
-    PropTypes.string
+    PropTypes.string,
+    PropTypes.object,
   ]).isRequired,
   className: PropTypes.string,
 }
