@@ -1,30 +1,13 @@
 import { CITIES } from "./cities"
 
-export const HASH_ROUTES = {
-  O_SLUZBE: {
-    pathname: '/',
-    hash: '#o-sluzbe',
-  },
-  POSTUP: {
-    pathname: '/',
-    hash: '#postup',
-  },
-  POTREBUJEM_POMOC: {
-    pathname: '/',
-    hash: '#potrebujem-pomoc',
-  },
-  CHCEM_POMOCT: {
-    pathname: '/',
-    hash: '#chcem-pomoct',
-  },
-  KONTAKT: {
-    pathname: '/',
-    hash: '#kontakt',
-  },
-}
-
 export const ROUTES = {
   DOMOV: '/',
+  VITAJTE: '/#vitajte',
+  O_SLUZBE: '/#o-sluzbe',
+  POSTUP: '/#postup',
+  POTREBUJEM_POMOC: '/#potrebujem-pomoc',
+  CHCEM_POMOCT: '/#chcem-pomoct',
+  KONTAKT: '/#kontakt',
   MESTA: '/mesta',
   MESTO: [...CITIES.map(city => city.route)],
   POVINNOSTI_DOBROVOLNIKA: '/povinnosti-dobrovolnika',

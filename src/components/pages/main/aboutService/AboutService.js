@@ -7,6 +7,7 @@ import backgroundPath from '../../../../assets/images/backgrounds/pattern_more_e
 
 const AboutService = () =>
   <Section
+    id="o-sluzbe"
     backgroundPath={backgroundPath}
     className="h-auto min-h-screen overflow-y-visible"
   >

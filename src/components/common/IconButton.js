@@ -6,7 +6,7 @@ const IconButton = props =>
     <img
       alt=""
       src={props.iconPath}
-      className={`${props.className} hover:cursor-pointer pointer-events-auto hover:fill-gray-hover`}
+      className={`${props.className} hover:cursor-pointer pointer-events-auto fill-black hover:fill-gray-hover`}
       onClick={props.onClick}
     />
   </button>;

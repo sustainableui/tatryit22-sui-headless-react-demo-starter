@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React from 'react';
 import RedirectArrowButton from './RedirectArrowButton';
@@ -17,9 +16,9 @@ const Arrow = props => {
   return (
     <div className={`flex justify-center items-center ${isVertical ? 'w-full flex-col' : 'h-full flex-row'}`}>
       {isVertical ? (
-        <ScrollArrowButton position={props.position} link={props.link} />
+        <ScrollArrowButton position={props.position} to={props.to} />
       ) : (
-        <RedirectArrowButton position={props.position} link={props.link} />
+        <RedirectArrowButton position={props.position} to={props.to} />
       )}
     </div>
   );
@@ -32,7 +31,7 @@ Arrow.propTypes = {
     POSITIONS.LEFT,
     POSITIONS.RIGHT
   ]).isRequired,
-  link: PropTypes.instanceOf(Link).isRequired,
+  to: PropTypes.string.isRequired,
 }
 
 export default Arrow;

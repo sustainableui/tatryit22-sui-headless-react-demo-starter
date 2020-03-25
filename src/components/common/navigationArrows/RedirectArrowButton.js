@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -15,7 +14,7 @@ RedirectArrowButton.propTypes = {
     'right',
     'left'
   ]).isRequired,
-  link: PropTypes.instanceOf(Link).isRequired,
+  to: PropTypes.string.isRequired,
 }
 
 export default RedirectArrowButton;

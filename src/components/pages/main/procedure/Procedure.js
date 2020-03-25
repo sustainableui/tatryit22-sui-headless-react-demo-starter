@@ -4,7 +4,10 @@ import React from 'react';
 import Section from '../../../common/section/Section';
 
 const Procedure = () =>
-  <Section className="h-auto min-h-screen overflow-y-visible">
+  <Section
+    id="postup"
+    className="h-auto min-h-screen overflow-y-visible"
+  >
     <div className="grid grid-rows-8 min-h-full">
       <div className="row-span-2" />
       <Headline
