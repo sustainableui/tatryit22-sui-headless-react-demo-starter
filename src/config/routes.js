@@ -1,3 +1,4 @@
+import { APP_NAME } from ".";
 import { CITIES } from "./cities"
 
 export const ROUTES = {
@@ -7,10 +8,10 @@ export const ROUTES = {
   POSTUP: '/#postup',
   POTREBUJEM_POMOC_HASH: '/#potrebujem-pomoc',
   POTREBUJEM_POMOC: [
-    CITIES.POPRAD,
-    CITIES.TRNAVA,
-    CITIES.HUMENNE,
-    CITIES.PIESTANY,
+    CITIES.POPRAD.ROUTE,
+    CITIES.TRNAVA.ROUTE,
+    CITIES.HUMENNE.ROUTE,
+    CITIES.PIESTANY.ROUTE,
   ],
   CHCEM_POMOCT_HASH: '/#chcem-pomoct',
   CHCEM_POMOCT: '/chcem-pomoct',
@@ -41,3 +42,26 @@ export const TITLES = {
   KONTAKT: "Kontakt",
   O_NAS: "O nás",
 }
+
+const getConcatenatedTitle = text => `${APP_NAME} / ${text}`;
+
+export const getTitleFromRoute = hash => {
+  switch (hash) {
+    case ROUTES.VITAJTE:
+      return getConcatenatedTitle("Vitajte");
+    case ROUTES.O_SLUZBE:
+      return getConcatenatedTitle("O službe");
+    case ROUTES.POSTUP:
+      return getConcatenatedTitle("Postup");
+    case ROUTES.POTREBUJEM_POMOC_HASH:
+      return getConcatenatedTitle("Potrebujem pomoc");
+    case ROUTES.CHCEM_POMOCT_HASH:
+      return getConcatenatedTitle("Chcem pomôcť");
+    case ROUTES.KONTAKT:
+      return getConcatenatedTitle("Kontakt");
+    case ROUTES.O_NAS_HASH:
+      return getConcatenatedTitle("O nás");
+    default:
+      return APP_NAME;
+  }
+};

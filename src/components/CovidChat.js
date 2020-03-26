@@ -24,7 +24,7 @@ const CovidChat = props => {
       js.src = "https://covid.chat/chat.js";
       bjs.parentNode.insertBefore(js, bjs);
     }(document, 'script', 'bmedia'));
-  });
+  }, []);
 
   let chat = document.getElementById('botmedia-chat-widget');
   if (chat) {

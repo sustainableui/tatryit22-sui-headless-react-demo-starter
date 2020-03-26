@@ -90,6 +90,9 @@ module.exports = {
       zIndex: {
         '41': '41',
       },
+      inset: {
+        '1/2': '50%',
+      },
     },
   }
 }

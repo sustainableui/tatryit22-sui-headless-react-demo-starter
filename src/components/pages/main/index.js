@@ -56,6 +56,7 @@ const MainPage = () => {
       uniqueLayout
     >
       <CallTo
+        id={IDS.POTREBUJEM_POMOC}
         headline={TITLES.POTREBUJEM_POMOC}
         description="Ak Ste Starší, Zdravotne Postihnutý Alebo Človek V Núdzi, Radi Vám Pomôžeme S Vašim Nákupom Alebo Donáškou Liekov. Stačí Nás Kontaktovať."
         theme="green"
@@ -72,6 +73,7 @@ const MainPage = () => {
       uniqueLayout
     >
       <CallTo
+        id={IDS.CHCEM_POMOCT}
         headline={TITLES.CHCEM_POMOCT}
         description="Ak Si Študent Alebo Jednoducho Hocikto Kto Chce Pomôcť Dobrej Veci, Vyplň Formulár Pre Dobrovoľníka A Pridaj Sa K Nám!"
         theme="blue"

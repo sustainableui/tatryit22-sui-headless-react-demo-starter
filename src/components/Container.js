@@ -10,9 +10,7 @@ const Container = props => {
   
   return (
     <div className="overflow-hidden">
-      <Navigation
-        onSidebarToggle={() => setHiddenSidebar(!hiddenSidebar)}
-      />
+      <Navigation onSidebarToggle={() => setHiddenSidebar(!hiddenSidebar)} />
       <Sidebar
         hidden={hiddenSidebar}
         onToggle={() => setHiddenSidebar(!hiddenSidebar)}

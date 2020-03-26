@@ -1,3 +1,4 @@
+import { LINKS } from '../../../config/transitions';
 import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -7,7 +8,7 @@ const LinkComponent = props =>
     <Link
       smooth
       to={props.to}
-      className="leading-24 lg:leading-20 md:leading-16 align-middle focus:text-blue text-black hover:text-gray-hover"
+      className={`${LINKS} ${props.isActive ? 'text-blue pointer-events-none' : 'text-black hover:text-gray-hover'} leading-24 lg:leading-20 md:leading-16 align-middle`}
     >
       {props.text}
     </Link>
@@ -16,6 +17,7 @@ const LinkComponent = props =>
 LinkComponent.propTypes = {
   text: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
+  isActive: PropTypes.bool.isRequired,
 }
 
 export default LinkComponent;

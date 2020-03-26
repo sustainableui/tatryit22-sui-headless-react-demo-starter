@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import { BUTTONS } from '../../../config/transitions';
 import Divider from './Divider';
 import { FACEBOOK_LINK } from '../../../config';
 import PropTypes from 'prop-types';
@@ -55,7 +56,7 @@ const Button = props => {
               src={getIconPath()}
               className="mx-auto"
             />
-            <span className={`${hovered ? 'text-gray-hover' : 'text-black'} ${props.bold ? 'font-futura-bold' : 'font-futura-medium'} block font-futura-medium pt-6 text-2xl`}>
+            <span className={`${BUTTONS} ${hovered ? 'text-gray-hover' : 'text-black'} ${props.bold ? 'font-futura-bold' : 'font-futura-medium'} block font-futura-medium pt-6 text-2xl`}>
               {props.text}
             </span>
           </button>

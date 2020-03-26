@@ -1,4 +1,6 @@
+import { LINKS } from '../../../../config/transitions';
 import { Link } from 'react-router-dom';
+import { ROUTES } from '../../../../config/routes';
 import React from 'react';
 import Step from './Step';
 
@@ -10,7 +12,7 @@ const Procedure = () =>
         <div className="col-span-4 sm:col-span-8 xs:col-span-8 flex flex-col justify-start Steps-center">
           <ol className="font-futura-medium text-lg text-left">
             <Step number={1}>
-              Kliknite na tlačidlo <Link className="text-green underline hover:text-black">Pomôžte mi</Link> a kontaktujte nás na <span className="text-blue">telefónne číslo</span> príslušné k vášmu mestu, alebo nám pošlite <span className="text-blue">elektronický formulár</span>
+              Kliknite na tlačidlo <Link to={ROUTES.VYBERTE_VASE_MESTO} className={`${LINKS} text-green underline hover:text-black`}>Pomôžte mi</Link> a kontaktujte nás na <span className="text-blue">telefónne číslo</span> príslušné k vášmu mestu, alebo nám pošlite <span className="text-blue">elektronický formulár</span>
             </Step>
             <Step number={2}>
               Definujte produkty, ktoré potrebujete
