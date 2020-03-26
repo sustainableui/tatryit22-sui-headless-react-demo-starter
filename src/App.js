@@ -1,4 +1,4 @@
-import { ROUTES, getTitleFromRoute } from './config/routes';
+import { ROUTES, setDocumentTitleFromRoute } from './config/routes';
 import React, { useEffect } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
@@ -19,7 +19,7 @@ const App = () => {
       onSectionEnter: newState => {
         const newRoute = `${history.location.pathname}#${newState.hash}`;
         history.replace(newRoute);
-        document.title = getTitleFromRoute(newRoute);
+        setDocumentTitleFromRoute(newRoute);
       },
     })
   }, []);

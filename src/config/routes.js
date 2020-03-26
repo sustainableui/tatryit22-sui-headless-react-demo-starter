@@ -45,8 +45,8 @@ export const TITLES = {
 
 const getConcatenatedTitle = text => `${APP_NAME} / ${text}`;
 
-export const getTitleFromRoute = hash => {
-  switch (hash) {
+const getTitleFromRoute = route => {
+  switch (route) {
     case ROUTES.VITAJTE:
       return getConcatenatedTitle("Vitajte");
     case ROUTES.O_SLUZBE:
@@ -65,3 +65,7 @@ export const getTitleFromRoute = hash => {
       return APP_NAME;
   }
 };
+
+export const setDocumentTitleFromRoute = route => {
+  document.title = getTitleFromRoute(route);
+}

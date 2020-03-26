@@ -2,6 +2,7 @@ import { BUTTONS } from '../../../config/transitions';
 import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { setDocumentTitleFromRoute } from '../../../config/routes';
 
 const ButtonLink = props => {
   const getClasses = () => {
@@ -29,6 +30,7 @@ const ButtonLink = props => {
     <Link
       smooth
       to={props.to}
+      onClick={() => setDocumentTitleFromRoute(props.to)}
       className={`sm:hidden xs:hidden ${props.isActive ? 'pointer-events-none' : '' }`}
     >
       <button className={`${BUTTONS} ${getClasses()} hover:bg-transparent focus:outline-none h-full w-full`}>
