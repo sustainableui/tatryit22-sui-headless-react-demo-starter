@@ -4,8 +4,8 @@ import React from 'react';
 
 const blueContainedClasses = "bg-blue text-white font-futura-bold hover:bg-blue-hover";
 const greenContainedClasses = "bg-green text-black font-futura-bold hover:bg-green-hover";
-const blueOutlinedClasses = "bg-transparent text-blue font-futura-medium border-4 border-blue hover:text-blue-hover hover:border-blue-hover";
-const greenOutlinedClasses = "bg-transparent text-blue font-futura-medium border-4 border-green hover:text-green-hover hover:border-green-hover";
+const blueOutlinedClasses = "bg-transparent text-blue font-futura-medium border-2 border-blue hover:text-white hover:border-0 hover:bg-blue";
+const greenOutlinedClasses = "bg-transparent text-green font-futura-medium border-2 border-green hover:text-white hover:border-0 hover:bg-green";
 
 const Button = props => {
   const getClasses = () => {
@@ -31,7 +31,7 @@ const Button = props => {
 
   return (
     <Link to={props.to}>
-      <button className={`inline-flex items-center py-2 px-8 focus:outline-none ${props.className} ${getClasses()}`}>
+      <button className={`inline-flex items-center focus:outline-none ${props.className} ${getClasses()} ${props.bigger ? 'px-14 py-3' : 'px-8 py-2'}`}>
         {props.text}
       </button>
     </Link>
@@ -50,6 +50,7 @@ Button.propTypes = {
   className: PropTypes.string,
   text: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
+  bigger: PropTypes.bool,
 }
 
 export default Button;

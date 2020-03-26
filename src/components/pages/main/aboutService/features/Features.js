@@ -40,7 +40,7 @@ const features = [{
   }];
 
 const Features = () =>
-  <div className="grid grid-cols-8 h-full font-futura-medium text-lg text-center">
+  <div className="grid grid-cols-8 h-full font-futura-medium text-lg text-center pt-10">
     <div />
     <div className="col-span-2 md:col-span-3 sm:col-span-6 xs:col-span-6 pl-4 pr-4">
       {features.map((feature, i) => feature.classNames[0] && (

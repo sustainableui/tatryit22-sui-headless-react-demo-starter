@@ -1,4 +1,4 @@
-import Button from '../../../common/buttons/Button';
+import Button from '../../../common/Button';
 import Description from './Description';
 import Headline from './Headline';
 import PropTypes from 'prop-types';

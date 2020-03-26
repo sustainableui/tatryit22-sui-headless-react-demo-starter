@@ -3,7 +3,7 @@ import React from 'react';
 import Text from './Text';
 
 const AboutService = () =>
-  <div className="">
+  <div>
     <Text />
     <Features />
   </div>;

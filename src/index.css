@@ -48,3 +48,9 @@ body::-webkit-scrollbar-thumb {
     background-color: #2cebad;
     outline: 0;
 }
+
+.monochromatic {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.65;
+}

@@ -1,4 +1,4 @@
-import IconButton from '../common/buttons/IconButton';
+import IconButton from '../common/navigation/IconButton';
 import PropTypes from 'prop-types';
 import React from 'react';
 import menuIconPath from '../../assets/icons/menu.svg';

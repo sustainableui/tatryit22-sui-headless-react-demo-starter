@@ -60,6 +60,8 @@ module.exports = {
         '7': '1.75rem',
         '14': '3.5rem',
         '26': '6.5rem',
+        '44': '11rem',
+        '53': '13.3rem',
       },
       minWidth: {
         'sidebar': '512px',
@@ -71,6 +73,7 @@ module.exports = {
         '3/4': '75%',
         'paragraph': '910px',
         'sm-paragraph': '460px',
+        'xs-paragraph': '340px',
         'divider': '100px',
       },
       minHeight: {
