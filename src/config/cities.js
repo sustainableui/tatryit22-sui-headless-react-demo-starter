@@ -1,29 +1,26 @@
-export const CITY_INDEXES = {
-  POPRAD: 0,
-  HUMENNE: 1,
-  TRNAVA: 2,
-  PIESTANY: 3,
-}
-
-export const CITIES = [{
-    route: '/poprad',
-    name: 'Poprad',
-    email: 'poprad@podmesipomahat.sk',
-    phone: '+421 000 000 000'
-  }, {
-    route: '/humenne',
-    name: 'Humenné',
-    email: 'humenne@podmesipomahat.sk',
-    phone: '+421 000 000 000'
-  }, {
-    route: '/trnava',
-    name: 'Trnava',
-    email: 'trnava@podmesipomahat.sk',
-    phone: '+421 000 000 000'
-  }, {
-    route: '/piestany',
-    name: 'Piešťany',
-    email: 'piestany@podmesipomahat.sk',
-    phone: '+421 000 000 000'
+export const CITIES = {
+  POPRAD: {
+    ROUTE: '/poprad',
+    NAME: 'Poprad',
+    EMAIL: 'poprad@podmesipomahat.sk',
+    PHONE: '+421 000 000 000'
+  },
+  HUMENNE: {
+    ROUTE: '/humenne',
+    NAME: 'Humenné',
+    EMAIL: 'humenne@podmesipomahat.sk',
+    PHONE: '+421 000 000 000'
+  },
+  TRNAVA: {
+    ROUTE: '/trnava',
+    NAME: 'Trnava',
+    EMAIL: 'trnava@podmesipomahat.sk',
+    PHONE: '+421 000 000 000'
+  },
+  PIESTANY: {
+    ROUTE: '/piestany',
+    NAME: 'Piešťany',
+    EMAIL: 'piestany@podmesipomahat.sk',
+    PHONE: '+421 000 000 000'
   }
-];
+};

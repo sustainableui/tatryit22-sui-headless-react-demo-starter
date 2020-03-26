@@ -1,10 +1,11 @@
+import { IDS, ROUTES, TITLES } from '../../../config/routes';
+
 import AboutService from './aboutService/AboutService';
 import AboutUs from './aboutUs/AboutUs';
 import CallTo from './callTo/CallTo';
 import Contacts from '../../common/contacts/Contacts';
 import Hero from './hero/Hero';
 import Procedure from './procedure/Procedure';
-import { ROUTES } from '../../../config/routes';
 import React from 'react';
 import Section from '../../common/section/Section';
 import aboutServiceBackgroundPath from '../../../assets/images/backgrounds/pattern_more_elements.svg';
@@ -18,7 +19,7 @@ import procedureBackgroundPath from '../../../assets/images/backgrounds/pattern_
 const MainPage = () => {
   const HeroSection = (
     <Section
-      id="vitajte"
+      id={IDS.VITAJTE}
       backgroundPath={heroBackgroundPath}
       uniqueLayout
     >
@@ -28,10 +29,10 @@ const MainPage = () => {
 
   const AboutSection = (
     <Section
-      id="o-sluzbe"
+      id={IDS.O_SLUZBE}
       backgroundPath={aboutServiceBackgroundPath}
       scrollable
-      title="O službe"
+      title={TITLES.O_SLUZBE}
     >
       <AboutService />
     </Section>
@@ -39,10 +40,10 @@ const MainPage = () => {
 
   const ProcedureSection = (
     <Section
-      id="postup"
+      id={IDS.POSTUP}
       backgroundPath={procedureBackgroundPath}
       scrollable
-      title="PostuP"
+      title={TITLES.POSTUP}
     >
       <Procedure />
     </Section>
@@ -50,28 +51,28 @@ const MainPage = () => {
 
   const CustomerSection = (
     <Section
-      id="potrebujem-pomoc"
+      id={IDS.POTREBUJEM_POMOC}
       backgroundPath={callToCustomerBackgroundPath}
       uniqueLayout
     >
       <CallTo
-        headline="Potrebujem Pomoc"
+        headline={TITLES.POTREBUJEM_POMOC}
         description="Ak Ste Starší, Zdravotne Postihnutý Alebo Človek V Núdzi, Radi Vám Pomôžeme S Vašim Nákupom Alebo Donáškou Liekov. Stačí Nás Kontaktovať."
         theme="green"
         action="Pomôžte mi"
-        actionTo={ROUTES.VYBER_MESTA}
+        actionTo={ROUTES.VYBERTE_VASE_MESTO}
       />
     </Section>
   );
 
   const VolunteerSection = (
     <Section
-      id="chcem-pomoct"
+      id={IDS.CHCEM_POMOCT}
       backgroundPath={callToVolunteerBackgroundPath}
       uniqueLayout
     >
       <CallTo
-        headline="Chcem Pomôcť"
+        headline={TITLES.CHCEM_POMOCT}
         description="Ak Si Študent Alebo Jednoducho Hocikto Kto Chce Pomôcť Dobrej Veci, Vyplň Formulár Pre Dobrovoľníka A Pridaj Sa K Nám!"
         theme="blue"
         action="Viac"
@@ -82,9 +83,9 @@ const MainPage = () => {
 
   const ContactSection = (
     <Section
-      id="kontakt"
+      id={IDS.KONTAKT}
       backgroundPath={contactBackgroundPath}
-      title="Kontakt"
+      title={TITLES.KONTAKT}
     >
       <div className="grid grid-rows-8 h-full overflow-hidden xl:-mt-10 lg:-mt-12 md:-mt-14 sm:-mt-14 xs:-mt-14">
         <Contacts bold />
@@ -94,9 +95,9 @@ const MainPage = () => {
 
   const AboutUsSection = (
     <Section
-      id="o-nas"
+      id={IDS.O_NAS}
       backgroundPath={aboutUsBackgroundPath}
-      title="O nás"
+      title={TITLES.O_NAS}
     >
       <AboutUs />
     </Section>

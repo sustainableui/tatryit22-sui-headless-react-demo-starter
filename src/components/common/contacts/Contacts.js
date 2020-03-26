@@ -1,6 +1,6 @@
-import { CITIES, CITY_INDEXES } from "../../../config/cities";
 import ContactButton, { TYPES } from "./Button";
 
+import { CITIES } from "../../../config/cities";
 import { GENERAL_EMAIL } from "../../../config";
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -8,7 +8,7 @@ import React from 'react';
 const Contacts = props => {
   const LocationButton = (
     <ContactButton
-      text={CITIES[CITY_INDEXES.POPRAD].name}
+      text={CITIES.POPRAD.NAME}
       type={TYPES.LOCATION}
       bold={props.bold}
     />
@@ -16,7 +16,7 @@ const Contacts = props => {
 
   const PhoneButton = (
     <ContactButton
-      text={CITIES[CITY_INDEXES.POPRAD].phone}
+      text={CITIES.POPRAD.PHONE}
       type={TYPES.PHONE}
       bold={props.bold}
     />

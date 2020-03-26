@@ -1,7 +1,7 @@
 import Headline from '../../../../common/section/Headline';
 import Logo from './Logo';
 import React from 'react';
-import { SUPPORTERS } from '../../../../../config';
+import { SUPPORTERS } from '../../../../../config/supporters';
 import atexLogoPath from '../../../../../assets/images/supporters/logo_atex.svg';
 import kingMediaLogoPath from '../../../../../assets/images/supporters/logo_king_media.svg';
 import podmeSaRozpravatLogoPath from '../../../../../assets/images/supporters/logo_podme_sa_rozpravat.svg';

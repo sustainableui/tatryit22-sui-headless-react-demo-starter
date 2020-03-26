@@ -15,10 +15,10 @@ const App = () =>
       <Route exact path={ROUTES.DOMOV}>
         <MainPage />
       </Route>
-      <Route path={ROUTES.VYBER_MESTA}>
+      <Route path={ROUTES.VYBERTE_VASE_MESTO}>
         <CityPickerPage />
       </Route>
-      <Route path={ROUTES.MESTO}>
+      <Route path={ROUTES.POTREBUJEM_POMOC}>
         <NeedHelpPage />
       </Route>
       <Route path={ROUTES.CHCEM_POMOCT}>
