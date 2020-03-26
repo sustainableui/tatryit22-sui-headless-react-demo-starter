@@ -1,7 +1,7 @@
 import AboutService from './aboutService/AboutService';
 import AboutUs from './aboutUs/AboutUs';
 import CallTo from './callTo/CallTo';
-import Contact from './Contact';
+import Contacts from '../../common/contacts/Contacts';
 import Hero from './hero/Hero';
 import Procedure from './procedure/Procedure';
 import { ROUTES } from '../../../config/routes';
@@ -86,7 +86,9 @@ const MainPage = () => {
       backgroundPath={contactBackgroundPath}
       title="Kontakt"
     >
-      <Contact />
+      <div className="grid grid-rows-8 h-full overflow-hidden xl:-mt-10 lg:-mt-12 md:-mt-14 sm:-mt-14 xs:-mt-14">
+        <Contacts bold />
+      </div>
     </Section>
   );
 

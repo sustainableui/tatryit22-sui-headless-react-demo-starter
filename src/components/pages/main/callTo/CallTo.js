@@ -1,12 +1,11 @@
-import Action from './Action';
+import Button from '../../../common/buttons/Button';
 import Description from './Description';
 import Headline from './Headline';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const CallTo = props =>
-  <div className="grid grid-rows-6 h-full overflow-hidden">
-    <div className="row-span-2" />
+  <div className="flex flex-col justify-center items-center h-full overflow-hidden">
     <Headline
       text={props.headline}
       theme={props.theme}
@@ -15,12 +14,12 @@ const CallTo = props =>
       text={props.description}
       theme={props.theme}
     />
-    <Action
-      theme={props.theme}
+    <Button
+      variant="contained"
+      color={props.theme === 'green' ? 'blue' : (props.theme === 'blue' ? 'green' : '')}
       text={props.action}
       to={props.actionTo}
     />
-    <div />
   </div>;
 
 CallTo.propTypes = {
