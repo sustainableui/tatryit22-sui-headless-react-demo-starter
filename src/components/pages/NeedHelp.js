@@ -2,12 +2,12 @@ import React from 'react';
 import Section from '../common/section/Section';
 import backgroundPath from '../../assets/images/backgrounds/pattern_more_elements.svg';
 
-const CityPickerPage = () =>
+const ContactPage = () =>
   <Section
     backgroundPath={backgroundPath}
-    title="Vyberte vaše mesto"
+    title="Potrebujem Pomoc"
   >
 
   </Section>;
 
-export default CityPickerPage;
+export default ContactPage;

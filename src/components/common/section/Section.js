@@ -4,7 +4,7 @@ import React from 'react';
 
 const Section = props =>
   <div
-    id={props.id}
+    id={props.id ? props.id : ''}
     className={`w-screen h-screen overflow-hidden p-5 sm:p-0 xs:p-0 ${props.fixedBackground ? '' : 'bg-scroll bg-no-repeat bg-cover'}`}
     style={{ backgroundImage: props.backgroundPath ? `url(${props.backgroundPath})` : 'none'}}
   >
@@ -32,7 +32,7 @@ Section.propTypes = {
     PropTypes.object,
     PropTypes.array,
   ]).isRequired,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   fixedBackground: PropTypes.bool,
 }
 

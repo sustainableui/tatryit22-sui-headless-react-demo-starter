@@ -20,12 +20,12 @@ const Navigation = props =>
     <ButtonLink
       text="Potrebujem Pomoc"
       className="bg-green text-black hover:text-green"
-      to={ROUTES.POTREBUJEM_POMOC}
+      to={ROUTES.POTREBUJEM_POMOC_HASH}
     />
     <ButtonLink
       text="Chcem Pomôcť"
       className="bg-blue text-white hover:text-blue"
-      to={ROUTES.CHCEM_POMOCT}
+      to={ROUTES.CHCEM_POMOCT_HASH}
     />
     <Link
       text="Kontakt"

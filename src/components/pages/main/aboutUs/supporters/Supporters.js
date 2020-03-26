@@ -9,7 +9,7 @@ import sampittkoLogoPath from '../../../../../assets/images/supporters/logo_samp
 import skillfulLogoPath from '../../../../../assets/images/supporters/logo_skillful.svg';
 
 const Supporters = () =>
-  <div className="grid grid-rows-3 h-full">
+  <div className="grid grid-rows-3 h-full relative">
     <div className="row-span-1">
       <Headline text="PodPorili nás" paddingless />
     </div>

@@ -59,7 +59,7 @@ const MainPage = () => {
         description="Ak Ste Starší, Zdravotne Postihnutý Alebo Človek V Núdzi, Radi Vám Pomôžeme S Vašim Nákupom Alebo Donáškou Liekov. Stačí Nás Kontaktovať."
         theme="green"
         action="Pomôžte mi"
-        actionTo={ROUTES.MESTA}
+        actionTo={ROUTES.VYBER_MESTA}
       />
     </Section>
   );
@@ -75,7 +75,7 @@ const MainPage = () => {
         description="Ak Si Študent Alebo Jednoducho Hocikto Kto Chce Pomôcť Dobrej Veci, Vyplň Formulár Pre Dobrovoľníka A Pridaj Sa K Nám!"
         theme="blue"
         action="Viac"
-        actionTo={ROUTES.POVINNOSTI_DOBROVOLNIKA}
+        actionTo={ROUTES.CHCEM_POMOCT}
       />
     </Section>
   );
