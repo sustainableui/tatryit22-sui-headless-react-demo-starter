@@ -1,8 +1,8 @@
 import { ROUTES, SECTION_IDS } from '../../../config/routes';
 import React, { useEffect } from 'react';
 
-import General from './General';
-import Lead from './Lead';
+import General from './general/General';
+import Lead from './lead/Lead';
 import Section from '../../common/section/Section';
 import Team from './team/Team';
 import backgroundPath from '../../../assets/images/backgrounds/pattern_more_elements.svg';
