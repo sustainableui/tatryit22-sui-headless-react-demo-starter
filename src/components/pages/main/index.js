@@ -97,7 +97,7 @@ const MainPage = () => {
 
   const AboutUsSection = (
     <Section
-      id={IDS.O_NAS}
+      id={IDS.O_NAS_HASH}
       backgroundPath={aboutUsBackgroundPath}
       title={TITLES.O_NAS}
     >

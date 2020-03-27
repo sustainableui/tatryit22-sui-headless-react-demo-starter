@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { BUTTONS } from '../../../config/transitions';
 import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
+import { setDocumentTitleFromRoute } from '../../../config/routes';
 
 const ELEMENTS = {
   ROOT: 1,
@@ -66,6 +67,7 @@ const Arrow = props => {
       <Link
         smooth
         to={props.to ? props.to : ''}
+        onClick={() => setDocumentTitleFromRoute(props.to)}
         onMouseEnter={() => setHovered(!hovered)}
         onMouseLeave={() => setHovered(!hovered)}
         className={`${BUTTONS} ${getClasses(ELEMENTS.LINK)} hover:bg-transparent hover:border-4 border-4 border-transparent focus:outline-none flex flex-col justify-center items-center`}

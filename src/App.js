@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
 import AboutUsPage from './components/pages/about_us';
-import CityPickerPage from './components/pages/CityPicker';
+import CityPickerPage from './components/pages/city_picker/CityPicker';
 import Container from './components/Container';
 import MainPage from './components/pages/main';
 import NeedHelpPage from './components/pages/NeedHelp';

@@ -62,6 +62,7 @@ module.exports = {
         '26': '6.5rem',
         '44': '11rem',
         '53': '13.3rem',
+        '72': '18rem',
       },
       minWidth: {
         'sidebar': '512px',
