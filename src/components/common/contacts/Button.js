@@ -56,7 +56,7 @@ const Button = props => {
               src={getIconPath()}
               className="mx-auto"
             />
-            <span className={`${BUTTONS} ${hovered ? 'text-gray-hover' : 'text-black'} ${props.bold ? 'font-futura-bold' : 'font-futura-medium'} block font-futura-medium pt-6 text-2xl`}>
+            <span className={`${BUTTONS} ${hovered ? 'text-gray-hover' : 'text-black'} ${props.bold ? 'font-futura-bold' : 'font-futura-medium'} block font-futura-medium pt-6 sm:pt-2 xs:pt-2 text-2xl sm:text-lg xs:text-lg`}>
               {props.text}
             </span>
           </button>

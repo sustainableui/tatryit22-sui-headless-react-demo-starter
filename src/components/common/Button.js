@@ -32,7 +32,7 @@ const Button = props => {
 
   return (
     <Link to={props.to}>
-      <button className={`${BUTTONS} inline-flex items-center focus:outline-none ${props.className} ${getClasses()} ${props.bigger ? 'px-14 py-3' : 'px-8 py-2'}`}>
+      <button className={`${BUTTONS} inline-flex items-center focus:outline-none ${props.className} ${getClasses()} ${props.bigger ? 'px-14 py-3 sm:px-8 sm:py-2 xs:px-8 xs:py-2' : 'px-8 py-2'}`}>
         {props.text}
       </button>
     </Link>
