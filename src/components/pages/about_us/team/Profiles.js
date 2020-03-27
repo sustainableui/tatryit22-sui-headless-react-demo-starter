@@ -1,4 +1,4 @@
-import Profile from './profile/Profile';
+import Profile from '../common/profile/Profile';
 import React from 'react';
 import SamuelMuchaProfileImagePath from '../../../../assets/images/people/samuel_mucha.png';
 import SamuelPitonakProfileImagePath from '../../../../assets/images/people/samuel_pitonak.png';
@@ -10,7 +10,7 @@ const Profiles = () =>
       <Profile
         imagePath={SamuelPitonakProfileImagePath}
         name="Samuel Pitoňák"
-        description="IT Študent"
+        description="IT Študent, Programátor"
       />
       <Profile
         imagePath={TimotejMuchaProfileImagePath}

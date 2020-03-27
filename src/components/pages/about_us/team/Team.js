@@ -1,5 +1,5 @@
 import Profiles from './Profiles';
-import Quote from '../Quote';
+import Quote from '../common/Quote';
 import React from 'react';
 import { SECTION_IDS } from '../../../../config/routes';
 import ScrollableSection from 'react-update-url-on-scroll';

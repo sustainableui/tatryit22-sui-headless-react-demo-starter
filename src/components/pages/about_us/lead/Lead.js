@@ -2,7 +2,7 @@ import { ROUTES, SECTION_IDS } from '../../../../config/routes';
 
 import Arrow from '../../../common/navigation/Arrow';
 import Graphic from './Graphic';
-import Quote from '../Quote';
+import Quote from '../common/Quote';
 import React from 'react';
 import ScrollableSection from 'react-update-url-on-scroll';
 
