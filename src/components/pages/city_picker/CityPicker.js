@@ -5,7 +5,7 @@ import { CITIES } from '../../../config/cities';
 import City from './City';
 import { ROUTES } from '../../../config/routes';
 import Section from '../../common/section/Section';
-import backgroundPath from '../../../assets/images/backgrounds/pattern_more_elements.svg';
+import backgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 
 const CityPickerPage = () => {

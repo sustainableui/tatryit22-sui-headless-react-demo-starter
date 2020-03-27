@@ -1,6 +1,6 @@
 import BistrikMuchaProfileImagePath from '../../../../assets/images/people/bystrik_mucha.png';
 import Logo from './Logo';
-import Profile from '../profile/Profile';
+import Profile from '../common/profile/Profile';
 import React from 'react';
 
 const Graphic = () => 

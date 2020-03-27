@@ -12,22 +12,6 @@
     font-style: normal;
 }
 
-/* @font-face {
-    font-family: 'Futura Medium';
-    src: url('./assets/fonts/futura_medium-webfont.woff2') format('woff2'),
-         url('./assets/fonts/futura_medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura Bold';
-    src: url('./assets/fonts/futura_bold-webfont.woff2') format('woff2'),
-         url('./assets/fonts/futura_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-
 @font-face {
     font-family: 'Rustico V2 Regular';
     src: url('./assets/fonts/rustico_v2_regular.ttf') format('truetype');

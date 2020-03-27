@@ -5,7 +5,7 @@ import General from './general/General';
 import Lead from './lead/Lead';
 import Section from '../../common/section/Section';
 import Team from './team/Team';
-import backgroundPath from '../../../assets/images/backgrounds/pattern_more_elements.svg';
+import backgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 
 const AboutUs = () => {
@@ -27,7 +27,7 @@ const AboutUs = () => {
     <Section
       id={SECTION_IDS.TEAM}
       backgroundPath={backgroundPath}
-      uniqueLayout
+      customLayout
     >
       <Team />
     </Section>
@@ -37,7 +37,7 @@ const AboutUs = () => {
     <Section
       id={SECTION_IDS.PODME_SA_ROZPRAVAT}
       backgroundPath={backgroundPath}
-      uniqueLayout
+      customLayout
     >
       <Lead />
     </Section>

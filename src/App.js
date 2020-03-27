@@ -17,6 +17,7 @@ const App = () => {
     configureAnchors({
       keepLastAnchorHash: true,
       offset: 70,
+      scrollBehaviour: 'instant',
       onSectionEnter: newState => {
         const newRoute = `${history.location.pathname}#${newState.hash}`;
         history.replace(newRoute);

@@ -20,7 +20,7 @@ const General = () =>
       color="blue"
     />
     <Arrow
-      to={ROUTES.TEAM}
+      to={ROUTES.TEAM_HASH}
       scroll
       color="blue"
     />

@@ -8,20 +8,20 @@ import Hero from './hero/Hero';
 import Procedure from './procedure/Procedure';
 import React from 'react';
 import Section from '../../common/section/Section';
-import aboutServiceBackgroundPath from '../../../assets/images/backgrounds/pattern_more_elements.svg';
-import aboutUsBackgroundPath from '../../../assets/images/backgrounds/pattern_more_elements.svg';
+import aboutServiceBackgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
+import aboutUsBackgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import callToCustomerBackgroundPath from '../../../assets/images/backgrounds/pattern_elements_green.svg';
 import callToVolunteerBackgroundPath from '../../../assets/images/backgrounds/pattern_elements_blue.svg';
-import contactBackgroundPath from '../../../assets/images/backgrounds/pattern_more_elements.svg';
+import contactBackgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import heroBackgroundPath from '../../../assets/images/backgrounds/hero.svg';
-import procedureBackgroundPath from '../../../assets/images/backgrounds/pattern_more_elements.svg';
+import procedureBackgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 
 const MainPage = () => {
   const HeroSection = (
     <Section
       id={SECTION_IDS.VITAJTE}
       backgroundPath={heroBackgroundPath}
-      uniqueLayout
+      customLayout
     >
       <Hero />
     </Section>
@@ -53,7 +53,7 @@ const MainPage = () => {
     <Section
       id={SECTION_IDS.POTREBUJEM_POMOC}
       backgroundPath={callToCustomerBackgroundPath}
-      uniqueLayout
+      customLayout
     >
       <CallTo
         id={SECTION_IDS.POTREBUJEM_POMOC}
@@ -70,7 +70,7 @@ const MainPage = () => {
     <Section
       id={SECTION_IDS.CHCEM_POMOCT}
       backgroundPath={callToVolunteerBackgroundPath}
-      uniqueLayout
+      customLayout
     >
       <CallTo
         id={SECTION_IDS.CHCEM_POMOCT}

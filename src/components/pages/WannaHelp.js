@@ -3,7 +3,7 @@ import Button from '../common/Button';
 import { ROUTES } from '../../config/routes';
 import React from 'react';
 import Section from '../common/section/Section';
-import backgroundPath from '../../assets/images/backgrounds/pattern_more_elements.svg';
+import backgroundPath from '../../assets/images/backgrounds/pattern_elements.svg';
 
 const WannaHelp = () =>
   <Section

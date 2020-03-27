@@ -2,6 +2,7 @@ import { BUTTONS } from '../../config/transitions';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { goToTop } from 'react-update-url-on-scroll';
 
 const blueContainedClasses = "bg-blue text-white font-futura-bold hover:bg-white hover:text-blue";
 const greenContainedClasses = "bg-green text-black font-futura-bold hover:bg-black hover:text-green";
@@ -31,7 +32,7 @@ const Button = props => {
   }
 
   return (
-    <Link to={props.to}>
+    <Link to={props.to} onClick={() => goToTop()}>
       <button className={`${BUTTONS} inline-flex items-center focus:outline-none ${props.className} ${getClasses()} ${props.bigger ? 'px-14 py-3 sm:px-8 sm:py-2 xs:px-8 xs:py-2' : 'px-8 py-2'}`}>
         {props.text}
       </button>

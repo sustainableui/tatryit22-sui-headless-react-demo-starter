@@ -19,7 +19,7 @@ export const ROUTES = {
   O_NAS: '/o-nas',
   O_NAS_PAGE_HASH: '/o-nas#vseobecne',
   O_NAS_HASH: '/#o-nas',
-  TEAM: `/o-nas#team`,
+  TEAM_HASH: `/o-nas#team`,
   PODME_SA_ROZPRAVAT: '/o-nas#podme-sa-rozpravat',
   NOT_FOUND: '*',
 }

@@ -23,7 +23,7 @@ const CallTo = props =>
         to={props.actionTo}
       />
     </div>
-  </ScrollableSection>
+  </ScrollableSection>;
 
 CallTo.propTypes = {
   headline: PropTypes.string.isRequired,
