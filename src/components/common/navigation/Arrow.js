@@ -18,7 +18,7 @@ const Arrow = props => {
   const getClasses = element => {
     let classes = "";
     if (element === ELEMENTS.ROOT) {
-      if (props.scroll) {
+      if (props.scroll || props.top) {
         classes = "w-screen";
       }
       else if (props.back) {
@@ -26,33 +26,43 @@ const Arrow = props => {
       }
     }
     else if (element === ELEMENTS.SVG) {
-      if (props.color === 'green') {
-        classes = hovered ? "fill-green" : "fill-white";
+      if (props.top) {
+        classes = hovered ? 'fill-black' : 'fill-white';
       }
-      else if (props.color === 'blue') {
-        classes = hovered ? "fill-blue" : "fill-white";
+      else {
+        if (props.color === 'green') {
+          classes = hovered ? "fill-green" : "fill-white";
+        }
+        else if (props.color === 'blue') {
+          classes = hovered ? "fill-blue" : "fill-white";
+        }
       }
     }
     else if (element === ELEMENTS.LINK) {
-      if (props.color === 'green') {
-        if (props.scroll) {
-          classes = "bg-green hover:border-green mx-auto w-12 h-12";
-        }
-        else if (props.back) {
-          classes = "bg-green hover:border-green w-24 h-24 md:w-16 md:h-16";
-        }
+      if (props.top) {
+        classes = "bg-black hover:border-black mx-auto w-12 h-12";
       }
-      else if (props.color === 'blue') {
-        if (props.scroll) {
-          classes = "bg-blue hover:border-blue mx-auto w-12 h-12";
+      else {
+        if (props.color === 'green') {
+          if (props.scroll) {
+            classes = "bg-green hover:border-green mx-auto w-12 h-12";
+          }
+          else if (props.back) {
+            classes = "bg-green hover:border-green w-24 h-24 md:w-16 md:h-16";
+          }
         }
-        else if (props.back) {
-          classes = "bg-blue hover:border-blue w-24 h-24 md:w-16 md:h-16";
+        else if (props.color === 'blue') {
+          if (props.scroll) {
+            classes = "bg-blue hover:border-blue mx-auto w-12 h-12";
+          }
+          else if (props.back) {
+            classes = "bg-blue hover:border-blue w-24 h-24 md:w-16 md:h-16";
+          }
         }
       }
     }
     else if (element === ELEMENTS.SVG_WRAPPER) {
-      if (props.scroll) {
+      if (props.scroll || props.top) {
         classes = "w-4";
       }
       else if (props.back) {
@@ -66,7 +76,7 @@ const Arrow = props => {
     <div className={`absolute left-0 bottom-0 ${getClasses(ELEMENTS.ROOT)} sm:hidden xs:hidden`}>
       <Link
         smooth
-        to={props.to ? props.to : ''}
+        to={props.to}
         onClick={() => setDocumentTitleFromRoute(props.to)}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -76,7 +86,7 @@ const Arrow = props => {
           viewBox="0 0 24 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className={`${props.back ? 'transform rotate-90' : ''} ${getClasses(ELEMENTS.SVG_WRAPPER)}`}
+          className={`${props.back ? 'transform rotate-90' : (props.top ? 'transform rotate-180' : '')} ${getClasses(ELEMENTS.SVG_WRAPPER)}`}
         >
           <path
             className={`${BUTTONS} ${getClasses(ELEMENTS.SVG)}`}
@@ -91,11 +101,12 @@ const Arrow = props => {
 Arrow.propTypes = {
   scroll: PropTypes.bool,
   back: PropTypes.bool,
+  top: PropTypes.bool,
   to: PropTypes.string.isRequired,
   color: PropTypes.oneOf([
     'green',
     'blue',
-  ]).isRequired,
+  ]),
 }
 
 export default Arrow;

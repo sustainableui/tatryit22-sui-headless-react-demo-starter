@@ -5,8 +5,8 @@ import ScrollableSection from 'react-update-url-on-scroll';
 
 const Section = props =>
   <div
-    id={props.id ? props.id : ''}
-    className={`relative w-screen h-screen overflow-hidden p-5 sm:p-0 xs:p-0 ${props.fixedBackground ? '' : 'bg-scroll bg-no-repeat bg-cover'}`}
+    id={props.id}
+    className="relative w-screen h-screen overflow-hidden p-5 sm:p-0 xs:p-0 bg-scroll bg-no-repeat bg-cover"
     style={{ backgroundImage: props.backgroundPath ? `url(${props.backgroundPath})` : 'none'}}
   >
     {props.uniqueLayout ? (
@@ -14,7 +14,7 @@ const Section = props =>
         {props.children}
       </React.Fragment>
     ) : (
-      <ScrollableSection hash={props.id ? props.id : ''}>
+      <ScrollableSection hash={props.id}>
         <div className="grid grid-rows-4 h-full overflow-hidden">
           <div className="row-span-1">
             <Headline text={props.title}/>
@@ -35,8 +35,7 @@ Section.propTypes = {
     PropTypes.object,
     PropTypes.array,
   ]).isRequired,
-  id: PropTypes.string,
-  fixedBackground: PropTypes.bool,
+  id: PropTypes.string.isRequired,
 }
 
 export default Section;

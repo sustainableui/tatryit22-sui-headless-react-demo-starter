@@ -1,7 +1,9 @@
+import { ROUTES, SECTION_IDS } from '../../../../config/routes';
+
+import Arrow from '../../../common/navigation/Arrow';
 import Graphic from './Graphic';
 import Quote from '../Quote';
 import React from 'react';
-import { SECTION_IDS } from '../../../../config/routes';
 import ScrollableSection from 'react-update-url-on-scroll';
 
 const Lead = () =>
@@ -16,6 +18,10 @@ const Lead = () =>
           <Quote text="„Prichádzame s iniciatívou POĎME SI POMÁHAŤ, keďže vieme, že hybnou silou v krajine, v dobrom aj zlom, je OBČAN. Teraz sa potrebujeme. Nie kvôli politike, ale kvôli vzájomnej pomoci a ľudskosti. Poprad určite takúto aktivitu potrebuje. Ďakujeme naši mladí!“"/>
         </div>
       </div>
+      <Arrow
+        top
+        to={ROUTES.O_NAS_PAGE_HASH}
+      />
     </div>
   </ScrollableSection>;
 
