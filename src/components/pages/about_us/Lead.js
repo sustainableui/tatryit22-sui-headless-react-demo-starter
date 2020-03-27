@@ -1,12 +1,12 @@
 import BistrikMuchaProfileImagePath from '../../../assets/images/people/bystrik_mucha.png';
-import { IDS } from '../../../config/routes';
 import ProfileImage from './team/profile/Image';
 import React from 'react';
+import { SECTION_IDS } from '../../../config/routes';
 import { ReactComponent as SVGPodmeSaRozpravatLogo } from '../../../assets/images/supporters/logo_podme_sa_rozpravat.svg';
 import ScrollableSection from 'react-update-url-on-scroll';
 
 const Lead = () =>
-  <ScrollableSection hash={IDS.PODME_SA_ROZPRAVAT}>
+  <ScrollableSection hash={SECTION_IDS.PODME_SA_ROZPRAVAT}>
     <div className="h-full">
       <div className="grid grid-rows-7 h-full overflow-hidden">
         <div className="row-span-1 h-full"/>

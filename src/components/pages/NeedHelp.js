@@ -1,8 +1,9 @@
-import { ROUTES, getCityFromRoute, setDocumentTitleFromRoute } from '../../config/routes';
 import React, {useEffect} from 'react';
+import { getCityFromRoute, setDocumentTitleFromRoute } from '../../utils/routesUtils';
 
 import Arrow from '../common/navigation/Arrow';
 import Button from '../common/Button';
+import { ROUTES } from '../../config/routes';
 import Section from '../common/section/Section';
 import backgroundPath from '../../assets/images/backgrounds/pattern_more_elements.svg';
 import history from '../../history';
@@ -17,30 +18,30 @@ const ContactPage = () => {
       backgroundPath={backgroundPath}
       title="Potrebujem Pomoc"
     >
-      <div className="flex flex-col justify-center items-center h-full -mt-14">
-        <h2 className="font-futura-bold text-5xl">
+      <div className="flex flex-col justify-center items-center h-full -mt-14 md:-mt-18 sm:-mt-24 xs:-mt-24">
+        <h2 className="font-futura-bold text-5xl md:text-4xl sm:text-3xl xs:text-3xl">
           {getCityFromRoute(history.location.pathname)}
         </h2>
 
-        <div className="text-center pt-14">
-          <span className="font-futura-medium text-md text-gray-hover">
+        <div className="text-center pt-14 md:pt-10 sm:pt-6 xs:pt-6">
+          <span className="font-futura-medium text-md md:text-sm sm:text-sm xs:text-sm text-gray-hover">
             objednávka cez tel. č.
           </span>
-          <h1 className="font-futura-bold text-6xl text-blue">
+          <h1 className="font-futura-bold text-6xl md:text-5xl sm:text-4xl xs:text-4xl text-blue">
             +421 911 000 000
           </h1>
         </div>
 
-        <div className="text-center text-5xl font-futura-bold pt-14">
-          <span className="pr-14">
+        <div className="text-center text-5xl md:text-4xl sm:text-3xl xs:text-3xl font-futura-bold pt-14 md:pt-10 sm:pt-6 xs:pt-6">
+          <span className="pr-14 md:pr-10 sm:pr-8 xs:pr-8">
             Po - Pia
           </span>
-          <span className="">
+          <span>
             12:00 - 17:00
           </span>
         </div>
 
-        <div className="text-center max-w-paragraph text-3xl font-rustico-regular pt-14">
+        <div className="text-center max-w-paragraph sm:max-w-sm-paragraph xs:max-w-xs-paragraph text-3xl md:text-2xl sm:text-xl xs:text-xl font-rustico-regular pt-14 md:pt-10 sm:pt-6 xs:pt-6">
           <p>
             Pri prebraní liekov alebo nákupu <span className="text-blue">majte ochranné rúško</span>
           </p>
@@ -49,8 +50,8 @@ const ContactPage = () => {
           </p>
         </div>
 
-        <div className="text-center pt-14">
-          <span className="font-futura-medium text-md text-gray-hover">
+        <div className="text-center pt-14 md:pt-10 sm:pt-6 xs:pt-6">
+          <span className="font-futura-medium text-md md:text-sm sm:text-sm xs:text-sm text-gray-hover">
             objednávka cez formulár
           </span>
           <div className="pt-3">

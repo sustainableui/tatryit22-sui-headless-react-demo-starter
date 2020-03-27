@@ -1,11 +1,12 @@
-import { ROUTES, setDocumentTitleFromRoute } from '../../../config/routes';
 import React, {useEffect} from 'react';
 
 import Arrow from '../../common/navigation/Arrow';
 import { CITIES } from '../../../config/cities';
 import City from './City';
+import { ROUTES } from '../../../config/routes';
 import Section from '../../common/section/Section';
 import backgroundPath from '../../../assets/images/backgrounds/pattern_more_elements.svg';
+import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 
 const CityPickerPage = () => {
   useEffect(() => {

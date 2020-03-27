@@ -5,7 +5,7 @@ import React from 'react';
 import Step from './Step';
 
 const Procedure = () =>
-  <div className="grid grid-rows-5 min-h-full">
+  <div className="grid grid-rows-5 sm:overflow-y-auto xs:overflow-y-auto h-full">
     <div className="row-span-4 sm:-mt-6 xs:-mt-6">
       <div className="grid grid-cols-10 h-full">
         <div className="col-span-1"/>

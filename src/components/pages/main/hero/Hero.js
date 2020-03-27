@@ -1,4 +1,4 @@
-import { IDS, ROUTES } from '../../../../config/routes';
+import { ROUTES, SECTION_IDS } from '../../../../config/routes';
 
 import Arrow from '../../../common/navigation/Arrow';
 import DeliverySet from './DeliverySet';
@@ -8,7 +8,7 @@ import React from 'react';
 import ScrollableSection from 'react-update-url-on-scroll';
 
 const Hero = () =>
-  <ScrollableSection hash={IDS.VITAJTE}>
+  <ScrollableSection hash={SECTION_IDS.VITAJTE}>
     <div className="h-full">
       <div className="grid grid-rows-10 sm:grid-rows-9 xs:grid-rows-9 h-full overflow-hidden">
         <div className="row-span-3 xs:row-span-2 sm:row-span-2" />

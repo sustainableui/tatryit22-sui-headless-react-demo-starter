@@ -1,4 +1,4 @@
-import { IDS, ROUTES, TITLES } from '../../../config/routes';
+import { ROUTES, SECTION_IDS, TITLES } from '../../../config/routes';
 
 import AboutService from './aboutService/AboutService';
 import AboutUs from './aboutUs/AboutUs';
@@ -19,7 +19,7 @@ import procedureBackgroundPath from '../../../assets/images/backgrounds/pattern_
 const MainPage = () => {
   const HeroSection = (
     <Section
-      id={IDS.VITAJTE}
+      id={SECTION_IDS.VITAJTE}
       backgroundPath={heroBackgroundPath}
       uniqueLayout
     >
@@ -29,7 +29,7 @@ const MainPage = () => {
 
   const AboutSection = (
     <Section
-      id={IDS.O_SLUZBE}
+      id={SECTION_IDS.O_SLUZBE}
       backgroundPath={aboutServiceBackgroundPath}
       scrollable
       title={TITLES.O_SLUZBE}
@@ -40,7 +40,7 @@ const MainPage = () => {
 
   const ProcedureSection = (
     <Section
-      id={IDS.POSTUP}
+      id={SECTION_IDS.POSTUP}
       backgroundPath={procedureBackgroundPath}
       scrollable
       title={TITLES.POSTUP}
@@ -51,12 +51,12 @@ const MainPage = () => {
 
   const CustomerSection = (
     <Section
-      id={IDS.POTREBUJEM_POMOC}
+      id={SECTION_IDS.POTREBUJEM_POMOC}
       backgroundPath={callToCustomerBackgroundPath}
       uniqueLayout
     >
       <CallTo
-        id={IDS.POTREBUJEM_POMOC}
+        id={SECTION_IDS.POTREBUJEM_POMOC}
         headline={TITLES.POTREBUJEM_POMOC}
         description="Ak Ste Starší, Zdravotne Postihnutý Alebo Človek V Núdzi, Radi Vám Pomôžeme S Vašim Nákupom Alebo Donáškou Liekov. Stačí Nás Kontaktovať."
         theme="green"
@@ -68,12 +68,12 @@ const MainPage = () => {
 
   const VolunteerSection = (
     <Section
-      id={IDS.CHCEM_POMOCT}
+      id={SECTION_IDS.CHCEM_POMOCT}
       backgroundPath={callToVolunteerBackgroundPath}
       uniqueLayout
     >
       <CallTo
-        id={IDS.CHCEM_POMOCT}
+        id={SECTION_IDS.CHCEM_POMOCT}
         headline={TITLES.CHCEM_POMOCT}
         description="Ak Si Študent Alebo Jednoducho Hocikto Kto Chce Pomôcť Dobrej Veci, Vyplň Formulár Pre Dobrovoľníka A Pridaj Sa K Nám!"
         theme="blue"
@@ -85,7 +85,7 @@ const MainPage = () => {
 
   const ContactSection = (
     <Section
-      id={IDS.KONTAKT}
+      id={SECTION_IDS.KONTAKT}
       backgroundPath={contactBackgroundPath}
       title={TITLES.KONTAKT}
     >
@@ -97,7 +97,7 @@ const MainPage = () => {
 
   const AboutUsSection = (
     <Section
-      id={IDS.O_NAS_HASH}
+      id={SECTION_IDS.O_NAS_HASH}
       backgroundPath={aboutUsBackgroundPath}
       title={TITLES.O_NAS}
     >

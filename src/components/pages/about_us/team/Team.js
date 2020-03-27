@@ -1,13 +1,13 @@
-import { IDS } from '../../../../config/routes';
 import ProfileImage from './profile/Image';
 import React from 'react';
+import { SECTION_IDS } from '../../../../config/routes';
 import SamuelMuchaProfileImagePath from '../../../../assets/images/people/samuel_mucha.png';
 import SamuelPitonakProfileImagePath from '../../../../assets/images/people/samuel_pitonak.png';
 import ScrollableSection from 'react-update-url-on-scroll';
 import TimotejMuchaProfileImagePath from '../../../../assets/images/people/timotej_mucha.png';
 
 const Team = () =>
-  <ScrollableSection hash={IDS.TEAM}>
+  <ScrollableSection hash={SECTION_IDS.TEAM}>
     <div className="h-full">
       <div className="grid grid-rows-5 h-full overflow-hidden">
         <div className="row-span-1"/>

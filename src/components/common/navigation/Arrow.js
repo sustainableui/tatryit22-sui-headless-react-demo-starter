@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { BUTTONS } from '../../../config/transitions';
 import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
-import { setDocumentTitleFromRoute } from '../../../config/routes';
+import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 
 const ELEMENTS = {
   ROOT: 1,
@@ -13,7 +13,7 @@ const ELEMENTS = {
 };
 
 const Arrow = props => {
-  const [hovered, setHovered] = useState();
+  const [hovered, setHovered] = useState(null);
 
   const getClasses = element => {
     let classes = "";
@@ -68,8 +68,8 @@ const Arrow = props => {
         smooth
         to={props.to ? props.to : ''}
         onClick={() => setDocumentTitleFromRoute(props.to)}
-        onMouseEnter={() => setHovered(!hovered)}
-        onMouseLeave={() => setHovered(!hovered)}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
         className={`${BUTTONS} ${getClasses(ELEMENTS.LINK)} hover:bg-transparent hover:border-4 border-4 border-transparent focus:outline-none flex flex-col justify-center items-center`}
       >
         <svg

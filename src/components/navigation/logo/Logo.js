@@ -1,9 +1,9 @@
-import { ROUTES, setDocumentTitleFromRoute } from '../../../config/routes';
-
 import Circle from './Circle';
 import { HashLink as Link } from 'react-router-hash-link';
+import { ROUTES } from '../../../config/routes';
 import React from 'react';
 import { ReactComponent as SVGElementsBlackLogo } from '../../../assets/images/logo/black_elements.svg';
+import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 
 const Logo = () =>
   <div className="relative col-span-2 flex flex-columns justify-start sm:col-span-1 pl-10 lg:pl-8 md:pl-6 sm:pl-8 xs:pl-8 xs:col-span-1">

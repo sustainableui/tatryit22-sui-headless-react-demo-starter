@@ -4,7 +4,7 @@ import React from 'react';
 import menuIconPath from '../../assets/icons/menu.svg';
 
 const MenuButton = props =>
-  <div className="col-span-2 sm:col-span-1 xs:col-span-1 flex flex-columns justify-end pr-10 lg:pr-8 md:pr-6 sm:pr-8 xs:pr-8">
+  <div className="col-span-2 sm:col-span-1 xs:col-span-1 flex flex-columns justify-end pr-10 lg:pr-8 md:pr-6 sm:pr-8 xs:pr-8 z-42">
     <IconButton
       iconPath={menuIconPath}
       onClick={props.onClick}

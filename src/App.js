@@ -1,4 +1,3 @@
-import { ROUTES, setDocumentTitleFromRoute } from './config/routes';
 import React, { useEffect } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
@@ -7,15 +6,17 @@ import CityPickerPage from './components/pages/city_picker/CityPicker';
 import Container from './components/Container';
 import MainPage from './components/pages/main';
 import NeedHelpPage from './components/pages/NeedHelp';
+import { ROUTES } from './config/routes';
 import WannaHelpPage from './components/pages/WannaHelp';
 import { configureAnchors } from 'react-update-url-on-scroll'
 import history from './history';
+import { setDocumentTitleFromRoute } from './utils/routesUtils';
 
 const App = () => {
   useEffect(() => {
     configureAnchors({
       keepLastAnchorHash: true,
-      offset: 20,
+      offset: 70,
       onSectionEnter: newState => {
         const newRoute = `${history.location.pathname}#${newState.hash}`;
         history.replace(newRoute);

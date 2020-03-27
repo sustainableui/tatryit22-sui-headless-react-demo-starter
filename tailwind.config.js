@@ -7,6 +7,7 @@ module.exports = {
       fill: ['responsive', 'hover'],
     },
     screens: {
+      'xxs': { 'min': '1px', 'max': '419px' },
       'xs': { 'min': '1px', 'max': '639px' },
       'sm': { 'min': '640px', 'max': '767px' },
       'md': { 'min': '768px', 'max': '1023px' },
@@ -90,6 +91,7 @@ module.exports = {
       },
       zIndex: {
         '41': '41',
+        '42': '42',
       },
       inset: {
         '1/2': '50%',

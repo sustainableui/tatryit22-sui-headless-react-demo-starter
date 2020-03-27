@@ -1,4 +1,4 @@
-import { IDS, ROUTES, setDocumentTitleFromRoute } from '../../../config/routes';
+import { ROUTES, SECTION_IDS } from '../../../config/routes';
 import React, { useEffect } from 'react';
 
 import General from './General';
@@ -6,6 +6,7 @@ import Lead from './Lead';
 import Section from '../../common/section/Section';
 import Team from './team/Team';
 import backgroundPath from '../../../assets/images/backgrounds/pattern_more_elements.svg';
+import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -14,7 +15,7 @@ const AboutUs = () => {
 
   const GeneralSection = (
     <Section
-      id={IDS.O_NAS}
+      id={SECTION_IDS.O_NAS}
       backgroundPath={backgroundPath}
       title="O nás"
     >
@@ -24,7 +25,7 @@ const AboutUs = () => {
 
   const TeamSection = (
     <Section
-      id={IDS.TEAM}
+      id={SECTION_IDS.TEAM}
       backgroundPath={backgroundPath}
       uniqueLayout
     >
@@ -34,7 +35,7 @@ const AboutUs = () => {
 
   const LeadSection = (
     <Section
-      id={IDS.PODME_SA_ROZPRAVAT}
+      id={SECTION_IDS.PODME_SA_ROZPRAVAT}
       backgroundPath={backgroundPath}
       uniqueLayout
     >

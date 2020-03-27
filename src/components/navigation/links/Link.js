@@ -2,7 +2,7 @@ import { LINKS } from '../../../config/transitions';
 import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { setDocumentTitleFromRoute } from '../../../config/routes';
+import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 
 const LinkComponent = props =>
   <div className="sm:hidden xs:hidden">
