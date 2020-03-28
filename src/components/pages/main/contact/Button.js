@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
-import { BUTTONS } from '../../../config/transitions';
+import { BUTTONS } from '../../../../config/transitions';
 import Divider from './Divider';
-import { FACEBOOK_LINK } from '../../../config';
+import { FACEBOOK_LINK } from '../../../../config';
 import PropTypes from 'prop-types';
-import facebookIconPath from '../../../assets/icons/facebook.svg';
-import locationIconPath from '../../../assets/icons/location.svg';
-import mailIconPath from '../../../assets/icons/mail.svg';
-import phoneIconPath from '../../../assets/icons/phone.svg';
+import facebookIconPath from '../../../../assets/icons/facebook.svg';
+import locationIconPath from '../../../../assets/icons/location.svg';
+import mailIconPath from '../../../../assets/icons/mail.svg';
+import phoneIconPath from '../../../../assets/icons/phone.svg';
 
 export const TYPES = {
   LOCATION: 'location',
@@ -56,7 +56,7 @@ const Button = props => {
               src={getIconPath()}
               className="mx-auto"
             />
-            <span className={`${BUTTONS} ${hovered ? 'text-gray-hover' : 'text-black'} ${props.bold ? 'font-futura-bold' : 'font-futura-medium'} block font-futura-medium pt-6 sm:pt-2 xs:pt-2 text-2xl sm:text-lg xs:text-lg`}>
+            <span className={`${BUTTONS} ${hovered ? 'text-gray-hover' : 'text-black'} font-futura-bold block font-futura-medium pt-6 sm:pt-2 xs:pt-2 text-2xl sm:text-lg xs:text-lg`}>
               {props.text}
             </span>
           </button>
@@ -74,7 +74,6 @@ Button.propTypes = {
     TYPES.FACEBOOK,
   ]).isRequired,
   text: PropTypes.string.isRequired,
-  bold: PropTypes.bool,
 }
 
 export default Button;

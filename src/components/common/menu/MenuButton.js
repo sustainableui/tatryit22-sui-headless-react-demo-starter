@@ -1,7 +1,7 @@
-import IconButton from '../common/navigation/IconButton';
+import IconButton from '../navigation/IconButton';
 import PropTypes from 'prop-types';
 import React from 'react';
-import menuIconPath from '../../assets/icons/menu.svg';
+import menuIconPath from '../../../assets/icons/menu.svg';
 
 const MenuButton = props =>
   <div className="xl:hidden lg:hidden md:hidden col-span-1 flex flex-columns justify-end pr-10 lg:pr-8 md:pr-6 sm:pr-8 xs:pr-8 z-42">

@@ -1,8 +1,8 @@
-import { BUTTONS } from '../../../config/transitions';
+import { BUTTONS } from '../../../../config/transitions';
 import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
+import { setDocumentTitleFromRoute } from '../../../../utils/routesUtils';
 
 const ButtonLink = props => {
   const getClasses = () => {
@@ -31,9 +31,10 @@ const ButtonLink = props => {
       smooth
       to={props.to}
       onClick={() => setDocumentTitleFromRoute(props.to)}
-      className={`sm:hidden xs:hidden ${props.isActive ? 'pointer-events-none' : '' }`}
+      className={`${props.menuInSidebar ? 'leading-24' : 'sm:hidden xs:hidden'} ${props.isActive ? 'pointer-events-none' : '' }`}
+      style={props.menuInSidebar ? { display: 'contents' } : {}}
     >
-      <button className={`${BUTTONS} ${getClasses()} hover:bg-transparent focus:outline-none h-full w-full`}>
+      <button className={`${BUTTONS} ${getClasses()} ${props.menuInSidebar ? 'max-h-24' : ''} hover:bg-transparent focus:outline-none h-full w-full`}>
         <span className="inline-block max-w-3/4 break-normal">
           {props.text}
         </span>
@@ -50,6 +51,7 @@ ButtonLink.propTypes = {
     'green',
   ]).isRequired,
   isActive: PropTypes.bool.isRequired,
+  menuInSidebar: PropTypes.bool,
 }
 
 export default ButtonLink;

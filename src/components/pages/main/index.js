@@ -3,7 +3,7 @@ import { ROUTES, SECTION_IDS, TITLES } from '../../../config/routes';
 import AboutService from './aboutService/AboutService';
 import AboutUs from './aboutUs/AboutUs';
 import CallTo from './callTo/CallTo';
-import Contacts from '../../common/contacts/Contacts';
+import Contact from './contact/Contact';
 import Hero from './hero/Hero';
 import Procedure from './procedure/Procedure';
 import React from 'react';
@@ -89,9 +89,7 @@ const MainPage = () => {
       backgroundPath={contactBackgroundPath}
       title={TITLES.KONTAKT}
     >
-      <div className="grid grid-rows-8 h-full overflow-hidden xl:-mt-10 lg:-mt-12 md:-mt-14 sm:-mt-8 xs:-mt-8">
-        <Contacts bold />
-      </div>
+      <Contact />
     </Section>
   );
 

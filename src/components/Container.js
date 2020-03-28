@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import CovidChat from './CovidChat';
-import Navigation from './navigation/Navigation';
+import Menu from './common/menu/Menu';
 import PropTypes from 'prop-types';
 import Sidebar from './sidebar/Sidebar';
 
@@ -10,7 +10,7 @@ const Container = props => {
   
   return (
     <div className="overflow-hidden">
-      <Navigation onSidebarToggle={() => setHiddenSidebar(!hiddenSidebar)} />
+      <Menu onSidebarToggle={() => setHiddenSidebar(!hiddenSidebar)} />
       <Sidebar
         hidden={hiddenSidebar}
         onToggle={() => setHiddenSidebar(!hiddenSidebar)}

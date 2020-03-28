@@ -38,6 +38,8 @@ const ContactPage = () => {
         />
         <CautionText />
         <Action
+          disabled={CITY_INFO.ORDER_FORM_LINK === ''}
+          redirect
           to={CITY_INFO.ORDER_FORM_LINK}
           descriptionText="objednávka cez formulár"
           actionText="Formulár"

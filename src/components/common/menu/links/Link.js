@@ -1,11 +1,11 @@
-import { LINKS } from '../../../config/transitions';
+import { LINKS } from '../../../../config/transitions';
 import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
+import { setDocumentTitleFromRoute } from '../../../../utils/routesUtils';
 
 const LinkComponent = props =>
-  <div className="sm:hidden xs:hidden">
+  <div className={props.menuInSidebar ? '' : 'sm:hidden xs:hidden'}>
     <Link
       smooth
       to={props.to}
@@ -20,6 +20,7 @@ LinkComponent.propTypes = {
   text: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
   isActive: PropTypes.bool.isRequired,
+  menuInSidebar: PropTypes.bool,
 }
 
 export default LinkComponent;

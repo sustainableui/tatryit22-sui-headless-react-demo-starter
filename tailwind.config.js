@@ -87,6 +87,9 @@ module.exports = {
       minHeight: {
         '20': '5rem',
       },
+      maxHeight: {
+        '24': '6rem',
+      },
       fontFamily: {
         'rustico-regular': ['Rustico V2 Regular'],
         'futura-medium': ['Futura Medium'],

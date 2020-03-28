@@ -4,7 +4,7 @@ import React from 'react';
 import exitIconPath from '../../assets/icons/exit.svg';
 
 const ExitButton = props =>
-  <div className="h-24 flex flex-columns justify-end pr-10">
+  <div className="absolute h-24 pr-10 pt-10 top-0 right-0">
     <IconButton
       onClick={props.onClick}
       iconPath={exitIconPath}

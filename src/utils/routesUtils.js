@@ -52,12 +52,10 @@ export const getRouteFromCity = city => {
   switch (city) {
     case CITIES.POPRAD.NAME:
       return ROUTES.POTREBUJEM_POMOC[0];
-    case CITIES.TRNAVA.NAME:
-      return ROUTES.POTREBUJEM_POMOC[1];
     case CITIES.HUMENNE.NAME:
-      return ROUTES.POTREBUJEM_POMOC[2];
+      return ROUTES.POTREBUJEM_POMOC[1];
     case CITIES.PIESTANY.NAME:
-      return ROUTES.POTREBUJEM_POMOC[3];
+      return ROUTES.POTREBUJEM_POMOC[2];
     default:
       return ROUTES.DOMOV;
   }
