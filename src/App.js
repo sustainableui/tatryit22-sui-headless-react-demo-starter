@@ -5,9 +5,9 @@ import AboutUsPage from './components/pages/about_us';
 import CityPickerPage from './components/pages/city_picker/CityPicker';
 import Container from './components/Container';
 import MainPage from './components/pages/main';
-import NeedHelpPage from './components/pages/NeedHelp';
+import NeedHelpPage from './components/pages/need_help/NeedHelp';
 import { ROUTES } from './config/routes';
-import WannaHelpPage from './components/pages/WannaHelp';
+import WannaHelpPage from './components/pages/wanna_help/WannaHelp';
 import { configureAnchors } from 'react-update-url-on-scroll'
 import history from './history';
 import { setDocumentTitleFromRoute } from './utils/routesUtils';

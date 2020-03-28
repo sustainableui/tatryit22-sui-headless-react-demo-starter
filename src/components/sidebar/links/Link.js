@@ -8,7 +8,7 @@ const LinkComponent = props =>
     <Link
       smooth
       to={props.to}
-      className={`${LINKS} font-futura-bold text-2xl focus:text-blue text-black hover:text-gray-hover`}
+      className={`${LINKS} font-futura-bold text-3xl sm:text-2xl xs:text-2xl focus:text-blue text-black hover:text-gray-hover`}
       onClick={props.onClick}
     >
       {props.text}

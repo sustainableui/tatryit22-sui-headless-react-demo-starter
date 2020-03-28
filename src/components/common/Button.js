@@ -5,9 +5,9 @@ import React from 'react';
 import { goToTop } from 'react-update-url-on-scroll';
 
 const blueContainedClasses = "bg-blue text-white font-futura-bold hover:bg-white hover:text-blue";
-const greenContainedClasses = "bg-green text-black font-futura-bold hover:bg-black hover:text-green";
-const blueOutlinedClasses = "bg-transparent text-blue font-futura-medium border-2 border-blue hover:text-white hover:border-0 hover:bg-blue";
-const greenOutlinedClasses = "bg-transparent text-green font-futura-medium border-2 border-green hover:text-white hover:border-0 hover:bg-green";
+const greenContainedClasses = "bg-green text-black font-futura-bold hover:bg-white hover:text-blue";
+const blueOutlinedClasses = "bg-transparent text-blue font-futura-medium border-4 border-blue hover:text-white hover:border-0 hover:bg-blue";
+const greenOutlinedClasses = "bg-transparent text-green font-futura-medium border-4 border-green hover:text-white hover:border-0 hover:bg-green";
 
 const Button = props => {
   const getClasses = () => {

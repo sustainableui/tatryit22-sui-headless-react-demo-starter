@@ -8,7 +8,7 @@ const ExitButton = props =>
     <IconButton
       onClick={props.onClick}
       iconPath={exitIconPath}
-      className="w-8"
+      className="w-8 sm:w-6 xs:w-6"
     />
   </div>;
 

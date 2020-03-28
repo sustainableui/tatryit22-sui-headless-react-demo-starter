@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import General from './general/General';
 import Lead from './lead/Lead';
 import Section from '../../common/section/Section';
-import Team from './team/Team';
+import Team from './Team';
 import backgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 

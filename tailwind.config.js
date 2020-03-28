@@ -7,7 +7,6 @@ module.exports = {
       fill: ['responsive', 'hover'],
     },
     screens: {
-      'xxs': { 'min': '1px', 'max': '419px' },
       'xs': { 'min': '1px', 'max': '639px' },
       'sm': { 'min': '640px', 'max': '767px' },
       'md': { 'min': '768px', 'max': '1023px' },
@@ -23,7 +22,7 @@ module.exports = {
       green: '#2cebad',
       'green-hover': '#0AB97B',
       gray: '#e6e6e6',
-      'gray-hover': '#b7b7b7',
+      'gray-hover': '#969696',
     },
     fill: theme => ({
       'black': theme('colors.black'),
@@ -36,6 +35,13 @@ module.exports = {
       'gray-hover': theme('colors.gray-hover'),
     }),
     extend: {
+      boxShadow: {
+        'default-sheer': '0 0 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)',
+        'md-sheer': ' 0 0 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06)',
+        'lg-sheer': ' 0 0 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)',
+        'xl-sheer': ' 0 0 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04)',
+        '2xl-sheer': '0 0 50px -12px rgba(0, 0, 0, .25)',
+      },
       backgroundPosition: {
         'bottom-xl-ul': 'center bottom 1.5rem',
         'bottom-lg-ul': 'center bottom 1rem',

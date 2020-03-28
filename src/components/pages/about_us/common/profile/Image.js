@@ -5,7 +5,7 @@ const Image = props =>
   <img
     alt=""
     src={props.imagePath}
-    className="mx-auto mb-6 "
+    className="mx-auto mb-6 w-56"
   />;
 
 Image.propTypes = {

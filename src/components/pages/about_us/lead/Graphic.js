@@ -11,6 +11,7 @@ const Graphic = () =>
         imagePath={BistrikMuchaProfileImagePath}
         name="Bistrík Mucha"
         description="Zakladateľ OI Poďme sa rozprávať"
+        className="md:block md:mx-auto sm:block sm:mx-auto xs:block xs:mx-auto"
       />
     </div>
   </div>;

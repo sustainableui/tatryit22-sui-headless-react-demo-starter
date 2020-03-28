@@ -66,7 +66,7 @@ const Arrow = props => {
         classes = "w-4";
       }
       else if (props.back) {
-        classes = "w-8 md:w-4";
+        classes = "w-8 md:w-4 mr-1";
       }
     }
     return classes;
