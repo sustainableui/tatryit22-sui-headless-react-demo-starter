@@ -8,7 +8,7 @@ import ScrollableSection from 'react-update-url-on-scroll';
 
 const Lead = () =>
   <ScrollableSection hash={SECTION_IDS.PODME_SA_ROZPRAVAT}>
-    <div className="h-full">
+    <div className="h-full sm:pt-8 xs:pt-8">
       <div className="xl:grid lg:grid md:grid xl:grid-rows-7 lg:grid-rows-7 md:grid-rows-7 h-full overflow-hidden sm:overflow-y-auto xs:overflow-y-auto">
         <div className="row-span-1 h-full sm:hidden xs:hidden"/>
         <div className="xl:row-span-3 lg:row-span-3 md:row-span-3">

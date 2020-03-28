@@ -40,40 +40,40 @@ const Arrow = props => {
     }
     else if (element === ELEMENTS.LINK) {
       if (props.top) {
-        classes = "bg-black hover:border-black mx-auto w-12 h-12";
+        classes = "bg-black hover:border-black mx-auto w-12 h-12 sm:w-8 sm:h-8 xs:w-8 xs:h-8";
       }
       else {
         if (props.color === 'green') {
           if (props.scroll) {
-            classes = "bg-green hover:border-green mx-auto w-12 h-12";
+            classes = "bg-green hover:border-green mx-auto w-12 h-12 sm:w-8 sm:h-8 xs:w-8 xs:h-8";
           }
           else if (props.back) {
-            classes = "bg-green hover:border-green w-24 h-24 md:w-16 md:h-16";
+            classes = "bg-green hover:border-green w-24 h-24 md:w-16 md:h-16 sm:w-12 sm:h-12 xs:w-12 xs:h-12";
           }
         }
         else if (props.color === 'blue') {
           if (props.scroll) {
-            classes = "bg-blue hover:border-blue mx-auto w-12 h-12";
+            classes = "bg-blue hover:border-blue mx-auto w-12 h-12 sm:w-8 sm:h-8 xs:w-8 xs:h-8";
           }
           else if (props.back) {
-            classes = "bg-blue hover:border-blue w-24 h-24 md:w-16 md:h-16";
+            classes = "bg-blue hover:border-blue w-24 h-24 md:w-16 md:h-16 sm:w-12 sm:h-12 xs:w-12 xs:h-12";
           }
         }
       }
     }
     else if (element === ELEMENTS.SVG_WRAPPER) {
       if (props.scroll || props.top) {
-        classes = "w-4";
+        classes = "w-4 sm:w-3 xs:w-3";
       }
       else if (props.back) {
-        classes = "w-8 md:w-4 mr-1";
+        classes = "w-8 md:w-5 sm:w-4 xs:w-4 mr-1";
       }
     }
     return classes;
   }
 
   return (
-    <div className={`absolute left-0 bottom-0 ${getClasses(ELEMENTS.ROOT)} sm:hidden xs:hidden`}>
+    <div className={`absolute left-0 bottom-0 ${getClasses(ELEMENTS.ROOT)}`}>
       <Link
         smooth
         to={props.to}

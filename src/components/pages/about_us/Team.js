@@ -10,7 +10,7 @@ import TimotejMuchaProfileImagePath from '../../../assets/images/people/timotej_
 const Team = () =>
   <ScrollableSection hash={SECTION_IDS.TEAM}>
     <div className="h-full">
-      <div className="xl:grid lg:grid md:grid xl:grid-rows-5 lg:grid-rows-5 md:grid-rows-3 h-full overflow-hidden sm:overflow-y-auto xs:overflow-y-auto">
+      <div className="xl:grid lg:grid md:grid xl:grid-rows-5 lg:grid-rows-5 md:grid-rows-3 h-full overflow-hidden md:overflow-y-auto sm:overflow-y-auto xs:overflow-y-auto">
         <div className="row-span-1 md:hidden sm:hidden xs:hidden"/>
         <div className="row-span-2">
           <div className="flex flex-col justify-center items-center h-full">
@@ -29,7 +29,7 @@ const Team = () =>
               />
               <Quote
                 text="„Celá myšlienka je pomôcť. Pomôcť tým, ktorí to najviac potrebujú. Už v prvých dňoch sme sa na fakulte rozprávali so spolužiakmi o tom, že treba niečo urobiť. Niečo, znamená POMÁHAŤ. Budem rád, ak sa k tejto iniciatíve pridajú aj ďalší mladí ľudia.“"
-                className="xl:hidden lg:hidden md:pt-10 sm:pt-5 xs:pt-5 sm:pb-10 xs:pb-10 sm:pr-10 sm:pl-10 xs:pr-5 xs:pl-5"
+                className="xl:hidden lg:hidden md:pt-5 sm:pt-5 xs:pt-5 sm:pb-10 xs:pb-10 sm:pr-10 sm:pl-10 xs:pr-5 xs:pl-5"
               />
               <Profile
                 imagePath={SamuelMuchaProfileImagePath}
@@ -45,19 +45,19 @@ const Team = () =>
             text="„Celá myšlienka je pomôcť. Pomôcť tým, ktorí to najviac potrebujú. Už v prvých dňoch sme sa na fakulte rozprávali so spolužiakmi o tom, že treba niečo urobiť. Niečo, znamená POMÁHAŤ. Budem rád, ak sa k tejto iniciatíve pridajú aj ďalší mladí ľudia.“"
             className="flex flex-col justify-start items-center h-full mt-10 md:hidden sm:hidden xs:hidden"
           />
-          <div className="xl:hidden lg:hidden flex flex-col justify-start items-center pb-10 md:-mt-14">
+          <div className="xl:hidden lg:hidden flex flex-col justify-start items-center pb-10 md:-mt-10">
             <div className="inline">
-              <Profile
-                imagePath={SamuelPitonakProfileImagePath}
-                name="Samuel Pitoňák"
-                description="IT Študent, Programátor"
-                className="pr-2 pl-2"
-              />
               <Profile
                 imagePath={SamuelMuchaProfileImagePath}
                 name="Samuel Mucha"
                 description="Študent, Graphic Designer"
-                className="pr-2 pl-2"
+                className="md:block md:mx-auto sm:block sm:mx-auto xs:block xs:mx-auto mb-8"
+              />
+              <Profile
+                imagePath={SamuelPitonakProfileImagePath}
+                name="Samuel Pitoňák"
+                description="IT Študent, Programátor"
+                className="md:block md:mx-auto sm:block sm:mx-auto xs:block xs:mx-auto"
               />
             </div>
           </div>

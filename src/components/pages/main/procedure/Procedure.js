@@ -9,8 +9,8 @@ const Procedure = () =>
     <div className="row-span-4 sm:-mt-6 xs:-mt-6">
       <div className="grid grid-cols-10 h-full">
         <div className="col-span-1"/>
-        <div className="col-span-4 sm:col-span-8 xs:col-span-8 flex flex-col justify-start Steps-center">
-          <ol className="font-futura-medium text-lg text-left">
+        <div className="col-span-4 sm:col-span-8 xs:col-span-8 flex flex-col justify-start items-center">
+          <ol className="font-futura-medium text-lg text-left sm:pt-1 xs:pt-1">
             <Step number={1}>
               Kliknite na tlačidlo <Link to={ROUTES.VYBERTE_VASE_MESTO} className={`${LINKS} text-green underline hover:text-black`}>Pomôžte mi</Link> a kontaktujte nás na <span className="text-blue">telefónne číslo</span> príslušné k vášmu mestu, alebo nám pošlite <span className="text-blue">elektronický formulár</span>
             </Step>

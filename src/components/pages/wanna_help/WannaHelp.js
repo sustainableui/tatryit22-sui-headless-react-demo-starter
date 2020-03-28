@@ -17,6 +17,7 @@ const WannaHelp = () =>
       <Headline text="Povinnosti dobrovoľníka"/>
       <List />
       <Action
+        redirect
         to={VOLUNTEER_FORM_LINK}
         descriptionText="zapoj sa zaslaním formulára"
         actionText="Formulár"

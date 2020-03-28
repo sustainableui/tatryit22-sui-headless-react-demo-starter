@@ -17,41 +17,37 @@ const Supporters = () =>
       </div>
     </div>
     <div className="row-span-2">
-      <div className="flex flex-row items-center justify-center h-full -mt-10 lg:-mt-14 lg:w-8/12 lg:mx-auto md:-mt-18 md:w-9/12 md:mx-auto">
-        <div className="xl:inline-flex lg:inline-flex md-inline-flex sm:block xs:block sm:mx-auto xs:mx-auto md:mr-2 sm:mr-2 xs:mr-2">
-          <Logo
-            logoPath={podmeSaRozpravatLogoPath}
-            href={SUPPORTERS.PODME_SA_ROZPRAVAT[0]}
-            className="w-64 md:w-44 sm:w-44 xs:w-40"
-            alt={SUPPORTERS.PODME_SA_ROZPRAVAT[1]}
-          />
-          <Logo
-            logoPath={atexLogoPath}
-            href={SUPPORTERS.ATEX[0]}
-            className="w-53 md:w-40 sm:w-40 xs:w-32"
-            alt={SUPPORTERS.ATEX[1]}
-          />
-          <Logo
-            logoPath={kingMediaLogoPath}
-            href={SUPPORTERS.KING_MEDIA[0]}
-            className="w-53 md:w-40 sm:w-40 xs:w-32"
-            alt={SUPPORTERS.KING_MEDIA[1]}
-          />
-        </div>
-        <div className="xl:inline-flex lg:inline-flex md-inline-flex sm:block xs:block sm:mx-auto xs:mx-auto md:ml-2 sm:ml-2 xs:ml-2">
-          <Logo
-            logoPath={skillfulLogoPath}
-            href={SUPPORTERS.SKILLFUL[0]}
-            className="w-44 md:w-32 sm:w-32 xs:w-24"
-            alt={SUPPORTERS.SKILLFUL[1]}
-          />
-          <Logo
-            logoPath={sampittkoLogoPath}
-            href={SUPPORTERS.SAMPITTKO[0]}
-            className="w-26 md:w-14 sm:w-14 xs:w-10"
-            alt={SUPPORTERS.SAMPITTKO[1]}
-          />
-        </div>
+      <div className="xl:flex lg:flex xl:flex-row lg:flex-row xl:items-center lg:items-center xl:justify-center lg:justify-center h-full -mt-10 lg:-mt-14 lg:w-8/12 lg:mx-auto md:overflow-y-auto sm:overflow-y-auto xs:overflow-y-auto md:pt-12">
+        <Logo
+          logoPath={podmeSaRozpravatLogoPath}
+          href={SUPPORTERS.PODME_SA_ROZPRAVAT[0]}
+          className="w-64 md:w-44 sm:w-44 xs:w-40 md:block md:mx-auto sm:block sm:mx-auto xs:block xs:mx-auto md:pb-3 sm:pb-3 xs:pb-3"
+          alt={SUPPORTERS.PODME_SA_ROZPRAVAT[1]}
+        />
+        <Logo
+          logoPath={atexLogoPath}
+          href={SUPPORTERS.ATEX[0]}
+          className="w-53 md:w-40 sm:w-40 xs:w-32 md:block md:mx-auto sm:block sm:mx-auto xs:block xs:mx-auto md:pb-3 sm:pb-3 xs:pb-3"
+          alt={SUPPORTERS.ATEX[1]}
+        />
+        <Logo
+          logoPath={kingMediaLogoPath}
+          href={SUPPORTERS.KING_MEDIA[0]}
+          className="w-53 md:w-40 sm:w-40 xs:w-32 md:block md:mx-auto sm:block sm:mx-auto xs:block xs:mx-auto md:pb-3 sm:pb-3 xs:pb-3"
+          alt={SUPPORTERS.KING_MEDIA[1]}
+        />
+        <Logo
+          logoPath={skillfulLogoPath}
+          href={SUPPORTERS.SKILLFUL[0]}
+          className="w-48 md:w-32 sm:w-36 xs:w-24 md:block md:mx-auto sm:block sm:mx-auto xs:block xs:mx-auto md:pb-3 sm:pb-3 xs:pb-3"
+          alt={SUPPORTERS.SKILLFUL[1]}
+        />
+        <Logo
+          logoPath={sampittkoLogoPath}
+          href={SUPPORTERS.SAMPITTKO[0]}
+          className="w-26 md:w-14 sm:w-14 xs:w-10 md:block md:mx-auto sm:block sm:mx-auto xs:block xs:mx-auto md:pb-3 sm:pb-3 xs:pb-3"
+          alt={SUPPORTERS.SAMPITTKO[1]}
+        />
       </div>
     </div>
   </div>;

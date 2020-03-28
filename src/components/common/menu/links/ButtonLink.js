@@ -26,11 +26,18 @@ const ButtonLink = props => {
     return classes;
   }
 
+  const handleClick = () => {
+    setDocumentTitleFromRoute(props.to);
+    if (props.menuInSidebar) {
+      props.onClick();
+    }
+  }
+
   return (
     <Link
       smooth
       to={props.to}
-      onClick={() => setDocumentTitleFromRoute(props.to)}
+      onClick={handleClick}
       className={`${props.menuInSidebar ? 'leading-24' : 'sm:hidden xs:hidden'} ${props.isActive ? 'pointer-events-none' : '' }`}
       style={props.menuInSidebar ? { display: 'contents' } : {}}
     >
@@ -52,6 +59,7 @@ ButtonLink.propTypes = {
   ]).isRequired,
   isActive: PropTypes.bool.isRequired,
   menuInSidebar: PropTypes.bool,
+  onClick: PropTypes.func,
 }
 
 export default ButtonLink;
