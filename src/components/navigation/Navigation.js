@@ -11,7 +11,7 @@ const Navigation = props => {
   const routeMatches = hashRoute => hashRoute === `${props.location.pathname}${props.location.hash}`;
 
   return (
-    <nav className="fixed h-24 xs:h-20 sm:h-20 lg:h-20 md:h-16 w-full grid grid-cols-9 bg-white shadow-xl text-lg font-rustico-regular text-center xs:grid-cols-2 xs:bg-transparent xs:shadow-none sm:grid-cols-2 sm:bg-transparent sm:shadow-none md:text-sm lg:text-base z-40">
+    <nav className="fixed h-24 xs:h-20 sm:h-20 lg:h-20 md:h-16 w-full grid grid-cols-8 bg-white shadow-xl text-lg font-rustico-regular text-center xs:grid-cols-2 xs:bg-transparent xs:shadow-none sm:grid-cols-2 sm:bg-transparent sm:shadow-none md:text-sm lg:text-base z-40">
       <Logo />
       <Link
         text="O službe"
@@ -39,6 +39,11 @@ const Navigation = props => {
         text="Kontakt"
         to={ROUTES.KONTAKT}
         isActive={routeMatches(ROUTES.KONTAKT)}
+      />
+      <Link
+        text="O nás"
+        to={ROUTES.O_NAS_HASH}
+        isActive={routeMatches(ROUTES.O_NAS_HASH)}
       />
       <MenuButton onClick={props.onSidebarToggle} />
     </nav>

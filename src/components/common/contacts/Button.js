@@ -17,7 +17,7 @@ export const TYPES = {
 }
 
 const Button = props => {
-  const [hovered, setHovered] = useState(false);
+  const [hovered, setHovered] = useState(null);
 
   const getIconPath = () => {
     switch (props.type) {
@@ -47,8 +47,8 @@ const Button = props => {
           target="_blank"
           href={getHref()}
           rel="noopener noreferrer"
-          onMouseEnter={() => setHovered(!hovered)}
-          onMouseLeave={() => setHovered(!hovered)}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
         >
           <button className="focus:outline-none">
             <img

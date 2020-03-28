@@ -3,15 +3,15 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const Logo = props => {
-  const [hovered, setHovered ] = useState(false);
+  const [hovered, setHovered ] = useState(null);
 
   return (
     <a
       href={props.href}
       rel="noopener noreferrer"
       target="_blank"
-      onMouseEnter={() => setHovered(!hovered)}
-      onMouseLeave={() => setHovered(!hovered)}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
       className="md:table sm:table xs:table sm:mx-auto xs:mx-auto md:mx-auto md:mt-5 sm:mt-5 xs:mt-5"
     >
       <img

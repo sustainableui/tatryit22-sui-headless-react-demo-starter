@@ -3,10 +3,10 @@ import React from 'react';
 
 const Feature = props =>
   <div
-    className={`${props.className} shadow-md rounded-gradient-box p-1 mb-5 w-full`}
+    className={`${props.className} shadow-md p-1 mb-5 w-full`}
     style={{ backgroundImage: 'linear-gradient(to right, #2cebad, #2e66ff)' }}
   >
-    <p className="bg-white rounded-gradient-box p-7 sm:p-3 xs:p-3">
+    <p className="bg-white p-7 sm:p-3 xs:p-3">
       {props.children}
     </p>
   </div>;

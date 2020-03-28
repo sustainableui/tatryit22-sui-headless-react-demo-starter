@@ -19,7 +19,6 @@ const Description = () =>
           text="Zistite Viac"
           to={ROUTES.O_NAS}
           color="blue"
-          bigger
         />
       </div>
     </div>

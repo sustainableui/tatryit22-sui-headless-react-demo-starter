@@ -58,7 +58,7 @@ const MainPage = () => {
       <CallTo
         id={SECTION_IDS.POTREBUJEM_POMOC}
         headline={TITLES.POTREBUJEM_POMOC}
-        description="Ak Ste Starší, Zdravotne Postihnutý Alebo Človek V Núdzi, Radi Vám Pomôžeme S Vašim Nákupom Alebo Donáškou Liekov. Stačí Nás Kontaktovať."
+        description="Ak Ste Starší, Zdravotne Postihnutý Alebo Človek V Núdzi, Radi Vám Pomôžeme S Vašim Nákupom Alebo Donáškou Liekov."
         theme="green"
         action="Pomôžte mi"
         actionTo={ROUTES.VYBERTE_VASE_MESTO}

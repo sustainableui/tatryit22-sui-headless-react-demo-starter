@@ -92,9 +92,6 @@ module.exports = {
         'futura-medium': ['Futura Medium'],
         'futura-bold': ['Futura Bold'],
       },
-      borderRadius: {
-        'gradient-box': '30px',
-      },
       zIndex: {
         '41': '41',
         '42': '42',

@@ -13,7 +13,6 @@ const Action = props =>
         color={props.buttonColor}
         text={props.actionText}
         to={props.to}
-        bigger
       />
     </div>
   </div>;

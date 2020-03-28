@@ -19,7 +19,7 @@ const Section = props => {
     <div
       id={props.id ? props.id : ''}
       className="relative w-screen h-screen overflow-hidden p-5 sm:p-0 xs:p-0 bg-scroll bg-no-repeat bg-cover"
-      style={{ backgroundImage: props.backgroundPath ? `url(${props.backgroundPath})` : 'none' }}
+      style={{ background: props.backgroundPath ? `url(${props.backgroundPath}) no-repeat center center` : 'none' }}
     >
       {props.customLayout ? (
         <React.Fragment>
