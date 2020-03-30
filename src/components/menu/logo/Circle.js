@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ROUTES } from '../../../../config/routes';
+import { ROUTES } from '../../../config/routes';
 import React from 'react';
 
 const Circle = () =>

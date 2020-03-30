@@ -1,8 +1,8 @@
-import { LINKS } from '../../../../config/transitions';
+import { LINKS } from '../../../config/transitions';
 import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { setDocumentTitleFromRoute } from '../../../../utils/routesUtils';
+import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 
 const LinkComponent = props => {
   const handleClick = () => {

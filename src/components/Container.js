@@ -1,23 +1,34 @@
 import React, { useState } from 'react';
 
 import CovidChat from './CovidChat';
-import Menu from './common/menu/Menu';
+import ImageLoader from './imageLoader/ImageLoader';
+import Navigation from './Navigation';
+import OpacityEaseIn from './OpacityEaseIn';
 import PropTypes from 'prop-types';
-import Sidebar from './sidebar/Sidebar';
+import generalBackgroundPath from '../assets/images/backgrounds/pattern_elements.svg';
+import heroBackgroundPath from '../assets/images/backgrounds/hero.svg';
 
 const Container = props => {
   const [hiddenSidebar, setHiddenSidebar] = useState(true);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
   
   return (
-    <div className="overflow-hidden">
-      <Menu onSidebarToggle={() => setHiddenSidebar(!hiddenSidebar)} />
-      <Sidebar
-        hidden={hiddenSidebar}
-        onToggle={() => setHiddenSidebar(!hiddenSidebar)}
+    <React.Fragment>
+      <Navigation
+        hiddenSidebar={hiddenSidebar}
+        onSidebarToggle={() => setHiddenSidebar(!hiddenSidebar)}
       />
-      {props.children}
+      <OpacityEaseIn imagesLoaded={imagesLoaded}>
+        {props.children}
+      </OpacityEaseIn>
+      {!imagesLoaded && (
+        <ImageLoader
+          imagePaths={[heroBackgroundPath, generalBackgroundPath]}
+          onLoad={() => setImagesLoaded(true)}
+        />
+      )}
       <CovidChat visible={hiddenSidebar} />
-    </div>
+    </React.Fragment>
   );
 }
 

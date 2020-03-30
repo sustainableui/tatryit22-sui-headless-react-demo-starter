@@ -1,5 +1,5 @@
 import ExitButton from './ExitButton';
-import Menu from '../common/menu/Menu';
+import Menu from '../menu/Menu';
 import Overlay from './Overlay';
 import PropTypes from 'prop-types';
 import React from 'react';

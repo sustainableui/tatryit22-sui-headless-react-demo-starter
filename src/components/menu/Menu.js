@@ -3,7 +3,7 @@ import Link from './links/Link';
 import Logo from './logo/Logo';
 import MenuButton from './MenuButton';
 import PropTypes from 'prop-types';
-import { ROUTES } from '../../../config/routes';
+import { ROUTES } from '../../config/routes';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
