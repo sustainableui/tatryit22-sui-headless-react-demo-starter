@@ -7,7 +7,7 @@ import ScrollableSection from 'react-update-url-on-scroll';
 
 const CallTo = props =>
   <ScrollableSection hash={props.id}>
-    <div className="flex flex-col justify-center items-center h-full overflow-hidden">
+    <div className="h-screen flex flex-col justify-center items-center">
       <Headline
         text={props.headline}
         theme={props.theme}

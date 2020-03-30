@@ -7,7 +7,7 @@ import { ROUTES } from '../../config/routes';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-const outsideSidebarClasses = "fixed h-24 xs:h-20 sm:h-20 lg:h-20 md:h-16 w-full grid grid-cols-10 bg-white shadow-xl xs:grid-cols-2 xs:bg-transparent xs:shadow-none sm:grid-cols-2 sm:bg-transparent sm:shadow-none md:text-sm lg:text-base z-40";
+const outsideSidebarClasses = "fixed xs:h-20 sm:h-20 md:h-16 lg:h-20 xl:h-24 w-full grid grid-cols-10 bg-white shadow-xl xs:grid-cols-2 xs:bg-transparent xs:shadow-none sm:grid-cols-2 sm:bg-transparent sm:shadow-none md:text-xs lg:text-base z-40";
 const inSidebarClasses = "flex flex-col justify-center items-center h-full";
 
 const Menu = props => {

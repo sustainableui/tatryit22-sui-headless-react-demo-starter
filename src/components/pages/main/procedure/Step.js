@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const Step = props =>
-  <li className={`relative min-h-20 ${props.className ? props.className : ''} xl:mt-8 lg:mt-6 md:mt-7 sm:mt-2 xs:mt-2`}>
-    <div className="absolute top-0 left-0 w-24">
+  <li className={`relative min-h-20 ${props.number === 1 || props.number === 6 ? 'pt-0' : 'xl:pt-8 lg:pt-6 md:pt-7 sm:pt-2 xs:pt-2'} ${props.className ? props.className : ''}`}>
+    <div className={`absolute top-0 left-0 w-24 ${props.number === 1 || props.number === 6 ? 'pt-0' : 'xl:pt-8 lg:pt-6 md:pt-7 sm:pt-2 xs:pt-2'}`}>
       <span className="inline-block w-full font-rustico-regular text-5xl text-blue text-right pr-8">
         {props.number}.
       </span>

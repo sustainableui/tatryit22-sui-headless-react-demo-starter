@@ -34,17 +34,17 @@ const Contact = () => {
   );
 
   return (
-    <div className="grid grid-rows-8 h-full overflow-hidden xl:-mt-10 lg:-mt-12 md:-mt-14 sm:-mt-8 xs:-mt-8">
-      <div className='row-span-2'>
+    <div className="grid grid-rows-4">
+      <div className="row-span-1">
         {LocationButton}
       </div>
-      <div className='row-span-2'>
+      <div className="row-span-1">
         {PhoneButton}
       </div>
-      <div className='row-span-2'>
+      <div className="row-span-1">
         {EmailButton}
       </div>
-      <div className='row-span-2'>
+      <div className="row-span-1">
         {FacebookButton}
       </div>
     </div>

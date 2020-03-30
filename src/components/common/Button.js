@@ -38,7 +38,7 @@ const Button = props => {
   }
 
   const button = (
-    <button className={`${BUTTONS} inline-flex items-center focus:outline-none ${props.className} ${getClasses()} px-14 py-3 sm:px-8 sm:py-2 xs:px-8 xs:py-2`}>
+    <button className={`${BUTTONS} inline-flex items-center focus:outline-none ${getClasses()} px-14 py-3 sm:px-8 sm:py-2 xs:px-8 xs:py-2 ${props.className ? props.className : ''}`}>
       {props.text}
     </button>
   );

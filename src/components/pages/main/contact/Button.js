@@ -40,9 +40,9 @@ const Button = props => {
   }
 
   return (
-    <div className="h-full">
+    <React.Fragment>
       {props.type === TYPES.FACEBOOK && <Divider />}
-      <div className="flex flex-col justify-center items-center h-full">
+      <div className="flex flex-col justify-center items-center xs:mt-5 sm:mt-5 md:mt-4 lg:mt-5 xl:mt-7 xs:mb-5 sm:mb-5 md:mb-4 lg:mb-5 xl:mb-7">
         <a
           target="_blank"
           href={getHref()}
@@ -62,7 +62,7 @@ const Button = props => {
           </button>
         </a>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 

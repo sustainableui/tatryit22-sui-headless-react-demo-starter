@@ -9,7 +9,7 @@ import ScrollableSection from 'react-update-url-on-scroll';
 
 const Hero = () =>
   <ScrollableSection hash={SECTION_IDS.VITAJTE}>
-    <div className="h-full">
+    <div className="h-screen w-screen">
       <div className="grid grid-rows-10 sm:grid-rows-9 xs:grid-rows-9 h-full overflow-hidden">
         <div className="row-span-3 xs:row-span-2 sm:row-span-2" />
         <Logo />

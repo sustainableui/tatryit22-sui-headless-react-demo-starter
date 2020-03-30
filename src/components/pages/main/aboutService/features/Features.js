@@ -40,23 +40,23 @@ const features = [{
   }];
 
 const Features = () =>
-  <div className="grid grid-cols-8 font-futura-medium text-lg text-center pt-10">
+  <div className="grid grid-cols-8 font-futura-medium text-lg text-center xs:mt-20 sm:mt-20 md:mt-16 lg:mt-20 xl:mt-24">
     <div />
-    <div className="col-span-2 md:col-span-3 sm:col-span-6 xs:col-span-6 pl-4 pr-4">
+    <div className="col-span-2 md:col-span-3 sm:col-span-6 xs:col-span-6 ml-4 mr-4">
       {features.map((feature, i) => feature.classNames[0] && (
         <Feature key={i} className={feature.classNames[0]}>
           {feature.elm}
         </Feature>
       ))}
     </div>
-    <div className="col-span-2 md:col-span-3 sm:hidden xs:hidden pl-4 pr-4">
+    <div className="col-span-2 md:col-span-3 sm:hidden xs:hidden ml-4 mr-4">
       {features.map((feature, i) => feature.classNames[1] && (
         <Feature key={i} className={feature.classNames[1]}>
           {feature.elm}
         </Feature>
       ))}
     </div>
-    <div className="md:hidden sm:hidden xs:hidden col-span-2 pl-4 pr-4">
+    <div className="md:hidden sm:hidden xs:hidden col-span-2 ml-4 mr-4">
       {features.map((feature, i) => feature.classNames[2] && (
         <Feature key={i} className={feature.classNames[2]}>
           {feature.elm}
