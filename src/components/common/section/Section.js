@@ -9,7 +9,7 @@ const Section = props => {
       <div className="row-span-2 sm:row-span-1 xs:row-span-1">
         <Headline text={props.title} />
       </div>
-      <div className="row-span-6 sm:row-span-7 xs:row-span-7 xs:ml-10 xs:mr-10 xs:mb-10 sm:ml-20 sm:mr-20 sm:mb-20 md:ml-16 md:mr-16 md:mb-16 lg:ml-20 lg:mr-20 lg:mb-20 xl:ml-24 xl:mr-24 xl:mb-24">
+      <div className="row-span-6 sm:row-span-7 xs:row-span-7 xs:ml-7 xs:mr-7 xs:mb-7 sm:ml-20 sm:mr-20 sm:mb-20 md:ml-16 md:mr-16 md:mb-16 lg:ml-20 lg:mr-20 lg:mb-20 xl:ml-24 xl:mr-24 xl:mb-24">
         {props.children}
       </div>
     </div>

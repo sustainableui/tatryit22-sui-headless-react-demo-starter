@@ -73,7 +73,7 @@ const Arrow = props => {
   }
 
   return (
-    <div className={`absolute left-0 bottom-0 ${getClasses(ELEMENTS.ROOT)}`}>
+    <div className={`${props.back ? 'fixed' : 'absolute'} left-0 bottom-0 ${getClasses(ELEMENTS.ROOT)} z-30`}>
       <Link
         smooth
         to={props.to}

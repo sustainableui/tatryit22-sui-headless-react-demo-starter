@@ -5,8 +5,8 @@ import React from 'react';
 import Text from './Text';
 
 const General = () =>
-  <div className="h-full">
-    <div className="grid grid-rows-2 lg:grid-rows-3 md:grid-rows-3 sm:grid-rows-4 xs:grid-rows-4 h-full overflow-hidden sm:overflow-y-auto xs:overflow-y-auto">
+  <React.Fragment>
+    <div className="grid grid-rows-2 lg:grid-rows-3 md:grid-rows-3 sm:grid-rows-4 xs:grid-rows-4">
       <div className="row-span-1">
         <Logo />
       </div>
@@ -24,6 +24,6 @@ const General = () =>
       scroll
       color="blue"
     />
-  </div>;
+  </React.Fragment>;
 
 export default General;

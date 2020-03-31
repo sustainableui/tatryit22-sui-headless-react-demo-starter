@@ -18,17 +18,18 @@ const CityPickerPage = () => {
       backgroundPath={backgroundPath}
       title="Vyberte vaše mesto"
     >
-      <div className="xl:grid xl:grid-rows-3 lg:grid lg:grid-rows-3 md:grid md:grid-rows-3 h-full sm:-mt-8 xs:-mt-8">
-        <div className="row-span-2">
+      <div className="xl:grid xl:grid-rows-5 lg:grid lg:grid-rows-5 md:grid md:grid-rows-5 h-full sm:-mt-8 xs:-mt-8">
+          <div className="row-span-1"/>
+          <div className="row-span-3">
           <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-4 h-full">
             <div className="col-span-1 sm:hidden xs:hidden" />
-            <div className="col-span-1 flex flex-col justify-center items-center h-full pr-5 sm:pl-5 xs:pl-5 sm:pr-5 xs:pr-5">
+            <div className="col-span-1 flex flex-col justify-center items-center h-full xl:pr-5 lg:pr-5 md:pr-5">
               <div className="sm:w-full xs:w-full">
                 <City text={CITIES.POPRAD.NAME} />
                 <City text={CITIES.PIESTANY.NAME} />
               </div>
             </div>
-            <div className="col-span-1 flex flex-col justify-center items-center h-full pl-5 sm:pl-5 xs:pl-5 sm:pr-5 xs:pr-5">
+            <div className="col-span-1 flex flex-col justify-center items-center h-full xl:pl-5 lg:pl-5 md:pl-5">
               <div className="sm:w-full xs:w-full">
                 <City text={CITIES.HUMENNE.NAME} />
                 <City text={CITIES.POPRAD.NAME} hidden />

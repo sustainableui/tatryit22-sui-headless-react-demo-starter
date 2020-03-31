@@ -13,18 +13,16 @@ const WannaHelp = () =>
     backgroundPath={backgroundPath}
     title="Chcem Pomôcť"
   >
-    <div className="flex flex-col justify-center items-center h-full -mt-14 sm:mt-0 xs:mt-0 sm:justify-start xs:justify-start">
-      <Headline text="Povinnosti dobrovoľníka"/>
-      <List />
-      <Action
-        redirect
-        to={VOLUNTEER_FORM_LINK}
-        descriptionText="zapoj sa zaslaním formulára"
-        actionText="Formulár"
-        buttonColor="blue"
-        buttonVariant="contained"
-      />
-    </div>
+    <Headline text="Povinnosti dobrovoľníka"/>
+    <List />
+    <Action
+      redirect
+      to={VOLUNTEER_FORM_LINK}
+      descriptionText="zapoj sa zaslaním formulára"
+      actionText="Formulár"
+      buttonColor="blue"
+      buttonVariant="contained"
+    />
     <Arrow
       to={ROUTES.CHCEM_POMOCT_HASH}
       back

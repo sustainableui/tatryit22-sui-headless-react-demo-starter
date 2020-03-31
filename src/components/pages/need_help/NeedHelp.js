@@ -27,7 +27,7 @@ const ContactPage = () => {
       backgroundPath={backgroundPath}
       title="Potrebujem Pomoc"
     >
-      <div className="flex flex-col justify-center sm:justify-start xs:justify-start items-center h-full -mt-14 md:-mt-18 sm:mt-0 xs:mt-0">
+      <React.Fragment>
         <Headline text={CITY}/>
         <PhoneNumber number={CITY_INFO.PHONE}/>
         <OpeningHours
@@ -46,7 +46,7 @@ const ContactPage = () => {
           buttonColor="green"
           buttonVariant="contained"
         />
-      </div>
+      </React.Fragment>
       <Arrow back color="green" to={ROUTES.VYBERTE_VASE_MESTO} />
     </Section>
   );

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const PhoneNumber = props =>
-  <div className="text-center pt-14 md:pt-10 sm:pt-3 xs:pt-3">
+  <div className="text-center mt-14 md:mt-10 sm:mt-3 xs:mt-3">
     <span className="font-futura-medium text-md md:text-sm sm:text-sm xs:text-sm text-gray-hover">
       objednávka cez tel. č.
     </span>

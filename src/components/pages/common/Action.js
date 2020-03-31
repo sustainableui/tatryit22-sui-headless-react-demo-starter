@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const Action = props =>
-  <div className="text-center pt-14 sm:pt-8 xs:pt-8">
+  <div className="text-center mt-14 sm:mt-8 xs:mt-8">
     <span className="font-futura-medium text-md text-gray-hover">
       {props.descriptionText}
       {props.disabled && <span className="block">(momentálne nie je k dispozícii)</span>}
