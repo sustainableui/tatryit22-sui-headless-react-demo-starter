@@ -17,12 +17,12 @@ const App = () => {
     configureAnchors({
       keepLastAnchorHash: true,
       offset: 70,
-      scrollBehaviour: 'instant',
+      scrollBehaviour: 'auto',
       onSectionEnter: newState => {
         const newRoute = `${history.location.pathname}#${newState.hash}`;
         history.replace(newRoute);
         setDocumentTitleFromRoute(newRoute);
-      },
+      },  
     })
   }, []);
 

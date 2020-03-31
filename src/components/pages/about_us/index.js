@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 
 import General from './general/General';
 import Lead from './lead/Lead';
-import Section from '../../common/section/Section';
+import Section from '../common/section/Section';
 import Team from './Team';
 import backgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
@@ -30,6 +30,7 @@ const AboutUs = () => {
       backgroundPath={backgroundPath}
       customLayout
       noBottom
+      backgroundPositionClass="bg-bottom"
     >
       <Team />
     </Section>
@@ -40,6 +41,7 @@ const AboutUs = () => {
       id={SECTION_IDS.PODME_SA_ROZPRAVAT}
       backgroundPath={backgroundPath}
       customLayout
+      backgroundPositionClass="bg-top"
     >
       <Lead />
     </Section>

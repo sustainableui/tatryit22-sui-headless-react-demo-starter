@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import CovidChat from './CovidChat';
 import ImageLoader from './imageLoader/ImageLoader';
 import Navigation from './Navigation';
-import OpacityEaseIn from './OpacityEaseIn';
+import OpacityEaseIn from './common/OpacityEaseIn';
 import PropTypes from 'prop-types';
 import generalBackgroundPath from '../assets/images/backgrounds/pattern_elements.svg';
 import heroBackgroundPath from '../assets/images/backgrounds/hero.svg';
@@ -18,7 +18,7 @@ const Container = props => {
         hiddenSidebar={hiddenSidebar}
         onSidebarToggle={() => setHiddenSidebar(!hiddenSidebar)}
       />
-      <OpacityEaseIn imagesLoaded={imagesLoaded}>
+      <OpacityEaseIn perform={imagesLoaded}>
         {props.children}
       </OpacityEaseIn>
       {!imagesLoaded && (

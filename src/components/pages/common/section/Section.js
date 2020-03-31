@@ -18,7 +18,7 @@ const Section = props => {
   return (
     <div
       id={props.id ? props.id : ''}
-      className={`relative w-screen bg-scroll bg-no-repeat bg-cover bg-center ${props.fullscreen ? 'min-h-screen' : ''}`}
+      className={`relative w-screen bg-scroll bg-no-repeat bg-cover ${props.backgroundPositionClass ? props.backgroundPositionClass : 'bg-center'} ${props.fullscreen ? 'min-h-screen' : ''}`}
       style={{ backgroundImage: `url(${props.backgroundPath})`}}
     >
       {props.customLayout ? (
@@ -53,6 +53,10 @@ Section.propTypes = {
   ]).isRequired,
   id: PropTypes.string,
   noBottom: PropTypes.bool,
+  backgroundPositionClass: PropTypes.oneOf([
+    'bg-top',
+    'bg-bottom',
+  ]),
 }
 
 export default Section;

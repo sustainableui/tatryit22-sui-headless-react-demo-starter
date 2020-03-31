@@ -7,7 +7,7 @@ import Contact from './contact/Contact';
 import Hero from './hero/Hero';
 import Procedure from './procedure/Procedure';
 import React from 'react';
-import Section from '../../common/section/Section';
+import Section from '../common/section/Section';
 import aboutServiceBackgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import aboutUsBackgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import callToCustomerBackgroundPath from '../../../assets/images/backgrounds/pattern_elements_green.svg';
@@ -34,6 +34,7 @@ const MainPage = () => {
       backgroundPath={aboutServiceBackgroundPath}
       title={TITLES.O_SLUZBE}
       noBottom
+      backgroundPositionClass="bg-bottom"
     >
       <AboutService />
     </Section>
@@ -44,6 +45,7 @@ const MainPage = () => {
       id={SECTION_IDS.POSTUP}
       backgroundPath={procedureBackgroundPath}
       title={TITLES.POSTUP}
+      backgroundPositionClass="bg-top"
     >
       <Procedure />
     </Section>
@@ -91,6 +93,7 @@ const MainPage = () => {
       backgroundPath={contactBackgroundPath}
       title={TITLES.KONTAKT}
       noBottom
+      backgroundPositionClass="bg-bottom"
     >
       <Contact />
     </Section>
@@ -101,6 +104,7 @@ const MainPage = () => {
       id={SECTION_IDS.O_NAS_HASH}
       backgroundPath={aboutUsBackgroundPath}
       title={TITLES.O_NAS}
+      backgroundPositionClass="bg-top"
     >
       <AboutUs />
     </Section>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { BUTTONS } from '../../../config/transitions';
+import GradientDivider from './GradientDivider';
 import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
@@ -73,28 +74,31 @@ const Arrow = props => {
   }
 
   return (
-    <div className={`${props.back ? 'fixed' : 'absolute'} left-0 bottom-0 ${getClasses(ELEMENTS.ROOT)} z-30`}>
-      <Link
-        smooth
-        to={props.to}
-        onClick={() => setDocumentTitleFromRoute(props.to)}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-        className={`${BUTTONS} ${getClasses(ELEMENTS.LINK)} hover:bg-transparent hover:border-4 border-4 border-transparent focus:outline-none flex flex-col justify-center items-center`}
-      >
-        <svg
-          viewBox="0 0 24 21"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className={`${props.back ? 'transform rotate-90' : (props.top ? 'transform rotate-180' : '')} ${getClasses(ELEMENTS.SVG_WRAPPER)}`}
+    <React.Fragment>
+      <div className={`${props.back ? 'fixed' : 'absolute'} left-0 bottom-0 ${props.scroll ? 'mb-2' : ''} ${getClasses(ELEMENTS.ROOT)} z-30`}>
+        <Link
+          smooth
+          to={props.to}
+          onClick={() => setDocumentTitleFromRoute(props.to)}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          className={`${BUTTONS} ${getClasses(ELEMENTS.LINK)} hover:bg-transparent hover:border-4 border-4 border-transparent focus:outline-none flex flex-col justify-center items-center`}
         >
-          <path
-            className={`${BUTTONS} ${getClasses(ELEMENTS.SVG)}`}
-            d="M12 20.8461L0.00888643 0.0769199L23.9911 0.0769178L12 20.8461Z"
-          />
-        </svg>
-      </Link>
-    </div>
+          <svg
+            viewBox="0 0 24 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className={`${props.back ? 'transform rotate-90' : (props.top ? 'transform rotate-180' : '')} ${getClasses(ELEMENTS.SVG_WRAPPER)}`}
+          >
+            <path
+              className={`${BUTTONS} ${getClasses(ELEMENTS.SVG)}`}
+              d="M12 20.8461L0.00888643 0.0769199L23.9911 0.0769178L12 20.8461Z"
+            />
+          </svg>
+        </Link>
+      </div>
+      {props.scroll && <GradientDivider />}
+    </React.Fragment>
   );
 }
 
