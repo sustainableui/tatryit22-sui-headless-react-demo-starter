@@ -18,6 +18,7 @@ const AboutUs = () => {
       id={SECTION_IDS.O_NAS}
       backgroundPath={backgroundPath}
       title="O nás"
+      fullscreen
     >
       <General />
     </Section>
@@ -28,6 +29,7 @@ const AboutUs = () => {
       id={SECTION_IDS.TEAM}
       backgroundPath={backgroundPath}
       customLayout
+      noBottom
     >
       <Team />
     </Section>

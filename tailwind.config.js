@@ -80,7 +80,7 @@ module.exports = {
         '1/2': '50%',
         '7/12': '58.333333%',
         '3/4': '75%',
-        'paragraph': '910px',
+        'paragraph': '700px',
         'sm-paragraph': '460px',
         'xs-paragraph': '340px',
         'divider': '100px',

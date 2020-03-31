@@ -1,12 +1,16 @@
-import { BUTTONS } from '../../config/transitions';
+import { BUTTONS } from '../../../config/transitions';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { goToTop } from 'react-update-url-on-scroll';
 
+const invertedBlueContainedClasses = "bg-blue text-white font-futura-bold hover:bg-green hover:text-blue";
 const blueContainedClasses = "bg-blue text-white font-futura-bold hover:bg-white hover:text-blue";
+const invertedGreenContainedClasses = "bg-green text-black font-futura-bold hover:bg-blue hover:text-green";
 const greenContainedClasses = "bg-green text-black font-futura-bold hover:bg-white hover:text-blue";
+const invertedBlueOutlinedClasses = "bg-transparent text-blue font-futura-medium border-4 border-blue hover:text-blue hover:border-0 hover:bg-white";
 const blueOutlinedClasses = "bg-transparent text-blue font-futura-medium border-4 border-blue hover:text-white hover:border-0 hover:bg-blue";
+const invertedGreenOutlinedClasses = "bg-transparent text-green font-futura-medium border-4 border-green hover:text-green hover:border-0 hover:bg-white";
 const greenOutlinedClasses = "bg-transparent text-green font-futura-medium border-4 border-green hover:text-white hover:border-0 hover:bg-green";
 const disabledClasses = "bg-gray-hover text-white font-futura-bold pointer-events-none";
 
@@ -19,18 +23,18 @@ const Button = props => {
     else {
       if (props.color === 'green') {
         if (props.variant === 'outlined') {
-          classes = greenOutlinedClasses;
+          classes = props.invertedHover ? invertedGreenOutlinedClasses : greenOutlinedClasses;
         }
         else if (props.variant === 'contained') {
-          classes = greenContainedClasses;
+          classes = props.invertedHover ? invertedGreenContainedClasses : greenContainedClasses;
         }
       }
       else if (props.color === 'blue') {
         if (props.variant === 'outlined') {
-          classes = blueOutlinedClasses;
+          classes = props.invertedHover ? invertedBlueOutlinedClasses : blueOutlinedClasses;
         }
         else if (props.variant === 'contained') {
-          classes = blueContainedClasses;
+          classes = props.invertedHover ? invertedBlueContainedClasses : blueContainedClasses;
         }
       }
     }
@@ -84,6 +88,7 @@ Button.propTypes = {
   to: PropTypes.string.isRequired,
   redirect: PropTypes.bool,
   disabled: PropTypes.bool,
+  invertedHover: PropTypes.bool,
 }
 
 export default Button;

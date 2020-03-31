@@ -1,4 +1,4 @@
-import Button from '../../../common/Button';
+import Button from '../../common/Button';
 import { ROUTES } from '../../../../config/routes';
 import React from 'react';
 

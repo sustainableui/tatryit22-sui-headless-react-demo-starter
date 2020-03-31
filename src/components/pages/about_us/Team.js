@@ -9,7 +9,7 @@ import TimotejMuchaProfileImagePath from '../../../assets/images/people/timotej_
 
 const Team = () =>
   <ScrollableSection hash={SECTION_IDS.TEAM}>
-    <div className="xl:grid lg:grid md:grid xl:grid-rows-5 lg:grid-rows-5 xs:mb-7 sm:mb-20 md:mb-16 lg:mb-20 xs:pl-7 xs:pr-7 sm:pl-20 sm:pr-20 xs:pt-16 sm:pt-16 md:pt-32 lg:pt-36 xl:pt-40">
+    <div className="xl:grid lg:grid md:grid xl:grid-rows-4 lg:grid-rows-4 xs:pb-16 sm:pb-16 md:pb-16 lg:mb-20 xs:pl-7 xs:pr-7 sm:pl-20 sm:pr-20 xs:pt-16 sm:pt-16 md:pt-32 lg:pt-36 xl:pt-40">
       <div className="row-span-3">
         <div className="flex flex-col justify-center items-center h-full">
           <div>
@@ -18,6 +18,7 @@ const Team = () =>
               name="Samuel Pitoňák"
               description="IT Študent, Programátor"
               className="md:hidden sm:hidden xs:hidden"
+              noMarginLeft
             />
             <Profile
               imagePath={TimotejMuchaProfileImagePath}
@@ -34,6 +35,7 @@ const Team = () =>
               name="Samuel Mucha"
               description="Študent, Graphic Designer"
               className="md:hidden sm:hidden xs:hidden"
+              noMarginRight
             />
           </div>
         </div>
@@ -60,7 +62,6 @@ const Team = () =>
           </div>
         </div>
       </div>
-      <div className="row-span-1 md:hidden sm:hidden xs:hidden" />
     </div>
   </ScrollableSection>;
 

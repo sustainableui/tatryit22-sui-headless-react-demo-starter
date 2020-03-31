@@ -52,8 +52,9 @@ const steps = [(
 ];
 
 const Procedure = () =>
-  <div className="grid grid-cols-2 font-futura-medium text-lg text-left">
-    <div className="col-span-1 sm:col-span-2 xs:col-span-2">
+  <div className="grid xl:grid-cols-10 lg:grid-cols-10 md:grid-cols-6 font-futura-medium text-lg text-left">
+    <div className="xl:col-span-2 lg:col-span-2 md:hidden sm:hidden xs:hidden"/>
+    <div className="col-span-3 sm:col-span-2 xs:col-span-2">
       <ol>
         {steps.map((step, i) => (
           <Step
@@ -66,7 +67,7 @@ const Procedure = () =>
         ))}
       </ol>
     </div>
-    <div className="col-span-1 sm:hidden xs:hidden">
+    <div className="col-span-3 sm:hidden xs:hidden">
       <ol>
         {steps.map((step, i) => (
           i >= 5 && (
@@ -80,6 +81,7 @@ const Procedure = () =>
         )}
       </ol>
     </div>
+    <div className="xl:col-span-2 lg:col-span-2 md:hidden sm:hidden xs:hidden" />
   </div>;
 
 export default Procedure;

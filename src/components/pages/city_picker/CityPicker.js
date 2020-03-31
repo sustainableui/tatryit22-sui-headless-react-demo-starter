@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 
-import Arrow from '../../common/navigation/Arrow';
+import Arrow from '../common/Arrow';
 import { CITIES } from '../../../config/cities';
 import City from './City';
 import { ROUTES } from '../../../config/routes';
-import Section from '../../common/section/Section';
+import Section from '../common/section/Section';
 import backgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 

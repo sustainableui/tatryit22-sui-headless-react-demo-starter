@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CautionText = () =>
-  <div className="mx-auto text-center max-w-paragraph sm:max-w-sm-paragraph xs:max-w-xs-paragraph text-3xl md:text-2xl sm:text-xl xs:text-xl font-rustico-regular mt-14 md:mt-10 sm:mt-3 xs:mt-3">
+  <div className="mx-auto text-center text-3xl md:text-2xl sm:text-xl xs:text-xl font-rustico-regular mt-14 md:mt-10 sm:mt-3 xs:mt-3">
     <p>
       Pri prebraní liekov alebo nákupu <span className="text-blue">majte ochranné rúško</span>
     </p>

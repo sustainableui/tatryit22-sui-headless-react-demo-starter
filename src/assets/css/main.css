@@ -3687,7 +3687,7 @@ video {
 }
 
 .max-w-paragraph {
-  max-width: 910px;
+  max-width: 700px;
 }
 
 .max-w-sm-paragraph {
@@ -11654,7 +11654,7 @@ video {
   }
 
   .xs\:max-w-paragraph {
-    max-width: 910px;
+    max-width: 700px;
   }
 
   .xs\:max-w-sm-paragraph {
@@ -19622,7 +19622,7 @@ video {
   }
 
   .sm\:max-w-paragraph {
-    max-width: 910px;
+    max-width: 700px;
   }
 
   .sm\:max-w-sm-paragraph {
@@ -27590,7 +27590,7 @@ video {
   }
 
   .md\:max-w-paragraph {
-    max-width: 910px;
+    max-width: 700px;
   }
 
   .md\:max-w-sm-paragraph {
@@ -35558,7 +35558,7 @@ video {
   }
 
   .lg\:max-w-paragraph {
-    max-width: 910px;
+    max-width: 700px;
   }
 
   .lg\:max-w-sm-paragraph {
@@ -43526,7 +43526,7 @@ video {
   }
 
   .xl\:max-w-paragraph {
-    max-width: 910px;
+    max-width: 700px;
   }
 
   .xl\:max-w-sm-paragraph {

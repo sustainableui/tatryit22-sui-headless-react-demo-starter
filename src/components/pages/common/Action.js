@@ -1,4 +1,4 @@
-import Button from '../../common/Button';
+import Button from '../common/Button';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -16,6 +16,7 @@ const Action = props =>
         text={props.actionText}
         to={props.to}
         redirect={props.redirect}
+        invertedHover
       />
     </div>
   </div>;

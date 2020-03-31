@@ -40,7 +40,8 @@ const features = [{
   }];
 
 const Features = () =>
-  <div className="grid grid-cols-6 font-futura-medium text-lg text-center xs:mt-20 sm:mt-20 md:mt-16 lg:mt-20 xl:mt-24">
+  <div className="grid xl:grid-cols-10 lg:grid-cols-10 md:grid-cols-6 sm:grid-cols-6 xs:grid-cols-6 font-futura-medium text-lg text-center xs:mt-20 sm:mt-20 md:mt-16 lg:mt-20 xl:mt-24">
+    <div className="xl:col-span-2 lg:col-span-2 md:hidden sm:hidden xs:hidden" />
     <div className="col-span-2 md:col-span-3 sm:col-span-6 xs:col-span-6 ml-4 mr-4">
       {features.map((feature, i) => feature.classNames[0] && (
         <Feature key={i} className={feature.classNames[0]}>
@@ -62,6 +63,7 @@ const Features = () =>
         </Feature>
       ))}
     </div>
+    <div className="xl:col-span-2 lg:col-span-2 md:hidden sm:hidden xs:hidden" />
   </div>;
   
 export default Features;

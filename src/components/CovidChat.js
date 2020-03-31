@@ -6,7 +6,6 @@ const CovidChat = props => {
     window.bChat = {
       "showChatNote": false,
       'image': 'https://covid.chat/assets/img/logo.png',
-      'text': 'Dôležité informácie o koronavíruse (COVID-19)',
       "autoOpen": false,
       "noAutoInit": false,
       "noHistory": true,

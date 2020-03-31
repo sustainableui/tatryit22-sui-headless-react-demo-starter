@@ -1,4 +1,4 @@
-import Arrow from '../../../common/navigation/Arrow';
+import Arrow from '../../common/Arrow';
 import Logo from './Logo';
 import { ROUTES } from '../../../../config/routes';
 import React from 'react';

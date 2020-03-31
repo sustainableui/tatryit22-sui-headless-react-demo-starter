@@ -1,4 +1,4 @@
-import Button from '../../../common/Button';
+import Button from '../../common/Button';
 import Description from './Description';
 import Headline from './Headline';
 import PropTypes from 'prop-types';
@@ -7,7 +7,7 @@ import ScrollableSection from 'react-update-url-on-scroll';
 
 const CallTo = props =>
   <ScrollableSection hash={props.id}>
-    <div className="h-screen flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center h-full h-screen">
       <Headline
         text={props.headline}
         theme={props.theme}

@@ -22,6 +22,7 @@ const MainPage = () => {
       id={SECTION_IDS.VITAJTE}
       backgroundPath={heroBackgroundPath}
       customLayout
+      fullscreen
     >
       <Hero />
     </Section>
@@ -31,8 +32,8 @@ const MainPage = () => {
     <Section
       id={SECTION_IDS.O_SLUZBE}
       backgroundPath={aboutServiceBackgroundPath}
-      scrollable
       title={TITLES.O_SLUZBE}
+      noBottom
     >
       <AboutService />
     </Section>
@@ -42,7 +43,6 @@ const MainPage = () => {
     <Section
       id={SECTION_IDS.POSTUP}
       backgroundPath={procedureBackgroundPath}
-      scrollable
       title={TITLES.POSTUP}
     >
       <Procedure />
@@ -54,11 +54,12 @@ const MainPage = () => {
       id={SECTION_IDS.POTREBUJEM_POMOC}
       backgroundPath={callToCustomerBackgroundPath}
       customLayout
+      fullscreen
     >
       <CallTo
         id={SECTION_IDS.POTREBUJEM_POMOC}
         headline={TITLES.POTREBUJEM_POMOC}
-        description="Ak Ste Starší, Zdravotne Postihnutý Alebo Človek V Núdzi, Radi Vám Pomôžeme S Vašim Nákupom Alebo Donáškou Liekov."
+        description="Ak ste starší, zdravotne postihnutý alebo človek v núdzi, radi vám pomôžeme s vašim nákupom alebo donáškou liekov."
         theme="green"
         action="Pomôžte mi"
         actionTo={ROUTES.VYBERTE_VASE_MESTO}
@@ -71,11 +72,12 @@ const MainPage = () => {
       id={SECTION_IDS.CHCEM_POMOCT}
       backgroundPath={callToVolunteerBackgroundPath}
       customLayout
+      fullscreen
     >
       <CallTo
         id={SECTION_IDS.CHCEM_POMOCT}
         headline={TITLES.CHCEM_POMOCT}
-        description="Ak Si Študent Alebo Jednoducho Hocikto Kto Chce Pomôcť Dobrej Veci, Vyplň Formulár Pre Dobrovoľníka A Pridaj Sa K Nám!"
+        description="Ak si študent alebo jednoducho hocikto kto chce pomôcť dobrej veci, vyplň formulár pre dobrovoľníka a pridaj sa k nám!"
         theme="blue"
         action="Viac"
         actionTo={ROUTES.CHCEM_POMOCT}
@@ -88,6 +90,7 @@ const MainPage = () => {
       id={SECTION_IDS.KONTAKT}
       backgroundPath={contactBackgroundPath}
       title={TITLES.KONTAKT}
+      noBottom
     >
       <Contact />
     </Section>

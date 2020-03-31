@@ -9,7 +9,7 @@ const Section = props => {
       <div className="row-span-2 sm:row-span-1 xs:row-span-1">
         <Headline text={props.title} />
       </div>
-      <div className="row-span-6 sm:row-span-7 xs:row-span-7 xs:ml-7 xs:mr-7 xs:mb-7 sm:ml-20 sm:mr-20 sm:mb-20 md:ml-16 md:mr-16 md:mb-16 lg:ml-20 lg:mr-20 lg:mb-20 xl:ml-24 xl:mr-24 xl:mb-24">
+      <div className={`row-span-6 sm:row-span-7 xs:row-span-7 xs:pl-7 xs:pr-7 sm:pl-20 sm:pr-20 md:pl-16 md:pr-16 lg:pl-20 lg:pr-20 xl:pl-24 xl:pr-24 ${props.noBottom ? '' : 'xs:pb-20 sm:pb-20 md:pb-32 lg:pb-36 xl:pb-40'}`}>
         {props.children}
       </div>
     </div>
@@ -18,7 +18,7 @@ const Section = props => {
   return (
     <div
       id={props.id ? props.id : ''}
-      className="relative min-h-screen w-screen bg-scroll bg-no-repeat bg-cover bg-center"
+      className={`relative w-screen bg-scroll bg-no-repeat bg-cover bg-center ${props.fullscreen ? 'min-h-screen' : ''}`}
       style={{ backgroundImage: `url(${props.backgroundPath})`}}
     >
       {props.customLayout ? (
@@ -44,6 +44,7 @@ const Section = props => {
 
 Section.propTypes = {
   customLayout: PropTypes.bool,
+  fullscreen: PropTypes.bool,
   title: PropTypes.string,
   backgroundPath: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
@@ -51,6 +52,7 @@ Section.propTypes = {
     PropTypes.array,
   ]).isRequired,
   id: PropTypes.string,
+  noBottom: PropTypes.bool,
 }
 
 export default Section;

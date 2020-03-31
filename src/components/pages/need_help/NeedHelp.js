@@ -2,13 +2,13 @@ import React, {useEffect} from 'react';
 import { getCityFromRoute, setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 
 import Action from '../common/Action';
-import Arrow from '../../common/navigation/Arrow';
+import Arrow from '../common/Arrow';
 import CautionText from './CautionText';
 import Headline from '../common/Headline';
 import OpeningHours from './OpeningHours';
 import PhoneNumber from './PhoneNumber';
 import { ROUTES } from '../../../config/routes';
-import Section from '../../common/section/Section';
+import Section from '../common/section/Section';
 import backgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import { getCityInfo } from '../../../utils/citiesUtils';
 import history from '../../../history';
@@ -26,6 +26,7 @@ const ContactPage = () => {
     <Section
       backgroundPath={backgroundPath}
       title="Potrebujem Pomoc"
+      fullscreen
     >
       <React.Fragment>
         <Headline text={CITY}/>

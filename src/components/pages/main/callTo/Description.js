@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const Description = props =>
-  <div className="text-2xl sm:text-xl xs:text-xl font-futura-medium xs:p-10 sm:p-20 md:p-16 lg:p-20 xl:p-24">
-    <p className={`max-w-sm-paragraph capitalize text-center ${props.theme === 'blue' ? 'text-white' : ''}`}>
+  <div className="text-2xl sm:text-xl xs:text-xl font-futura-medium xs:p-5 sm:p-10 md:p-10 lg:p-10 xl:p-12">
+    <p className={`max-w-sm-paragraph text-center ${props.theme === 'blue' ? 'text-white' : ''}`}>
       {props.text}
     </p>
   </div>;
