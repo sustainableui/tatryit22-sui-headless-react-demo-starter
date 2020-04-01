@@ -103,6 +103,9 @@ module.exports = {
       inset: {
         '1/2': '50%',
       },
+      leading: {
+        '14': '3.5rem',
+      },
     },
   }
 }
