@@ -14,7 +14,7 @@ const steps = [(
     </span>
   ), (
     <span>
-      Z príslušného tel. č. dostanete <span className="text-blue">telefonicky</span> alebo <span className="text-blue">SMS správou</span> informáciu a dobrovoľníkovi, ktorý nákup či lieky doručí
+      Z príslušného tel. č. dostanete <span className="text-blue">telefonicky</span> alebo <span className="text-blue">SMS správou</span> informáciu o dobrovoľníkovi, ktorý nákup či lieky doručí
     </span>
   ), (
     <span>
