@@ -1,11 +1,5 @@
-const { variants } = require('tailwindcss/defaultTheme');
-
 module.exports = {
   theme: {
-    variants: {
-      ...variants,
-      fill: ['responsive', 'hover'],
-    },
     screens: {
       'xs': { 'min': '1px', 'max': '639px' },
       'sm': { 'min': '640px', 'max': '767px' },

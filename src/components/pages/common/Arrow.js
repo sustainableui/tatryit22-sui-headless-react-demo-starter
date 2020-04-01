@@ -1,6 +1,6 @@
+import { BUTTONS, OPACITY } from '../../../config/transitions';
 import React, { useState } from 'react';
 
-import { BUTTONS } from '../../../config/transitions';
 import GradientDivider from './GradientDivider';
 import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
@@ -15,6 +15,7 @@ const ELEMENTS = {
 
 const Arrow = props => {
   const [hovered, setHovered] = useState(null);
+  const [clicked, setClicked] = useState(false);
 
   const getClasses = element => {
     let classes = "";
@@ -73,13 +74,19 @@ const Arrow = props => {
     return classes;
   }
 
+  const handleClick = () => {
+    setDocumentTitleFromRoute(props.to);
+    setHovered(false);
+    setClicked(true);
+  }
+
   return (
     <React.Fragment>
-      <div className={`${props.back ? 'fixed' : 'absolute'} left-0 bottom-0 ${props.scroll ? 'mb-2' : ''} ${getClasses(ELEMENTS.ROOT)} z-30`}>
+      <div className={`${OPACITY} ${clicked && props.scroll ? 'opacity-0' : 'opacity-100'} ${props.back ? 'fixed' : 'absolute'} left-0 bottom-0 ${props.scroll ? 'mb-2' : ''} ${getClasses(ELEMENTS.ROOT)} z-30`}>
         <Link
           smooth
           to={props.to}
-          onClick={() => setDocumentTitleFromRoute(props.to)}
+          onClick={handleClick}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           className={`${BUTTONS} ${getClasses(ELEMENTS.LINK)} hover:bg-transparent hover:border-4 border-4 border-transparent focus:outline-none flex flex-col justify-center items-center`}
