@@ -5,13 +5,15 @@ import React from 'react';
 const Circle = () =>
   <svg className="xl:hidden lg:hidden md:hidden absolute top-0 left-0 bg-transparent">
     <defs>
-      <filter id="logoshadow" x="-40%" y="-40%" width="180%" height="180%" filterUnits="userSpaceOnUse">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
-        <feOffset dx="5" dy="5" result="offsetblur" />
-        <feOffset dx="-5" dy="-5" result="offsetblur" />
+      
+      <filter id="logoshadow" height="130%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="6" />
+        <feOffset dx="2" dy="2" result="offsetblur" />
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.20" />
+        </feComponentTransfer>
         <feMerge>
           <feMergeNode />
-          <feMergeNode in="SourceGraphic" />
           <feMergeNode in="SourceGraphic" />
         </feMerge>
       </filter>
