@@ -88,6 +88,7 @@ const Arrow = props => {
           to={props.to}
           onClick={handleClick}
           onMouseEnter={() => setHovered(true)}
+          onMouseOver={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           className={`${BUTTONS} ${getClasses(ELEMENTS.LINK)} hover:bg-transparent hover:border-4 border-4 border-transparent focus:outline-none flex flex-col justify-center items-center`}
         >

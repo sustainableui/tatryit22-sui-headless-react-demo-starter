@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import chatImagePath from '../assets/icons/covid_chat.svg';
 import { useEffect } from 'react';
 
 const CovidChat = props => {
   useEffect(() => {
     window.bChat = {
       "showChatNote": false,
-      'image': 'https://covid.chat/assets/img/logo.png',
+      'image': chatImagePath,
       "autoOpen": false,
       "noAutoInit": false,
       "noHistory": true,

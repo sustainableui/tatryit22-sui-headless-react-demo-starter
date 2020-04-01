@@ -10,7 +10,7 @@ export const CITIES = {
       FROM_HOUR: "09:00",
       TO_HOUR: "15:00",
     },
-    ORDER_FORM_LINK: 'http://docs.google.com/forms/d/1AupWzQBFxitz6Mczs1TDustUYQwgXspx53naWc_nR2w/viewform',
+    ORDER_FORM_LINK: 'https://docs.google.com/forms/d/e/1FAIpQLSe9TR7UIR8Lpfmbaeco5KfhFLRGrhNhYgg3WoWSiJDlX9ghUQ/viewform',
   },
   HUMENNE: {
     ROUTE: '/humenne',

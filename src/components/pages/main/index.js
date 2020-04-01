@@ -61,7 +61,7 @@ const MainPage = () => {
       <CallTo
         id={SECTION_IDS.POTREBUJEM_POMOC}
         headline={TITLES.POTREBUJEM_POMOC}
-        description="Ak ste starší, zdravotne postihnutý alebo človek v núdzi, radi vám pomôžeme s vašim nákupom alebo donáškou liekov."
+        description="Ak ste starší, zdravotne postihnutý, alebo človek v núdzi, radi vám pomôžeme s vašim nákupom alebo donáškou liekov."
         theme="green"
         action="Pomôžte mi"
         actionTo={ROUTES.VYBERTE_VASE_MESTO}
@@ -79,7 +79,7 @@ const MainPage = () => {
       <CallTo
         id={SECTION_IDS.CHCEM_POMOCT}
         headline={TITLES.CHCEM_POMOCT}
-        description="Ak si študent alebo jednoducho hocikto kto chce pomôcť dobrej veci, vyplň formulár pre dobrovoľníka a pridaj sa k nám!"
+        description="Ak si študent alebo jednoducho hocikto, kto chce pomôcť dobrej veci, vyplň formulár pre dobrovoľníka a pridaj sa k nám!"
         theme="blue"
         action="Viac"
         actionTo={ROUTES.CHCEM_POMOCT}

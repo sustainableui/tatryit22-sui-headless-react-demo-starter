@@ -9,7 +9,7 @@ const Graphic = () =>
       <Logo />
       <Profile
         imagePath={BistrikMuchaProfileImagePath}
-        name="Bistrík Mucha"
+        name="Bystrík Mucha"
         description="Zakladateľ OI Poďme sa rozprávať"
         className="md:block md:mx-auto sm:block sm:mx-auto xs:block xs:mx-auto"
       />

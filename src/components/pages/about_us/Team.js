@@ -33,7 +33,7 @@ const Team = () =>
             <Profile
               imagePath={SamuelMuchaProfileImagePath}
               name="Samuel Mucha"
-              description="Študent, Graphic Designer"
+              description="Študent, GraPhic Designer"
               className="md:hidden sm:hidden xs:hidden"
               noMarginRight
             />
@@ -50,7 +50,7 @@ const Team = () =>
             <Profile
               imagePath={SamuelMuchaProfileImagePath}
               name="Samuel Mucha"
-              description="Študent, Graphic Designer"
+              description="Študent, GraPhic Designer"
               className="md:block md:mx-auto sm:block sm:mx-auto xs:block xs:mx-auto md:mb-16 lg:mb-20 xl:mb-24 xs:mb-16 sm:mb-16"
             />
             <Profile

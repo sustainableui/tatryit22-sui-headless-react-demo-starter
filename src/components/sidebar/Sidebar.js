@@ -1,17 +1,16 @@
 import ExitButton from './ExitButton';
 import Menu from '../menu/Menu';
-import Overlay from './Overlay';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { TRANSFORM } from '../../config/transitions';
 
 const Sidebar = props =>
-  <div className={props.hidden ? 'hidden' : ''}>
-    <Overlay onClick={props.onToggle}/>
-    <div className="fixed right-0 top-0 w-1/5 min-w-sidebar sm:w-screen sm:min-w-full xs:w-screen xs:min-w-full bg-white z-50 h-full">
+  <React.Fragment>
+    <div className={`${TRANSFORM} fixed right-0 top-0 bg-white z-50 w-1/5 min-w-sidebar sm:w-screen sm:min-w-full xs:w-screen xs:min-w-full h-full transform ${props.hidden ? 'translate-x-full' : 'translate-x-0 shadow-xl'}`}>
       <ExitButton onClick={props.onToggle}/>
       <Menu inSidebar onSidebarToggle={props.onToggle} />
     </div>
-  </div>;
+  </React.Fragment>;
 
 Sidebar.propTypes = {
   hidden: PropTypes.bool.isRequired,
