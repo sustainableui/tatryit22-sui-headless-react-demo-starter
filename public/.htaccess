@@ -4,7 +4,7 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 
 RewriteEngine On
-RewriteCond %{HTTP:X-Forwarded-Proto} != https
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
 RewriteRule ^.*$ https://www.podmesipomahat.sk [L,R]
 
 DirectoryIndex index.html
