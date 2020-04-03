@@ -31,8 +31,8 @@ export const CITIES = {
     EMAIL: 'trnava@podmesipomahat.sk',
     PHONE: '',
     OPENING_HOURS: {
-      FROM_DAY: "",
-      TO_DAY: "",
+      FROM_DAY: "Po",
+      TO_DAY: "Pia",
       FROM_HOUR: "",
       TO_HOUR: "",
     },

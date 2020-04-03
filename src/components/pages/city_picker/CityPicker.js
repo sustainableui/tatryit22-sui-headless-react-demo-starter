@@ -32,7 +32,7 @@ const CityPickerPage = () => {
             <div className="col-span-1 flex flex-col justify-center items-center h-full xl:pl-5 lg:pl-5 md:pl-5">
               <div className="sm:w-full xs:w-full">
                 <City text={CITIES.HUMENNE.NAME} />
-                <City text={CITIES.POPRAD.NAME} hidden />
+                <City text={CITIES.TRNAVA.NAME} />
               </div>
             </div>
             <div className="col-span-1 sm:hidden xs:hidden" />

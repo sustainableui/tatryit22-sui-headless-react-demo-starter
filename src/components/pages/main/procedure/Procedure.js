@@ -18,11 +18,11 @@ const steps = [(
     </span>
   ), (
     <span>
-      Po jeho príchode sa vám preukáže <span className="text-blue">občianskym preukazom</span> (pokojne ho k preukázaním sa vyzvite)
+      Po jeho príchode sa vám preukáže <span className="text-blue">občianskym preukazom</span> (pokojne ho k preukázaniu vyzvite)
     </span>
   ), (
     <span>
-      Naši dobrovoľníci budú mať vždy na viditeľnom mieste pripnutý <span className="text-blue">odznak <span className="uppercase">poďme si pomáhať!</span></span>
+      Naši dobrovoľníci budú mať na viditeľnom mieste pripnutý <span className="text-blue">odznak <span className="uppercase">poďme si pomáhať!</span></span>
     </span>
   ), (
     <span>

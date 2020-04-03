@@ -56,6 +56,8 @@ export const getRouteFromCity = city => {
       return ROUTES.POTREBUJEM_POMOC[1];
     case CITIES.PIESTANY.NAME:
       return ROUTES.POTREBUJEM_POMOC[2];
+    case CITIES.TRNAVA.NAME:
+      return ROUTES.POTREBUJEM_POMOC[3];
     default:
       return ROUTES.DOMOV;
   }
