@@ -10,7 +10,7 @@ export const ROUTES = {
     CITIES.POPRAD.ROUTE,
     CITIES.HUMENNE.ROUTE,
     CITIES.PIESTANY.ROUTE,
-    CITIES.TRNAVA.ROUTE,
+    // CITIES.TRNAVA.ROUTE,
   ],
   CHCEM_POMOCT_HASH: '/#chcem-pomoct',
   CHCEM_POMOCT: '/chcem-pomoct',
