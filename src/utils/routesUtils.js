@@ -34,11 +34,13 @@ const getTitleFromRoute = route => {
     case ROUTES.POTREBUJEM_POMOC[0]:
       return getConcatenatedTitle("Potrebujem pomoc - Poprad");
     case ROUTES.POTREBUJEM_POMOC[1]:
-      return getConcatenatedTitle("Potrebujem pomoc - Trnava");
-    case ROUTES.POTREBUJEM_POMOC[2]:
       return getConcatenatedTitle("Potrebujem pomoc - Humenné");
-    case ROUTES.POTREBUJEM_POMOC[3]:
+    case ROUTES.POTREBUJEM_POMOC[2]:
       return getConcatenatedTitle("Potrebujem pomoc - Piešťany");
+    case ROUTES.POTREBUJEM_POMOC[3]:
+      return getConcatenatedTitle("Potrebujem pomoc - Kysucké Nové Mesto");
+    case ROUTES.POTREBUJEM_POMOC[4]:
+      return getConcatenatedTitle("Potrebujem pomoc - Trnava");
     default:
       return APP_NAME;
   }
@@ -56,8 +58,10 @@ export const getRouteFromCity = city => {
       return ROUTES.POTREBUJEM_POMOC[1];
     case CITIES.PIESTANY.NAME:
       return ROUTES.POTREBUJEM_POMOC[2];
-    case CITIES.TRNAVA.NAME:
+    case CITIES.KYSUCKE_NOVE_MESTO.NAME:
       return ROUTES.POTREBUJEM_POMOC[3];
+    case CITIES.TRNAVA.NAME:
+      return ROUTES.POTREBUJEM_POMOC[4];
     default:
       return ROUTES.DOMOV;
   }
@@ -73,6 +77,8 @@ export const getCityFromRoute = route => {
       return CITIES.HUMENNE.NAME;
     case CITIES.PIESTANY.ROUTE:
       return CITIES.PIESTANY.NAME;
+    case CITIES.KYSUCKE_NOVE_MESTO.ROUTE:
+      return CITIES.KYSUCKE_NOVE_MESTO.NAME;
     default:
       return "";
   }

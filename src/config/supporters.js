@@ -4,4 +4,5 @@ export const SUPPORTERS = {
   KING_MEDIA: ["http://zazrakynapockanie.sk", "King Media - Výroba reklamy"],
   SAMPITTKO: ["http://sampittko.sk", "SAMPITTKO solutions"],
   SKILLFUL: ["http://facebook.com/SkillfulSkolaBezkovania", "Skillful škola bežkovania"],
+  WEBSUPPORT: ["http://websupport.sk", "Registrácia domén, hosting a servery"],
 }

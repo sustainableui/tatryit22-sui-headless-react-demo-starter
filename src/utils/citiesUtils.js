@@ -10,6 +10,8 @@ export const getCityInfo = cityName => {
       return CITIES.PIESTANY;
     case CITIES.TRNAVA.NAME:
       return CITIES.TRNAVA;
+    case CITIES.KYSUCKE_NOVE_MESTO.NAME:
+      return CITIES.KYSUCKE_NOVE_MESTO;
     default:
       return "";
   }

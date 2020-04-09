@@ -50,5 +50,18 @@ export const CITIES = {
       TO_HOUR: "16:00",
     },
     ORDER_FORM_LINK: '',
+  },
+  KYSUCKE_NOVE_MESTO: {
+    ROUTE: '/kysucke-nove-mesto',
+    NAME: 'Kysucké Nové Mesto',
+    EMAIL: 'kysuckenovemesto@podmesipomahat.sk',
+    PHONE: '0910 489 591',
+    OPENING_HOURS: {
+      FROM_DAY: "Po",
+      TO_DAY: "Pia",
+      FROM_HOUR: "08:00",
+      TO_HOUR: "12:00",
+    },
+    ORDER_FORM_LINK: '',
   }
 };

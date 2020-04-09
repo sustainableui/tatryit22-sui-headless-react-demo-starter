@@ -14,37 +14,26 @@ const CityPickerPage = () => {
   }, []);
 
   return (
-    <Section
-      backgroundPath={backgroundPath}
-      title="Vyberte vaše mesto"
-    >
-      <div className="xl:grid xl:grid-rows-5 lg:grid lg:grid-rows-5 md:grid md:grid-rows-5 h-full sm:-mt-8 xs:-mt-8">
-          <div className="row-span-1"/>
-          <div className="row-span-3">
-          <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-4 h-full">
-            <div className="col-span-1 sm:hidden xs:hidden" />
-            <div className="col-span-1 flex flex-col justify-center items-center h-full xl:pr-5 lg:pr-5 md:pr-5">
-              <div className="sm:w-full xs:w-full">
-                <City text={CITIES.POPRAD.NAME} />
-                <City text={CITIES.PIESTANY.NAME} />
-              </div>
+    <Section fullscreen backgroundPath={backgroundPath} title="Vyberte vaše mesto">
+      <div className="sm:-mt-8 xs:-mt-8 h-full">
+        <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-4 h-full">
+          <div className="col-span-1 sm:hidden xs:hidden" />
+          <div className="col-span-1 h-full xl:pr-5 lg:pr-5 md:pr-5">
+            <div className="sm:w-full xs:w-full">
+              <City text={CITIES.POPRAD.NAME} />
+              <City text={CITIES.PIESTANY.NAME} />
             </div>
-            <div className="col-span-1 flex flex-col justify-center items-center h-full xl:pl-5 lg:pl-5 md:pl-5">
-              <div className="sm:w-full xs:w-full">
-                <City text={CITIES.HUMENNE.NAME} />
-                <City text={CITIES.TRNAVA.NAME} hidden />
-              </div>
-            </div>
-            <div className="col-span-1 sm:hidden xs:hidden" />
           </div>
+          <div className="col-span-1 h-full xl:pl-5 lg:pl-5 md:pl-5">
+            <div className="sm:w-full xs:w-full">
+              <City text={CITIES.HUMENNE.NAME} />
+              <City text={CITIES.KYSUCKE_NOVE_MESTO.NAME} />
+            </div>
+          </div>
+          <div className="col-span-1 sm:hidden xs:hidden" />
         </div>
-        <div className="row-span-1 sm:hidden xs:hidden" />
       </div>
-      <Arrow
-        to={ROUTES.POTREBUJEM_POMOC_HASH}
-        back
-        color="green"
-      />
+      <Arrow to={ROUTES.POTREBUJEM_POMOC_HASH} back color="green" />
     </Section>
   );
 }
