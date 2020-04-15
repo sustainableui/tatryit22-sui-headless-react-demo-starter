@@ -5,6 +5,9 @@ import atexLogoPath from '../../../../../assets/images/supporters/logo_atex.svg'
 import podmeSaRozpravatLogoPath from '../../../../../assets/images/supporters/logo_podme_sa_rozpravat.svg';
 import sampittkoLogoPath from '../../../../../assets/images/supporters/logo_sampittko.svg';
 import skillfulLogoPath from '../../../../../assets/images/supporters/logo_skillful.svg';
+import websupportLogoPath from '../../../../../assets/images/supporters/logo_websupport.svg';
+
+// import kingMediaLogoPath from '../../../../../assets/images/supporters/logo_king_media.svg';
 
 const Supporters = () =>
   <React.Fragment>
@@ -22,6 +25,12 @@ const Supporters = () =>
           href={SUPPORTERS.PODME_SA_ROZPRAVAT[0]}
           className="w-64 md:w-52 sm:w-44 xs:w-36"
           alt={SUPPORTERS.PODME_SA_ROZPRAVAT[1]}
+        />
+        <Logo
+          logoPath={websupportLogoPath}
+          href={SUPPORTERS.WEBSUPPORT[0]}
+          className="w-56 md:w-50 sm:w-44 xs:w-36"
+          alt={SUPPORTERS.WEBSUPPORT[1]}
         />
         {/* <Logo
           logoPath={kingMediaLogoPath}
