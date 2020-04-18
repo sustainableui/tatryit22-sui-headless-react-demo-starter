@@ -18,13 +18,16 @@ const Stat = props => {
       <VisibilitySensor onChange={onVisibilitySensorChange}>
         <span className="block text-6xl sm:text-5xl xs:text-5xl">
           {animationFired ? (
-            <CountUp start={props.countStart} end={props.countEnd} duration={props.countDuration} startOnMount={false} />
+            <CountUp
+              start={props.countStart}
+              end={props.countEnd}
+              duration={props.countDuration}
+              startOnMount={false}
+            />
           ) : (
-            <React.Fragment>
-              {props.countStart}
-            </React.Fragment>
+            <React.Fragment>{props.countStart}</React.Fragment>
           )}
-          <span className="text-green">+</span>
+          {props.signVisible && <span className="text-green">+</span>}
         </span>
       </VisibilitySensor>
       <span className="block text-2xl sm:text-xl xs:text-xl max-w-3/4 break-normal text-center">
@@ -38,6 +41,7 @@ Stat.propTypes = {
   countStart: PropTypes.number.isRequired,
   countEnd: PropTypes.number.isRequired,
   countDuration: PropTypes.number.isRequired,
+  signVisible: PropTypes.bool,
   text: PropTypes.string.isRequired,
 };
 
