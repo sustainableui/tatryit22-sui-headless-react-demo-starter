@@ -8,6 +8,7 @@ import Hero from './hero/Hero';
 import Procedure from './procedure/Procedure';
 import React from 'react';
 import Section from '../common/section/Section';
+import Stats from './stats/Stats';
 import aboutServiceBackgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import aboutUsBackgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import callToCustomerBackgroundPath from '../../../assets/images/backgrounds/pattern_elements_green.svg';
@@ -15,6 +16,7 @@ import callToVolunteerBackgroundPath from '../../../assets/images/backgrounds/pa
 import contactBackgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 import heroBackgroundPath from '../../../assets/images/backgrounds/hero.svg';
 import procedureBackgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
+import statsBackgroundPath from '../../../assets/images/backgrounds/pattern_elements_blue_stats.svg';
 
 const MainPage = () => {
   const HeroSection = (
@@ -33,10 +35,19 @@ const MainPage = () => {
       id={SECTION_IDS.O_SLUZBE}
       backgroundPath={aboutServiceBackgroundPath}
       title={TITLES.O_SLUZBE}
-      noBottom
       backgroundPositionClass="bg-bottom"
     >
       <AboutService />
+    </Section>
+  );
+
+  const StatsSection = (
+    <Section
+      backgroundPath={statsBackgroundPath}
+      customLayout
+      noBottom
+    >
+      <Stats />
     </Section>
   );
 
@@ -114,6 +125,7 @@ const MainPage = () => {
     <React.Fragment>
       {HeroSection}
       {AboutSection}
+      {StatsSection}
       {ProcedureSection}
       {CustomerSection}
       {VolunteerSection}

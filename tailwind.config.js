@@ -79,6 +79,9 @@ module.exports = {
         'xs-paragraph': '340px',
         'divider': '100px',
       },
+      height: {
+        '1/4-screen': '25vh',
+      },
       minHeight: {
         '20': '5rem',
       },
