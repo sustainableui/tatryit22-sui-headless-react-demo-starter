@@ -22,6 +22,7 @@ const General = () =>
     <Arrow
       to={ROUTES.TEAM_HASH}
       scroll
+      withDivider
       color="blue"
     />
   </React.Fragment>;

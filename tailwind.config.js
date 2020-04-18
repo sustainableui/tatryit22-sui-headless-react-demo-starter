@@ -79,11 +79,9 @@ module.exports = {
         'xs-paragraph': '340px',
         'divider': '100px',
       },
-      height: {
-        '1/4-screen': '25vh',
-      },
       minHeight: {
         '20': '5rem',
+        '2/5-screen': '40vh',
       },
       maxHeight: {
         '24': '6rem',

@@ -30,17 +30,6 @@ const MainPage = () => {
     </Section>
   );
 
-  const AboutSection = (
-    <Section
-      id={SECTION_IDS.O_SLUZBE}
-      backgroundPath={aboutServiceBackgroundPath}
-      title={TITLES.O_SLUZBE}
-      backgroundPositionClass="bg-bottom"
-    >
-      <AboutService />
-    </Section>
-  );
-
   const StatsSection = (
     <Section
       backgroundPath={statsBackgroundPath}
@@ -48,6 +37,18 @@ const MainPage = () => {
       noBottom
     >
       <Stats />
+    </Section>
+  );
+
+  const AboutSection = (
+    <Section
+      id={SECTION_IDS.O_SLUZBE}
+      backgroundPath={aboutServiceBackgroundPath}
+      title={TITLES.O_SLUZBE}
+      backgroundPositionClass="bg-bottom"
+      noBottom
+    >
+      <AboutService />
     </Section>
   );
 
@@ -124,8 +125,8 @@ const MainPage = () => {
   return (
     <React.Fragment>
       {HeroSection}
-      {AboutSection}
       {StatsSection}
+      {AboutSection}
       {ProcedureSection}
       {CustomerSection}
       {VolunteerSection}

@@ -82,7 +82,7 @@ const Arrow = props => {
 
   return (
     <React.Fragment>
-      <div className={`${OPACITY} ${clicked && props.scroll ? 'opacity-0' : 'opacity-100'} ${props.back ? 'fixed' : 'absolute'} left-0 bottom-0 ${props.scroll ? 'mb-2' : ''} ${getClasses(ELEMENTS.ROOT)} z-30`}>
+      <div className={`${OPACITY} ${clicked && props.scroll ? 'opacity-0' : 'opacity-100'} ${props.back ? 'fixed' : 'absolute'} left-0 bottom-0 ${props.scroll && props.withDivider ? 'mb-2' : ''} ${getClasses(ELEMENTS.ROOT)} z-30`}>
         <Link
           smooth
           to={props.to}
@@ -105,7 +105,7 @@ const Arrow = props => {
           </svg>
         </Link>
       </div>
-      {props.scroll && <GradientDivider />}
+      {props.scroll && props.withDivider && <GradientDivider />}
     </React.Fragment>
   );
 }
@@ -119,6 +119,7 @@ Arrow.propTypes = {
     'green',
     'blue',
   ]),
+  withDivider: PropTypes.bool,
 }
 
 export default Arrow;
