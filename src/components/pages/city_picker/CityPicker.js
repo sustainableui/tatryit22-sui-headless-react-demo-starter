@@ -22,7 +22,6 @@ const CityPickerPage = () => {
             <div className="sm:w-full xs:w-full">
               <City text={CITIES.POPRAD.NAME} />
               <City text={CITIES.PIESTANY.NAME} />
-              <City text={CITIES.TRNAVA.NAME} />
             </div>
           </div>
           <div className="col-span-1 h-full xl:pl-5 lg:pl-5 md:pl-5">

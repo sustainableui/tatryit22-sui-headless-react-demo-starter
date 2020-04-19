@@ -14,9 +14,9 @@ const Stat = props => {
   };
 
   return (
-    <div className="font-rustico-regular text-white flex flex-col justify-center items-center h-full">
+    <div className="text-white flex flex-col justify-center items-center h-full">
       <VisibilitySensor onChange={onVisibilitySensorChange}>
-        <span className="block text-6xl sm:text-5xl xs:text-5xl">
+        <span className="font-futura-bold block text-6xl sm:text-5xl xs:text-5xl">
           {animationFired ? (
             <CountUp
               start={props.countStart}
@@ -30,7 +30,7 @@ const Stat = props => {
           {props.signVisible && <span className="text-green">+</span>}
         </span>
       </VisibilitySensor>
-      <span className="block text-2xl sm:text-xl xs:text-xl max-w-3/4 break-normal text-center">
+      <span className="font-rustico-regular block text-2xl sm:text-xl xs:text-xl max-w-3/4 break-normal text-center">
         {props.text}
       </span>
     </div>
