@@ -25,7 +25,9 @@ const Stat = props => {
               startOnMount={false}
             />
           ) : (
-            <React.Fragment>{props.countStart}</React.Fragment>
+            <React.Fragment>
+              {props.countStart}
+            </React.Fragment>
           )}
           {props.signVisible && <span className="text-green">+</span>}
         </span>
@@ -37,8 +39,13 @@ const Stat = props => {
   );
 };
 
+Stat.defaultProps = {
+  countStart: 1,
+  signVisible: false,
+};
+
 Stat.propTypes = {
-  countStart: PropTypes.number.isRequired,
+  countStart: PropTypes.number,
   countEnd: PropTypes.number.isRequired,
   countDuration: PropTypes.number.isRequired,
   signVisible: PropTypes.bool,

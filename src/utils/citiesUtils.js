@@ -8,6 +8,8 @@ export const getCityInfo = cityName => {
       return CITIES.HUMENNE;
     case CITIES.PIESTANY.NAME:
       return CITIES.PIESTANY;
+    case CITIES.PRESOV.NAME:
+      return CITIES.PRESOV;
     case CITIES.TRNAVA.NAME:
       return CITIES.TRNAVA;
     case CITIES.KYSUCKE_NOVE_MESTO.NAME:
