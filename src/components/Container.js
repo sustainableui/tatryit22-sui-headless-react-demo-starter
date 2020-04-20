@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { ACCEPT_COOKIES_KEY } from '../config';
 import { BUTTONS } from '../config/transitions';
 import CovidChat from './CovidChat';
-import ImageLoader from './imageLoader/ImageLoader';
+import ImageLoader from './ImageLoader';
 import Navigation from './Navigation';
 import OpacityEaseIn from './common/OpacityEaseIn';
 import PropTypes from 'prop-types';

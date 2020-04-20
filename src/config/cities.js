@@ -75,7 +75,7 @@ export const CITIES = {
     COORDINATES: [21.1059, 48.9957],
     MAP_COLOR: "blue",
   },
-  PRESOV: {
+  TRNAVA: {
     ROUTE: "/trnava",
     NAME: "Trnava",
     EMAIL: "trnava@podmesipomahat.sk",

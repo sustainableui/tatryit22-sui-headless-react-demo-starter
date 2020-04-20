@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import Loader from './Loader';
+import Loader from './common/Loader';
 import PropTypes from 'prop-types';
 
 const ImageLoader = props => {

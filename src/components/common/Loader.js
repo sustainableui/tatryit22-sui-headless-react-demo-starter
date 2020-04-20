@@ -14,7 +14,7 @@ Loader.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.object
-  ]).isRequired,
+  ]),
 };
 
 export default Loader;
