@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import { geoBounds, geoMercator, geoPath } from "d3-geo";
 
 import City from "./City";
+import Gradient from "./defs/gradient";
+import Loader from "./Loader";
 import PropTypes from 'prop-types';
 import { ROUTES } from "../../../../config/routes";
+import Shadow from "./defs/shadow";
 import { feature } from "topojson-client";
 import { setDocumentTitleFromRoute } from "../../../../utils/routesUtils";
 
@@ -22,7 +25,7 @@ const width = 1000;
 const height = 350;
 
 const MapComponent = props => {
-  const [geography, setGeography] = useState(null);
+  const [geoFeature, setGeoFeature] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -52,7 +55,7 @@ const MapComponent = props => {
         projection.scale(scale);
         projection.translate([width / 2, height / 2]);
 
-        setGeography(mapFeature);
+        setGeoFeature(mapFeature);
         setIsLoading(false);
       });
     });
@@ -70,23 +73,15 @@ const MapComponent = props => {
         {!isLoading ? (
           <React.Fragment>
             <defs>
-              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop
-                  offset="0%"
-                  style={{ stopColor: "rgb(46, 102, 255)", stopOpacity: 1 }}
-                />
-                <stop
-                  offset="100%"
-                  style={{ stopColor: "rgb(44, 235, 173)", stopOpacity: 1 }}
-                />
-              </linearGradient>
+              <Gradient />
+              <Shadow />
             </defs>
             <g>
               <path
-                d={geoPath().projection(projection)(geography)}
+                d={geoPath().projection(projection)(geoFeature)}
                 fill="url(#grad1)"
-                stroke="#FFFFFF"
                 strokeWidth={0.5}
+                filter="url(#drop-shadow)"
               />
             </g>
             <g>
@@ -103,14 +98,7 @@ const MapComponent = props => {
             </g>
           </React.Fragment>
         ) : (
-          <text
-            className="font-rustico-regular fill-blue text-3xl"
-            textAnchor="middle"
-            x={projection([19.4724, 48.6832])[0] - 22}
-            y={projection([19.4724, 48.6832])[1] + 50}
-          >
-            MaPa sa načítava..
-          </text>
+          <Loader projection={projection} />
         )}
       </svg>
     </React.Fragment>

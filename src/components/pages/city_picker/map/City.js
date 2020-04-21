@@ -13,15 +13,15 @@ const City = props => {
     >
       <text
         textAnchor="middle"
-        className={`font-rustico-regular text-xxs ${props.hovered ? `fill-${props.data.MAP_COLOR}` : 'fill-white'}`}
+        className={`font-rustico-regular text-xxs ${props.hovered ? `fill-gray` : 'fill-white'}`}
         x={props.projection(props.data.COORDINATES)[0] + 13}
         y={props.projection(props.data.COORDINATES)[1] + 30}
       >
         {props.data.NAME}
       </text>
       <MapLocationIconSVG
-        height={20}
-        x={props.projection(props.data.COORDINATES)[0]}
+        height={23}
+        x={props.projection(props.data.COORDINATES)[0] - 7}
         y={props.projection(props.data.COORDINATES)[1]}
       />
     </Link>

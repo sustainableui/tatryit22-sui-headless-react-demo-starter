@@ -13,7 +13,6 @@ export const CITIES = {
     ORDER_FORM_LINK:
       "https://docs.google.com/forms/d/e/1FAIpQLSe9TR7UIR8Lpfmbaeco5KfhFLRGrhNhYgg3WoWSiJDlX9ghUQ/viewform",
     COORDINATES: [20.2274, 49.0587],
-    MAP_COLOR: "blue",
   },
   HUMENNE: {
     ROUTE: "/humenne",
@@ -28,7 +27,6 @@ export const CITIES = {
     },
     ORDER_FORM_LINK: "",
     COORDINATES: [21.8694, 48.9437],
-    MAP_COLOR: "blue",
   },
   PIESTANY: {
     ROUTE: "/piestany",
@@ -43,7 +41,6 @@ export const CITIES = {
     },
     ORDER_FORM_LINK: "",
     COORDINATES: [17.7723, 48.6002],
-    MAP_COLOR: "green",
   },
   KYSUCKE_NOVE_MESTO: {
     ROUTE: "/kysucke-nove-mesto",
@@ -58,7 +55,6 @@ export const CITIES = {
     },
     ORDER_FORM_LINK: "",
     COORDINATES: [18.7771, 49.3055],
-    MAP_COLOR: "green",
   },
   PRESOV: {
     ROUTE: "/presov",
@@ -73,7 +69,6 @@ export const CITIES = {
     },
     ORDER_FORM_LINK: "",
     COORDINATES: [21.1059, 48.9957],
-    MAP_COLOR: "blue",
   },
   TRNAVA: {
     ROUTE: "/trnava",
@@ -88,6 +83,5 @@ export const CITIES = {
     },
     ORDER_FORM_LINK: "",
     COORDINATES: [17.5034, 48.3746],
-    MAP_COLOR: "green",
   },
 };
