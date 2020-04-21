@@ -69,6 +69,7 @@ module.exports = {
         "44": "11rem",
         "53": "13.3rem",
         "72": "18rem",
+        "84": "24rem",
       },
       minWidth: {
         sidebar: "512px",

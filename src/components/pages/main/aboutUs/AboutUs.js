@@ -5,8 +5,8 @@ import React from 'react';
 import Supporters from './supporters/Supporters';
 
 const AboutUs = () =>
-  <div className="grid xl:grid-rows-5 overflow-x-hidden">
-    <div className="xl:row-span-2 xs:pb-16 sm:pb-16 md:pb-16 lg:pb-24 xl:pb-34">
+  <div className="grid xl:grid-rows-4 overflow-x-hidden">
+    <div className="xl:row-span-1 xs:pb-16 sm:pb-16 md:pb-16 lg:pb-24 xl:pb-34">
       <div className="flex flex-col justify-start items-center h-full">
         <p className="font-futura-medium text-lg text-center max-w-xs-paragraph mx-auto">
           Sme študenti vysokých škôl s podporou
