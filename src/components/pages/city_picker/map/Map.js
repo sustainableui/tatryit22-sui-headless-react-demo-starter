@@ -31,8 +31,9 @@ const MapComponent = props => {
   useEffect(() => {
     setDocumentTitleFromRoute(ROUTES.VYBERTE_VASE_MESTO);
 
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
-    fetch(proxyurl + "http://podmesipomahat.sk/static/countries.json").then((response) => {
+    // const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    // fetch(proxyurl + "http://podmesipomahat.sk/static/countries.json").then((response) => {
+    fetch("/static/countries.json").then((response) => {
       if (response.status !== 200) {
         console.error(`There was a problem: ${response.status}`);
         return;
