@@ -18,7 +18,7 @@ const ListComponent = props => {
           <div className="sm:w-full xs:w-full">
             {props.cities.map((city, i) => (i + 1 <= Math.ceil(props.cities.length / 2) && (
               <City
-                key={`city-${i}`}
+                key={`citypicker-list-city-${i}`}
                 index={i}
                 text={city.NAME}
                 hovered={props.hoveredCityIndex === i}
@@ -31,7 +31,7 @@ const ListComponent = props => {
           <div className="sm:w-full xs:w-full">
             {props.cities.map((city, i) => (i + 1 > Math.ceil(props.cities.length / 2) && (
               <City
-                key={`city-${i}`}
+                key={`citypicker-list-city-${i}`}
                 index={i}
                 text={city.NAME}
                 hovered={props.hoveredCityIndex === i}

@@ -44,21 +44,21 @@ const Features = () =>
     <div className="xl:col-span-2 lg:col-span-2 md:hidden sm:hidden xs:hidden" />
     <div className="col-span-2 md:col-span-3 sm:col-span-6 xs:col-span-6 ml-4 mr-4">
       {features.map((feature, i) => feature.classNames[0] && (
-        <Feature key={i} className={feature.classNames[0]}>
+        <Feature key={`aboutservice-feature-${i}-col-1`} className={feature.classNames[0]}>
           {feature.elm}
         </Feature>
       ))}
     </div>
     <div className="col-span-2 md:col-span-3 sm:hidden xs:hidden ml-4 mr-4">
       {features.map((feature, i) => feature.classNames[1] && (
-        <Feature key={i} className={feature.classNames[1]}>
+        <Feature key={`aboutservice-feature-${i}-col-2`} className={feature.classNames[1]}>
           {feature.elm}
         </Feature>
       ))}
     </div>
     <div className="col-span-2 md:hidden sm:hidden xs:hidden ml-4 mr-4">
       {features.map((feature, i) => feature.classNames[2] && (
-        <Feature key={i} className={feature.classNames[2]}>
+        <Feature key={`aboutservice-feature-${i}-col-3`} className={feature.classNames[2]}>
           {feature.elm}
         </Feature>
       ))}

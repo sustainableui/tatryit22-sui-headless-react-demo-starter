@@ -13,13 +13,13 @@ const Supporters = () =>
     </div>
     {SUPPORTERS.map((row, rowIndex) => (
       <div
-        key={`row-${rowIndex}`}
+        key={`aboutus-supporters-row-${rowIndex}`}
         className="row-span-1"
       >
         <div className="xl:flex xl:flex-row xl:items-center xl:justify-center">
           {SUPPORTERS[rowIndex].map((supporter, supporterIndex) => (
             <Logo
-              key={`supporter-${supporterIndex}`}
+              key={`aboutus-supporter-${supporterIndex}`}
               href={supporter[0]}
               alt={supporter[1]}
               logoPath={supporter[2]}

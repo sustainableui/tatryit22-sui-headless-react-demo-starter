@@ -60,7 +60,7 @@ const Procedure = () =>
           <Step
             number={i + 1}
             className={i >= 5 ? 'md:hidden lg:hidden xl:hidden' : ''}
-            key={i}
+            key={`procedure-step-${i}-col-1`}
           >
             {step}
           </Step>
@@ -73,7 +73,7 @@ const Procedure = () =>
           i >= 5 && (
             <Step
               number={i + 1}
-              key={i}
+              key={`procedure-step-${i}-col-2`}
             >
               {step}
             </Step>

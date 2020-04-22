@@ -18,7 +18,7 @@ const ImageLoader = props => {
     <Loader>
       {props.imagePaths.map((imagePath, i) => (
         <img
-          key={i}
+          key={`imageloader-image-${i}`}
           alt=""
           src={imagePath}
           onLoad={() => setLoadedImages([

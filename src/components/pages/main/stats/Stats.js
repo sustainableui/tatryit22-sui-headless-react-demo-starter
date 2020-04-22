@@ -7,7 +7,7 @@ const Stats = () => (
     <div className="col-span-1 md:hidden sm:hidden xs:hidden" />
     {stats.map((stat, i) => (
       <div
-        key={`stat-${i}`}
+        key={`stats-stat-${i}`}
         className="xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 xs:pb-10"
       >
         <Stat
