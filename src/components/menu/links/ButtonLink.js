@@ -38,8 +38,7 @@ const ButtonLink = props => {
       smooth
       to={props.to}
       onClick={handleClick}
-      className={`${props.menuInSidebar ? 'leading-24' : 'sm:hidden xs:hidden'} ${props.isActive ? 'pointer-events-none' : '' }`}
-      style={props.menuInSidebar ? { display: 'contents' } : {}}
+      className={`${props.menuInSidebar ? 'leading-24 w-full h-24' : 'sm:hidden xs:hidden'} ${props.isActive ? 'pointer-events-none' : '' }`}
     >
       <button className={`${BUTTONS} ${getClasses()} ${props.menuInSidebar ? 'max-h-24' : ''} hover:bg-transparent focus:outline-none h-full w-full`}>
         <span className="inline-block max-w-3/4 break-normal">

@@ -12,7 +12,10 @@ const Supporters = () =>
       </div>
     </div>
     {SUPPORTERS.map((row, rowIndex) => (
-      <div className="row-span-1">
+      <div
+        key={`row-${rowIndex}`}
+        className="row-span-1"
+      >
         <div className="xl:flex xl:flex-row xl:items-center xl:justify-center">
           {SUPPORTERS[rowIndex].map((supporter, supporterIndex) => (
             <Logo
