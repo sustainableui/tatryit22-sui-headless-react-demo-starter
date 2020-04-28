@@ -1,5 +1,5 @@
 export const stats = [{
-  countEnd: 70,
+  countEnd: 80,
   signVisible: true,
   text: "krát sme Pomohli",
   duration: 4,
