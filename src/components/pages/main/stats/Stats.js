@@ -1,6 +1,6 @@
 import React from 'react';
 import Stat from './Stat';
-import { stats } from '../../../../config/stats';
+import stats from '../../../../config/stats.json';
 
 const Stats = () => (
   <div className="xl:grid xl:grid-cols-5 lg:grid lg:grid-cols-5 md:grid md:grid-cols-3 sm:grid sm:grid-cols-3 min-h-2/5-screen xs:h-auto pt-16 pb-16 xs:pb-6 sm:pb-10 sm:pt-10">
