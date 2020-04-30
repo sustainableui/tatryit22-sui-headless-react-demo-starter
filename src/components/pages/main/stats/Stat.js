@@ -40,13 +40,14 @@ const Stat = props => {
 };
 
 Stat.defaultProps = {
-  countStart: 1,
+  countStart: 0,
+  countEnd: 0,
   signVisible: false,
 };
 
 Stat.propTypes = {
   countStart: PropTypes.number,
-  countEnd: PropTypes.number.isRequired,
+  countEnd: PropTypes.number,
   countDuration: PropTypes.number.isRequired,
   signVisible: PropTypes.bool,
   text: PropTypes.string.isRequired,
