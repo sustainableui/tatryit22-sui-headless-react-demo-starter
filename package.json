@@ -1,11 +1,8 @@
 {
-  "name": "podme-si-pomahat",
+  "name": "@sampittko/podme-si-pomahat",
   "version": "1.3.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
     "d3-geo": "^1.12.0",
     "react": "^16.13.0",
     "react-cookie-consent": "^3.0.0",
@@ -30,7 +27,7 @@
     "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "@sampittko/podme-si-pomahat"
   },
   "browserslist": {
     "production": [
