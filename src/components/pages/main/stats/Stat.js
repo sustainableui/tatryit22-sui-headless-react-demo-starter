@@ -33,7 +33,13 @@ const Stat = props => {
         </span>
       </VisibilitySensor>
       <span className="font-rustico-regular block text-2xl sm:text-xl xs:text-xl max-w-3/4 break-normal text-center">
-        {props.text}
+        {props.href ? (
+          <a className="hover:text-gray" href={props.href} rel="noreferrer noopener">
+            {props.text}
+          </a>
+        ) : (
+          <>{props.text}</>
+        )}
       </span>
     </div>
   );
@@ -43,6 +49,7 @@ Stat.defaultProps = {
   countStart: 0,
   countEnd: 0,
   signVisible: false,
+  href: ''
 };
 
 Stat.propTypes = {
@@ -51,6 +58,7 @@ Stat.propTypes = {
   countDuration: PropTypes.number.isRequired,
   signVisible: PropTypes.bool,
   text: PropTypes.string.isRequired,
+  href: PropTypes.string,
 };
 
 export default Stat;

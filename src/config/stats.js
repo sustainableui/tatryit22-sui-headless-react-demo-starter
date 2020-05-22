@@ -1,3 +1,5 @@
+import { ROUTES } from "./routes";
+
 export const stats = [
   {
     signVisible: true,
@@ -9,6 +11,7 @@ export const stats = [
     duration: 3
   },
   {
+    href: ROUTES.VYBERTE_VASE_MESTO,
     text: "Pokryté mestá",
     duration: 3
   }

@@ -35,6 +35,7 @@ const Stats = () => {
             countEnd={jsonStats ? jsonStats[i] : stat.countStart}
             text={stat.text}
             signVisible={stat.signVisible}
+            href={stat.href}
           />
         </div>
       ))}
