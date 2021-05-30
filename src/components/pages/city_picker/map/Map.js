@@ -4,7 +4,7 @@ import { geoBounds, geoMercator, geoPath } from "d3-geo";
 import City from "./City";
 import Gradient from "./defs/gradient";
 import Loader from "./Loader";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { ROUTES } from "../../../../config/routes";
 import Shadow from "./defs/shadow";
 import { feature } from "topojson-client";
@@ -13,18 +13,18 @@ import { setDocumentTitleFromRoute } from "../../../../utils/routesUtils";
 const projection = geoMercator();
 
 const slovakia = {
-  arcs: [[-650,-1256,1256,-955,1257]],
+  arcs: [[-650, -1256, 1256, -955, 1257]],
   type: "Polygon",
   properties: {
-    name:"Slovakia"
+    name: "Slovakia",
   },
-  id:"703"
+  id: "703",
 };
 
 const width = 1000;
 const height = 350;
 
-const MapComponent = props => {
+const MapComponent = (props) => {
   const [geoFeature, setGeoFeature] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -33,7 +33,7 @@ const MapComponent = props => {
 
     // const proxyurl = "https://cors-anywhere.herokuapp.com/";
     // fetch(proxyurl + "http://podmesipomahat.sk/static/json/countries.json").then((response) => {
-    fetch("/static/json/countries.json").then((response) => {
+    fetch(process.env.PUBLIC_URL + "/data/countries.json").then((response) => {
       if (response.status !== 200) {
         console.error(`There was a problem: ${response.status}`);
         return;
@@ -110,6 +110,6 @@ MapComponent.propTypes = {
   cities: PropTypes.arrayOf(PropTypes.object).isRequired,
   onMouse: PropTypes.func.isRequired,
   hoveredCityIndex: PropTypes.number.isRequired,
-}
+};
 
 export default MapComponent;
