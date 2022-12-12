@@ -5,8 +5,6 @@ import PropTypes from "prop-types";
 
 import CityPickerMapLocation from "./CityPickerMapLocation";
 import CityPickerMapLoader from "./CityPickerMapLoader";
-import Gradient from "./defs/gradient";
-import Shadow from "./defs/shadow";
 
 const projection = geoMercator();
 
@@ -27,8 +25,6 @@ const MapComponent = (props) => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    // const proxyurl = "https://cors-anywhere.herokuapp.com/";
-    // fetch(proxyurl + "http://podmesipomahat.sk/static/json/countries.json").then((response) => {
     fetch(process.env.PUBLIC_URL + "/data/countries.json").then((response) => {
       if (response.status !== 200) {
         console.error(`There was a problem: ${response.status}`);
@@ -69,8 +65,20 @@ const MapComponent = (props) => {
         {!isLoading ? (
           <React.Fragment>
             <defs>
-              <Gradient />
-              <Shadow />
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style={{ stopColor: "rgb(46, 102, 255)", stopOpacity: 1 }} />
+                <stop offset="100%" style={{ stopColor: "rgb(44, 235, 173)", stopOpacity: 1 }} />
+              </linearGradient>
+              <filter id="drop-shadow" height="130%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="6" />
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.30" />
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
             </defs>
             <g>
               <path

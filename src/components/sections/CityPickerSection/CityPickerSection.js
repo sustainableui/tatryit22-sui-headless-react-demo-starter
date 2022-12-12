@@ -10,7 +10,7 @@ const INITIAL_HIGHLIGHTED_CITY_INDEX = -1;
 const CityPickerSection = () => {
   const [highlightedCityIndex, setHighlightedCityIndex] = useState(INITIAL_HIGHLIGHTED_CITY_INDEX);
 
-  const handleMouse = (isHovered, cityIndex) => {
+  const handleCityHighlight = (isHovered, cityIndex) => {
     if (isHovered) {
       setHighlightedCityIndex(cityIndex);
     } else {
@@ -20,8 +20,8 @@ const CityPickerSection = () => {
 
   return (
     <Section title="Vyberte vaše mesto">
-      <Map cities={CITIES} onMouse={handleMouse} hoveredCityIndex={highlightedCityIndex} />
-      <List cities={CITIES} onMouse={handleMouse} hoveredCityIndex={highlightedCityIndex} />
+      <Map cities={CITIES} onMouse={handleCityHighlight} hoveredCityIndex={highlightedCityIndex} />
+      <List cities={CITIES} onMouse={handleCityHighlight} hoveredCityIndex={highlightedCityIndex} />
     </Section>
   );
 };
