@@ -30,14 +30,7 @@ app.get('/api/grid-carbon-intensity', async (req, res) => {
   const closestAzureRegion = getClosestAzureRegion({ lat, lon }, AZURE_REGIONS);
 
   const gridIntensityResponse = await fetch(
-    `${CARBON_AWARE_API}/emissions/bylocation?location=${closestAzureRegion}`,
-    {
-      method: 'GET',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }
+    `${CARBON_AWARE_API}/emissions/bylocation?location=${closestAzureRegion}`
   );
 
   if (gridIntensityResponse.status === 200) {
@@ -49,7 +42,7 @@ app.get('/api/grid-carbon-intensity', async (req, res) => {
 
     res.status(200).json({ value: value[0].rating, measurementRegion: closestAzureRegion });
   } else {
-    console.error(`lat ${lat}; lon ${lon};`);
+    console.error(`lat ${lat}; lon ${lon}; ${gridIntensityResponse.statusText}`);
 
     res.status(200).json({ value: null, measurementRegion: null });
   }
