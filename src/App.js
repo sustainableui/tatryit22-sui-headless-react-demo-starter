@@ -9,17 +9,13 @@ const App = () => {
   return (
     <Container>
       <Switch>
-        <Route
-          exact
-          path={ROUTES.DOMOV}
-          component={CityPickerPage}
-        />
+        <Route exact path={ROUTES.DOMOV} component={CityPickerPage} />
         <Route path={ROUTES.NOT_FOUND}>
-          <Redirect to={ROUTES.DOMOV}/>
+          <Redirect to={ROUTES.DOMOV} />
         </Route>
       </Switch>
     </Container>
   );
-}
+};
 
 export default App;
