@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const Loader = props =>
+const Loader = (props) => (
   <text
     className="font-rustico-regular fill-blue text-3xl"
     textAnchor="middle"
@@ -9,10 +9,11 @@ const Loader = props =>
     y={props.projection([19.4724, 48.6832])[1] + 50}
   >
     MaPa sa načítava..
-  </text>;
+  </text>
+);
 
 Loader.propTypes = {
-  projection: PropTypes.func.isRequired,
+  projection: PropTypes.func.isRequired
 };
 
 export default Loader;

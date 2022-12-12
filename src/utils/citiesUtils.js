@@ -1,6 +1,6 @@
-import { CITIES } from "../config/cities"
+import { CITIES } from '../config/cities';
 
-export const getCityInfo = cityName => {
+export const getCityInfo = (cityName) => {
   switch (cityName) {
     case CITIES.POPRAD.NAME:
       return CITIES.POPRAD;
@@ -15,6 +15,6 @@ export const getCityInfo = cityName => {
     case CITIES.KYSUCKE_NOVE_MESTO.NAME:
       return CITIES.KYSUCKE_NOVE_MESTO;
     default:
-      return "";
+      return '';
   }
-}
+};

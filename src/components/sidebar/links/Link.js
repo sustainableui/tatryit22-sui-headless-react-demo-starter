@@ -3,7 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const LinkComponent = props =>
+const LinkComponent = (props) => (
   <div className="flex flex-col justify-center items-center">
     <Link
       smooth
@@ -13,12 +13,13 @@ const LinkComponent = props =>
     >
       {props.text}
     </Link>
-  </div>;
+  </div>
+);
 
 LinkComponent.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  to: PropTypes.string.isRequired,
-}
+  to: PropTypes.string.isRequired
+};
 
 export default LinkComponent;

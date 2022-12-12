@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react";
-import { geoBounds, geoMercator, geoPath } from "d3-geo";
+import React, { useEffect, useState } from 'react';
+import { geoBounds, geoMercator, geoPath } from 'd3-geo';
 
-import City from "./City";
-import Gradient from "./defs/gradient";
-import Loader from "./Loader";
-import PropTypes from "prop-types";
-import Shadow from "./defs/shadow";
-import { feature } from "topojson-client";
+import City from './City';
+import Gradient from './defs/gradient';
+import Loader from './Loader';
+import PropTypes from 'prop-types';
+import Shadow from './defs/shadow';
+import { feature } from 'topojson-client';
 
 const projection = geoMercator();
 
 const slovakia = {
   arcs: [[-650, -1256, 1256, -955, 1257]],
-  type: "Polygon",
+  type: 'Polygon',
   properties: {
-    name: "Slovakia",
+    name: 'Slovakia'
   },
-  id: "703",
+  id: '703'
 };
 
 const width = 1000;
@@ -29,7 +29,7 @@ const MapComponent = (props) => {
   useEffect(() => {
     // const proxyurl = "https://cors-anywhere.herokuapp.com/";
     // fetch(proxyurl + "http://podmesipomahat.sk/static/json/countries.json").then((response) => {
-    fetch(process.env.PUBLIC_URL + "/data/countries.json").then((response) => {
+    fetch(process.env.PUBLIC_URL + '/data/countries.json').then((response) => {
       if (response.status !== 200) {
         console.error(`There was a problem: ${response.status}`);
         return;
@@ -47,7 +47,7 @@ const MapComponent = (props) => {
         mapBounds = geoBounds(mapFeature);
         projection.center([
           (mapBounds[1][0] + mapBounds[0][0]) / 2,
-          (mapBounds[1][1] + mapBounds[0][1]) / 2,
+          (mapBounds[1][1] + mapBounds[0][1]) / 2
         ]);
         projection.scale(scale);
         projection.translate([width / 2, height / 2]);
@@ -105,7 +105,7 @@ const MapComponent = (props) => {
 MapComponent.propTypes = {
   cities: PropTypes.arrayOf(PropTypes.object).isRequired,
   onMouse: PropTypes.func.isRequired,
-  hoveredCityIndex: PropTypes.number.isRequired,
+  hoveredCityIndex: PropTypes.number.isRequired
 };
 
 export default MapComponent;

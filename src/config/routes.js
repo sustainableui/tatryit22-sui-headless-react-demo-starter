@@ -1,4 +1,4 @@
-import { CITIES } from "./cities"
+import { CITIES } from './cities';
 
 export const ROUTES = {
   DOMOV: '/',
@@ -10,7 +10,7 @@ export const ROUTES = {
     CITIES.POPRAD.ROUTE,
     CITIES.HUMENNE.ROUTE,
     CITIES.PIESTANY.ROUTE,
-    CITIES.KYSUCKE_NOVE_MESTO.ROUTE,
+    CITIES.KYSUCKE_NOVE_MESTO.ROUTE
     // CITIES.PRESOV.ROUTE,
     // CITIES.TRNAVA.ROUTE,
   ],
@@ -19,7 +19,7 @@ export const ROUTES = {
     `/potrebujem-pomoc${CITIES.POPRAD.ROUTE}`,
     `/potrebujem-pomoc${CITIES.HUMENNE.ROUTE}`,
     `/potrebujem-pomoc${CITIES.PIESTANY.ROUTE}`,
-    `/potrebujem-pomoc${CITIES.KYSUCKE_NOVE_MESTO.ROUTE}`,
+    `/potrebujem-pomoc${CITIES.KYSUCKE_NOVE_MESTO.ROUTE}`
     // `/potrebujem-pomoc${CITIES.PRESOV.ROUTE}`,
     // `/potrebujem-pomoc${CITIES.TRNAVA.ROUTE}`,
   ],
@@ -33,16 +33,16 @@ export const ROUTES = {
   O_NAS_HASH: '/#o-nas',
   TEAM_HASH: `/o-nas#team`,
   PODME_SA_ROZPRAVAT: '/o-nas#podme-sa-rozpravat',
-  NOT_FOUND: '*',
-}
+  NOT_FOUND: '*'
+};
 
 export const HASHES = {
   VSEOBECNE: '#vseobecne',
-  TEAM: "#team",
-  PODME_SA_ROZPRAVAT: '#podme-sa-rozpravat',
-}
+  TEAM: '#team',
+  PODME_SA_ROZPRAVAT: '#podme-sa-rozpravat'
+};
 
-const getSectionIdFromHashRoute = hashRoute => hashRoute.replace('#', '').replace('/', '');
+const getSectionIdFromHashRoute = (hashRoute) => hashRoute.replace('#', '').replace('/', '');
 
 export const SECTION_IDS = {
   VITAJTE: getSectionIdFromHashRoute(ROUTES.VITAJTE),
@@ -54,14 +54,14 @@ export const SECTION_IDS = {
   O_NAS_HASH: getSectionIdFromHashRoute(ROUTES.O_NAS_HASH),
   O_NAS: getSectionIdFromHashRoute(HASHES.VSEOBECNE),
   TEAM: getSectionIdFromHashRoute(HASHES.TEAM),
-  PODME_SA_ROZPRAVAT: getSectionIdFromHashRoute(HASHES.PODME_SA_ROZPRAVAT),
-}
+  PODME_SA_ROZPRAVAT: getSectionIdFromHashRoute(HASHES.PODME_SA_ROZPRAVAT)
+};
 
 export const TITLES = {
-  O_SLUZBE: "O službe",
-  POSTUP: "PostuP",
-  POTREBUJEM_POMOC: "Potrebujem Pomoc",
-  CHCEM_POMOCT: "Chcem Pomôcť",
-  KONTAKT: "Kontakt",
-  O_NAS: "O nás",
-}
+  O_SLUZBE: 'O službe',
+  POSTUP: 'PostuP',
+  POTREBUJEM_POMOC: 'Potrebujem Pomoc',
+  CHCEM_POMOCT: 'Chcem Pomôcť',
+  KONTAKT: 'Kontakt',
+  O_NAS: 'O nás'
+};

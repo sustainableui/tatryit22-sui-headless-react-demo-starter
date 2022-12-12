@@ -17,7 +17,10 @@
     "build": "npm run build:css && react-scripts build",
     "postbuild": "rimraf build/**/*.map",
     "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
-    "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css"
+    "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "eslintConfig": {
     "extends": "@sustainableui/tatryit22-sui-headless-react-demo-starter"

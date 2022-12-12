@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { getRouteFromCity } from '../../../../utils/routesUtils';
 
-const City = props => {
+const City = (props) => {
   return (
     <Link
       to={getRouteFromCity(props.data.NAME)}
@@ -33,7 +33,7 @@ City.propTypes = {
   data: PropTypes.object.isRequired,
   hovered: PropTypes.bool.isRequired,
   index: PropTypes.number.isRequired,
-  onMouse: PropTypes.func.isRequired,
+  onMouse: PropTypes.func.isRequired
 };
 
 export default City;

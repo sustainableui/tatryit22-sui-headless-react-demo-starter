@@ -13,4 +13,4 @@ const shadow = () => (
   </filter>
 );
 
-export default shadow
+export default shadow;

@@ -1,43 +1,43 @@
 @font-face {
-    font-family: 'Futura Medium';
-    src: url('./assets/fonts/futura_medium.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Futura Medium';
+  src: url('./assets/fonts/futura_medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Futura Bold';
-    src: url('./assets/fonts/futura_bold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Futura Bold';
+  src: url('./assets/fonts/futura_bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Rustico V2 Regular';
-    src: url('./assets/fonts/rustico_v2_regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Rustico V2 Regular';
+  src: url('./assets/fonts/rustico_v2_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body::-webkit-scrollbar {
-    width: 1.1rem;
+  width: 1.1rem;
 }
 
 body::-webkit-scrollbar-track {
-    -webkit-box-shadow: 0 0 0 0;
-    box-shadow: 0 0 0 0;
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #2cebad;
-    outline: 0;
+  background-color: #2cebad;
+  outline: 0;
 }
 
 .monochromatic {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.65;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.65;
 }
