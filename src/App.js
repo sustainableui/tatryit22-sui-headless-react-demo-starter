@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
 import AboutUsPage from './components/pages/about_us';
@@ -7,29 +7,9 @@ import Container from './components/Container';
 import MainPage from './components/pages/main';
 import NeedHelpPage from './components/pages/need_help/NeedHelp';
 import { ROUTES } from './config/routes';
-import ReactGA from 'react-ga';
 import WannaHelpPage from './components/pages/wanna_help/WannaHelp';
-import { configureAnchors } from 'react-update-url-on-scroll'
-import history from './history';
-import { setDocumentTitleFromRoute } from './utils/routesUtils';
 
 const App = () => {
-  useEffect(() => {
-    configureAnchors({
-      keepLastAnchorHash: true,
-      offset: 70,
-      scrollBehaviour: 'auto',
-      onSectionEnter: newState => {
-        const newRoute = `${history.location.pathname}#${newState.hash}`;
-        history.replace(newRoute);
-        setDocumentTitleFromRoute(newRoute);
-      },  
-    })
-
-    ReactGA.initialize('UA-153646200-1');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-
   return (
     <Container>
       <Switch>
