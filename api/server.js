@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
 const getClosestAzureRegion = require('./utils/getClosestAzureRegion');
@@ -8,6 +9,8 @@ const CARBON_AWARE_API = 'https://carbon-aware-api.azurewebsites.net';
 const PORT = 3001;
 
 const app = express();
+
+app.use(cors({ origin: 'http://localhost:3000' }));
 
 app.listen(PORT, () => {
   console.log(`API running on port ${PORT}`);
@@ -27,7 +30,14 @@ app.get('/api/grid-carbon-intensity', async (req, res) => {
   const closestAzureRegion = getClosestAzureRegion({ lat, lon }, AZURE_REGIONS);
 
   const gridIntensityResponse = await fetch(
-    `${CARBON_AWARE_API}/emissions/bylocation?location=${closestAzureRegion}`
+    `${CARBON_AWARE_API}/emissions/bylocation?location=${closestAzureRegion}`,
+    {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }
   );
 
   if (gridIntensityResponse.status === 200) {

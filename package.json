@@ -2,6 +2,7 @@
   "name": "@sustainableui/tatryit22-sui-headless-react-demo-starter",
   "version": "0.0.0-unversioned",
   "private": true,
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@sustainableui/sui-headless-react": "^1.2.2",
     "@types/node": "^18.11.13",
@@ -18,14 +19,18 @@
     "typescript": "^4.8.4"
   },
   "scripts": {
-    "start": "npm run watch:css && react-app-rewired start",
+    "start:client": "npm run watch:css && react-app-rewired start",
+    "start:server": "cd api && node server",
     "build": "npm run build:css && react-app-rewired build",
     "postbuild": "rimraf build/**/*.map",
     "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
     "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "install:client": "npm i",
+    "install:server": "cd api && npm i",
+    "install": "npm run install:client && npm run install:server"
   },
   "eslintConfig": {
     "extends": "@sustainableui/tatryit22-sui-headless-react-demo-starter"
