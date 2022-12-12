@@ -13,8 +13,6 @@ const root = createRoot(container);
 
 root.render(
   <Router history={history}>
-    <SuiProvider api="/api" LoaderComponent={() => null} SwitchComponent={() => null}>
-      <App />
-    </SuiProvider>
+    <App />
   </Router>
 );
