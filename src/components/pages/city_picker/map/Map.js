@@ -5,10 +5,8 @@ import City from "./City";
 import Gradient from "./defs/gradient";
 import Loader from "./Loader";
 import PropTypes from "prop-types";
-import { ROUTES } from "../../../../config/routes";
 import Shadow from "./defs/shadow";
 import { feature } from "topojson-client";
-import { setDocumentTitleFromRoute } from "../../../../utils/routesUtils";
 
 const projection = geoMercator();
 
@@ -29,8 +27,6 @@ const MapComponent = (props) => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    setDocumentTitleFromRoute(ROUTES.VYBERTE_VASE_MESTO);
-
     // const proxyurl = "https://cors-anywhere.herokuapp.com/";
     // fetch(proxyurl + "http://podmesipomahat.sk/static/json/countries.json").then((response) => {
     fetch(process.env.PUBLIC_URL + "/data/countries.json").then((response) => {

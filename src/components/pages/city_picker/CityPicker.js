@@ -1,13 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 
-import Arrow from '../common/Arrow';
 import { CITIES } from '../../../config/cities';
 import List from './list/List';
 import Map from './map/Map';
-import { ROUTES } from '../../../config/routes';
 import Section from '../common/section/Section';
 import backgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
-import { setDocumentTitleFromRoute } from '../../../utils/routesUtils';
 
 const cities = [
   CITIES.HUMENNE,
@@ -20,10 +17,6 @@ export const NONE = -1;
 
 const CityPickerPage = () => {
   const [hoveredCityIndex, setHoveredCityIndex] = useState(NONE);
-
-  useEffect(() => {
-    setDocumentTitleFromRoute(ROUTES.VYBERTE_VASE_MESTO);
-  }, []);
 
   const handleMouse = (hovered, index) => {
     if (hovered) {
@@ -49,11 +42,6 @@ const CityPickerPage = () => {
         cities={cities}
         onMouse={handleMouse}
         hoveredCityIndex={hoveredCityIndex}
-      />
-      <Arrow
-        to={ROUTES.POTREBUJEM_POMOC_HASH}
-        back
-        color="green"
       />
     </Section>
   );

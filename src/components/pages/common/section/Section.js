@@ -1,7 +1,6 @@
 import Headline from './Headline';
 import PropTypes from 'prop-types';
 import React from 'react';
-import ScrollableSection from 'react-update-url-on-scroll';
 
 const Section = props => {
   const defaultLayout = !props.customLayout ? (
@@ -17,7 +16,6 @@ const Section = props => {
 
   return (
     <div
-      id={props.id ? props.id : ''}
       className={`relative w-screen bg-scroll bg-no-repeat bg-cover ${props.backgroundPositionClass ? props.backgroundPositionClass : 'bg-center'} ${props.fullscreen ? 'min-h-screen' : ''}`}
       style={{ backgroundImage: `url(${props.backgroundPath})`}}
     >
@@ -27,15 +25,7 @@ const Section = props => {
         </React.Fragment>
       ) : (
         <React.Fragment>
-          {props.id ? (
-            <ScrollableSection hash={props.id}>
-              {defaultLayout}
-            </ScrollableSection>
-          ) : (
-            <React.Fragment>
-              {defaultLayout}
-            </React.Fragment>
-          )}
+          {defaultLayout}
         </React.Fragment>
       )}
     </div>
@@ -51,7 +41,6 @@ Section.propTypes = {
     PropTypes.object,
     PropTypes.array,
   ]).isRequired,
-  id: PropTypes.string,
   noBottom: PropTypes.bool,
   backgroundPositionClass: PropTypes.oneOf([
     'bg-top',
