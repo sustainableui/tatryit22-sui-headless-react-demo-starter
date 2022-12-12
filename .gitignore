@@ -4,3 +4,4 @@ package-lock.json
 debug.log
 .idea
 /**/.DS_Store
+/src/react-app-env.d.ts
