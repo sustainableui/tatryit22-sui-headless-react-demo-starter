@@ -84,7 +84,7 @@ const MapComponent = (props) => {
               {props.cities.map((city, i) => (
                 <CityPickerMapLocation
                   index={i}
-                  key={`citypicker-map-city-${i}`}
+                  key={city.NAME}
                   projection={projection}
                   data={city}
                   hovered={props.hoveredCityIndex === i}
