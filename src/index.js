@@ -1,19 +1,17 @@
 import './index.css';
 import './assets/css/main.css';
 
-import * as serviceWorker from './serviceWorker';
-
-import App from './App';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Router } from "react-router-dom";
+import {createRoot} from "react-dom/client";
+import {Router} from "react-router-dom";
+import App from './App';
 import history from './history';
 
-ReactDOM.render(
-  <Router history={history}>
-    <App />
-  </Router>,
-  document.getElementById('root')
-);
+const container = document.getElementById('root')
+const root = createRoot(container);
 
-serviceWorker.unregister();
+root.render(
+    <Router history={history}>
+        <App/>
+    </Router>
+)
