@@ -1,1 +1,1 @@
-export { default } from "./CityPicker.js"
+export { default } from "./CityPicker"

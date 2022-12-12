@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-const Loader = (props) => (
+const CityPickerMapLoader = (props) => (
   <text
     className="font-rustico-regular fill-blue text-3xl"
     textAnchor="middle"
@@ -12,8 +12,8 @@ const Loader = (props) => (
   </text>
 );
 
-Loader.propTypes = {
+CityPickerMapLoader.propTypes = {
   projection: PropTypes.func.isRequired
 };
 
-export default Loader;
+export default CityPickerMapLoader;

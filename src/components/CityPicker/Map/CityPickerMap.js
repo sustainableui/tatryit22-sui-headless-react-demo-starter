@@ -3,8 +3,8 @@ import { geoBounds, geoMercator, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import PropTypes from "prop-types";
 
-import City from "./City";
-import Loader from "./Loader";
+import CityPickerMapLocation from "./CityPickerMapLocation";
+import CityPickerMapLoader from "./CityPickerMapLoader";
 import Gradient from "./defs/gradient";
 import Shadow from "./defs/shadow";
 
@@ -82,7 +82,7 @@ const MapComponent = (props) => {
             </g>
             <g>
               {props.cities.map((city, i) => (
-                <City
+                <CityPickerMapLocation
                   index={i}
                   key={`citypicker-map-city-${i}`}
                   projection={projection}
@@ -94,7 +94,7 @@ const MapComponent = (props) => {
             </g>
           </React.Fragment>
         ) : (
-          <Loader projection={projection} />
+          <CityPickerMapLoader projection={projection} />
         )}
       </svg>
     </React.Fragment>

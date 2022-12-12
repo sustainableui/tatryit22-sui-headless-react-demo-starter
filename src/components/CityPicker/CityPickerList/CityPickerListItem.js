@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import React from "react";
 
-const City = (props) => (
+const CityPickerListItem = (props) => (
   <Link to="#" style={props.hidden ? { visibility: "hidden" } : {}}>
     <div
       onMouseEnter={() => props.onMouse(true, props.index)}
@@ -27,11 +27,11 @@ const City = (props) => (
   </Link>
 );
 
-City.propTypes = {
+CityPickerListItem.propTypes = {
   text: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
   hovered: PropTypes.bool.isRequired,
   onMouse: PropTypes.func.isRequired
 };
 
-export default City;
+export default CityPickerListItem;

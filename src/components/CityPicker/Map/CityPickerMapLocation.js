@@ -3,7 +3,7 @@ import { ReactComponent as MapLocationIconSVG } from "../../../assets/icons/map_
 import PropTypes from "prop-types";
 import React from "react";
 
-const City = (props) => {
+const CityPickerMapLocation = (props) => {
   return (
     <Link
       to="#"
@@ -27,7 +27,7 @@ const City = (props) => {
   );
 };
 
-City.propTypes = {
+CityPickerMapLocation.propTypes = {
   projection: PropTypes.func.isRequired,
   data: PropTypes.object.isRequired,
   hovered: PropTypes.bool.isRequired,
@@ -35,4 +35,4 @@ City.propTypes = {
   onMouse: PropTypes.func.isRequired
 };
 
-export default City;
+export default CityPickerMapLocation;

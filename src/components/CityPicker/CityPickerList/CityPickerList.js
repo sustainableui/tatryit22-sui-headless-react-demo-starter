@@ -1,9 +1,9 @@
 import React from "react";
 
-import City from "./City";
+import CityPickerListItem from "./CityPickerListItem";
 import PropTypes from "prop-types";
 
-const ListComponent = (props) => {
+const CityPickerList = (props) => {
   return (
     <div className="sm:-mt-8 xs:-mt-8">
       <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-4 h-full">
@@ -13,7 +13,7 @@ const ListComponent = (props) => {
             {props.cities.map(
               (city, i) =>
                 i + 1 <= Math.ceil(props.cities.length / 2) && (
-                  <City
+                  <CityPickerListItem
                     key={city.NAME}
                     index={i}
                     text={city.NAME}
@@ -29,7 +29,7 @@ const ListComponent = (props) => {
             {props.cities.map(
               (city, i) =>
                 i + 1 > Math.ceil(props.cities.length / 2) && (
-                  <City
+                  <CityPickerListItem
                     key={city.NAME}
                     index={i}
                     text={city.NAME}
@@ -46,10 +46,10 @@ const ListComponent = (props) => {
   );
 };
 
-ListComponent.propTypes = {
+CityPickerList.propTypes = {
   cities: PropTypes.arrayOf(PropTypes.object).isRequired,
   onMouse: PropTypes.func.isRequired,
   hoveredCityIndex: PropTypes.number.isRequired
 };
 
-export default ListComponent;
+export default CityPickerList;
