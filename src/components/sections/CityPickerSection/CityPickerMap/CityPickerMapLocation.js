@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ReactComponent as MapLocationIconSVG } from "../../../assets/icons/map_location.svg";
+import { ReactComponent as MapLocationIconSVG } from "../../../../assets/icons/map_location.svg";
 import PropTypes from "prop-types";
 import React from "react";
 

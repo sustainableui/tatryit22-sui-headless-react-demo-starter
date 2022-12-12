@@ -1,12 +1,11 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
-
-import CityPicker from "./components/CityPicker";
+import IndexPage from './pages';
 
 const App = () => {
   return (
     <Switch>
-      <Route exact path="/" component={CityPicker} />
+      <Route exact path="/" component={IndexPage} />
       <Route path="*">
         <Redirect to="/" />
       </Route>

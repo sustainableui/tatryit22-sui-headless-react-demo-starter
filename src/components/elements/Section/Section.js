@@ -2,6 +2,8 @@ import Headline from "./Headline";
 import PropTypes from "prop-types";
 import React from "react";
 
+import backgroundPath from "../../../assets/images/backgrounds/pattern_elements.svg";
+
 const Section = (props) => {
   const defaultLayout = !props.customLayout ? (
     <div className="grid grid-rows-8">
@@ -23,7 +25,7 @@ const Section = (props) => {
       className={`relative bg-scroll bg-no-repeat bg-cover ${
         props.backgroundPositionClass ? props.backgroundPositionClass : "bg-center"
       } ${props.fullscreen ? "min-h-screen" : ""}`}
-      style={{ backgroundImage: `url(${props.backgroundPath})` }}
+      style={{ backgroundImage: `url(${backgroundPath})` }}
     >
       {props.customLayout ? (
         <React.Fragment>{props.children}</React.Fragment>
@@ -38,10 +40,13 @@ Section.propTypes = {
   customLayout: PropTypes.bool,
   fullscreen: PropTypes.bool,
   title: PropTypes.string,
-  backgroundPath: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
   noBottom: PropTypes.bool,
   backgroundPositionClass: PropTypes.oneOf(["bg-top", "bg-bottom"])
 };
+
+Section.defaultProps = {
+  fullscreen: true,
+}
 
 export default Section;
