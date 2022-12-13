@@ -13,7 +13,7 @@ const app = express();
 app.use(cors({ origin: 'http://localhost:3000' }));
 
 app.listen(PORT, () => {
-  console.log(`API running on port ${PORT}`);
+  console.log(`Proxy running on port ${PORT}`);
 });
 
 app.get('/api/grid-carbon-intensity', async (req, res) => {
