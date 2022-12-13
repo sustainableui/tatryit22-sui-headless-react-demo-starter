@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Section from "../../elements/Section";
-import Map from "./CityPickerMap";
-import List from "./CityPickerList";
+import React, { useState } from 'react';
+import Section from '../../elements/Section';
+import CityPickerMap from './CityPickerMap';
+import CityPickerList from './CityPickerList';
 
 import { CITIES } from './data.json';
 
@@ -20,8 +20,16 @@ const CityPickerSection = () => {
 
   return (
     <Section title="Vyberte vaše mesto">
-      <Map cities={CITIES} onMouse={handleCityHighlight} hoveredCityIndex={highlightedCityIndex} />
-      <List cities={CITIES} onMouse={handleCityHighlight} hoveredCityIndex={highlightedCityIndex} />
+      <CityPickerMap
+        cities={CITIES}
+        onMouse={handleCityHighlight}
+        hoveredCityIndex={highlightedCityIndex}
+      />
+      <CityPickerList
+        cities={CITIES}
+        onMouse={handleCityHighlight}
+        hoveredCityIndex={highlightedCityIndex}
+      />
     </Section>
   );
 };
