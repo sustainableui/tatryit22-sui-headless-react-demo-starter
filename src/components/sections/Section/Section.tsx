@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import Headline from '../Headline';
+import Headline from '../../elements/Headline';
 
 import backgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 

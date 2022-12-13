@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from '../../elements/Section';
+import Section from '../Section';
 import Map from './Map';
 import List from './List';
 import useCityHighlight from './hooks/useCityHighlight';
