@@ -5,7 +5,7 @@ Rozšíriť mapu v komponente
 
 ## Štruktúra projektu
 - `src` - React aplikácia
-- `api` - Express server ako proxy pre dopyty na Carbon Aware API, ktoré na základe súradníc používateľa React aplikácie vráti uhlíkovú intenzitu elektrickej energie regiónu Azure, ktorý je ku týmto súradniciam najbližšie
+- `api` - Express server ako proxy pre dopyty na [Carbon Aware API](https://carbon-aware-api.azurewebsites.net/swagger/index.html), ktoré na základe súradníc používateľa React aplikácie vráti uhlíkovú intenzitu elektrickej energie regiónu Azure, ktorý je ku týmto súradniciam najbližšie
 
 ## Vývoj
 1. `npm install`
