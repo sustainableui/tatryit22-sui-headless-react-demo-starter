@@ -1,10 +1,17 @@
 import React from 'react';
 import CityPickerSection from '../components/sections/CityPickerSection';
-
 import pageData from './indexData.json';
 
-const IndexPage = () => {
-  return <CityPickerSection cities={pageData.cities} />;
-};
+function IndexPage() {
+  return (
+    <>
+      <CityPickerSection
+        title={pageData.cityPickerSection.title}
+        cities={pageData.cityPickerSection.cities}
+      />
+      {/* ... */}
+    </>
+  );
+}
 
 export default IndexPage;

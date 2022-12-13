@@ -1,7 +1,7 @@
 ## Cieľ
 
 Rozšíriť mapu v komponente
-`CityPickerMap` o Carbon Aware UI funkcionalitu za pomoci knižnice SUI Headless pre React.
+`Map` o Carbon Aware UI funkcionalitu za pomoci knižnice SUI Headless pre React.
 
 ## Štruktúra projektu
 - `src` - React aplikácia

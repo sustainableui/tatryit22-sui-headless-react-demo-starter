@@ -4,7 +4,7 @@ const INITIAL_HIGHLIGHTED_CITY_INDEX = -1;
 
 function useCityHighlight(): {
   highlightedCityIndex: number;
-  handleCityHighlight: (isHovered: boolean, index: number) => void;
+  handleCityHighlight: (isHovered: boolean, cityIndex: number) => void;
 } {
   const [highlightedCityIndex, setHighlightedCityIndex] = useState(INITIAL_HIGHLIGHTED_CITY_INDEX);
 
