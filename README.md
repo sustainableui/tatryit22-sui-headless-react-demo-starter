@@ -9,8 +9,8 @@ Rozšírte mapu v komponente
 
 ## Príprava na vývoj
 1. `npm run setup`
-2. `npm start:client`
-3. `npm start:proxy` (ak nie je Carbon Aware API dostupné, `npm start:fake-proxy`)
+2. `npm run start:client`
+3. `npm run start:proxy` (ak nie je Carbon Aware API dostupné, `npm start:fake-proxy`)
 
 ## Postup
 
