@@ -4,10 +4,10 @@ import ListItem from './ListItem';
 interface CityPickerListProps {
   cities: Array<{ name: string; coordinates: number[] }>;
   onMouse: (isHovered: boolean, cityIndex: number) => void;
-  hoveredCityIndex: number;
+  highlightedCityIndex: number;
 }
 
-function List({ cities, onMouse, hoveredCityIndex }: CityPickerListProps) {
+function List({ cities, onMouse, highlightedCityIndex }: CityPickerListProps) {
   return (
     <div className="sm:-mt-8 xs:-mt-8">
       <div className="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-4 h-full">
@@ -21,7 +21,7 @@ function List({ cities, onMouse, hoveredCityIndex }: CityPickerListProps) {
                     key={city.name}
                     index={i}
                     text={city.name}
-                    isHovered={hoveredCityIndex === i}
+                    isHovered={highlightedCityIndex === i}
                     onMouse={onMouse}
                   />
                 )
@@ -37,7 +37,7 @@ function List({ cities, onMouse, hoveredCityIndex }: CityPickerListProps) {
                     key={city.name}
                     index={i}
                     text={city.name}
-                    isHovered={hoveredCityIndex === i}
+                    isHovered={highlightedCityIndex === i}
                     onMouse={onMouse}
                   />
                 )

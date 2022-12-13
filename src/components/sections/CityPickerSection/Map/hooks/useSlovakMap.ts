@@ -1,7 +1,6 @@
 import { useMemo } from 'react';
 import { geoBounds, geoPath } from 'd3-geo';
 import { feature } from 'topojson-client';
-import mapData from '../mapData.json';
 
 const Slovakia = {
   arcs: [[-650, -1256, 1256, -955, 1257]],
@@ -20,11 +19,12 @@ interface UseSlovakMapProps {
   };
   width: number;
   height: number;
+  topologyData: {};
 }
 
-function useSlovakMap({ projection, width, height }: UseSlovakMapProps) {
+function useSlovakMap({ topologyData, projection, width, height }: UseSlovakMapProps) {
   return useMemo(() => {
-    let mapFeature = feature(mapData, Slovakia);
+    let mapFeature = feature(topologyData, Slovakia);
     let mapBounds = geoPath().bounds(mapFeature);
     let scale =
       30 /

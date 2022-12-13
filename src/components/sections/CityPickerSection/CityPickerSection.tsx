@@ -4,6 +4,8 @@ import Map from './Map';
 import List from './List';
 import useCityHighlight from './hooks/useCityHighlight';
 
+import mapData from './mapData.json';
+
 interface CityPickerSectionProps {
   title: string;
   cities: Array<{ name: string; coordinates: number[] }>;
@@ -14,8 +16,17 @@ function CityPickerSection({ title, cities }: CityPickerSectionProps) {
 
   return (
     <Section title={title}>
-      <Map cities={cities} onMouse={handleCityHighlight} hoveredCityIndex={highlightedCityIndex} />
-      <List cities={cities} onMouse={handleCityHighlight} hoveredCityIndex={highlightedCityIndex} />
+      <Map
+        topologyData={mapData}
+        cities={cities}
+        onMouse={handleCityHighlight}
+        highlightedCityIndex={highlightedCityIndex}
+      />
+      <List
+        cities={cities}
+        onMouse={handleCityHighlight}
+        highlightedCityIndex={highlightedCityIndex}
+      />
     </Section>
   );
 }

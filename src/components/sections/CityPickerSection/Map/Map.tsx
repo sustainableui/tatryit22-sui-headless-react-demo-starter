@@ -12,11 +12,17 @@ const MAP_HEIGHT = 350;
 interface MapProps {
   cities: Array<{ name: string; coordinates: number[] }>;
   onMouse: (isHovered: boolean, index: number) => void;
-  hoveredCityIndex: number;
+  highlightedCityIndex: number;
+  topologyData: {};
 }
 
-function Map(props: MapProps) {
-  const geoFeature = useSlovakMap({ projection, width: MAP_WIDTH, height: MAP_HEIGHT });
+function Map({ topologyData, cities, onMouse, highlightedCityIndex }: MapProps) {
+  const geoFeature = useSlovakMap({
+    topologyData,
+    projection,
+    width: MAP_WIDTH,
+    height: MAP_HEIGHT
+  });
 
   return (
     <svg
@@ -51,14 +57,14 @@ function Map(props: MapProps) {
             />
           </g>
           <g>
-            {props.cities.map((city, i) => (
+            {cities.map((city, i) => (
               <Location
                 index={i}
                 key={city.name}
                 projection={projection}
                 city={city}
-                isHovered={props.hoveredCityIndex === i}
-                onMouse={props.onMouse}
+                isHovered={highlightedCityIndex === i}
+                onMouse={onMouse}
               />
             ))}
           </g>
