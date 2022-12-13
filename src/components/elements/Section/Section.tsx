@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import Headline from '../Headline';
 
 import backgroundPath from '../../../assets/images/backgrounds/pattern_elements.svg';
 
@@ -14,9 +15,7 @@ function Section({ title, children }: SectionProps) {
       style={{ backgroundImage: `url(${backgroundPath})` }}>
       <div className="grid grid-rows-8">
         <div className="row-span-2 sm:row-span-1 xs:row-span-1">
-          <div className="text-center break-normal p-16 md:pt-32 lg:pt-36 xl:pt-40">
-            <h1 className="font-rustico-regular text-5xl sm:text-4xl xs:text-4xl">{title}</h1>
-          </div>
+          <Headline text={title} />
         </div>
         <div
           className={
