@@ -2,7 +2,6 @@
   "name": "@sustainableui/tatryit22-sui-headless-react-demo-starter",
   "version": "0.0.0-unversioned",
   "private": true,
-  "proxy": "http://localhost:3001",
   "dependencies": {
     "@sustainableui/sui-headless-react": "^1.2.2",
     "@types/react": "^18.0.26",
@@ -13,10 +12,8 @@
     "react-dom": "^18.2.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
-    "react-router-hash-link": "^1.2.2",
     "react-scripts": "3.4.0",
-    "topojson-client": "^3.1.0",
-    "typescript": "^4.8.4"
+    "topojson-client": "^3.1.0"
   },
   "scripts": {
     "start:client": "npm run watch:css && react-app-rewired start",
@@ -58,6 +55,7 @@
     "prettier": "^2.8.1",
     "react-app-rewire-babel-loader": "^0.1.1",
     "react-app-rewired": "^2.2.1",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0",
+    "typescript": "^4.8.4"
   }
 }
