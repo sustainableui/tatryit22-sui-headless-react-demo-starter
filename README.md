@@ -18,4 +18,10 @@ Rozšíriť mapu v komponente
 2. Implementácia komponentu `LoaderComponent`, ktorý bude knižnicou zobrazený počas lokalizácie používateľa
 3. Implementácia komponentu `SwitchComponent`, pomocou ktorého vie používateľ prepínať verziu UI
 3. Na základe [dokumentácie knižnice](https://www.npmjs.com/package/@sustainableui/sui-headless-react) pridajte podporu pre primitívy Carbon Aware UI do React aplikácie
-4. Použite `withSui` HOC pre `CityPickerMap`
+
+## Príklady
+
+
+- POC implementácia Carbon Aware UI primitív pre React - Carbon Hack 22 demo
+  - NextJS, MUI, Vercel
+  - https://github.com/sustainableui/ch22-sui-headless-react-demo
