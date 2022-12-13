@@ -26,9 +26,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "install:client": "npm i",
-    "install:proxy": "cd api && npm i",
-    "install": "npm run install:client && npm run install:proxy"
+    "setup:client": "npm i",
+    "setup:proxy": "cd api && npm i",
+    "setup": "npm run setup:client && npm run setup:proxy"
   },
   "eslintConfig": {
     "extends": "@sustainableui/tatryit22-sui-headless-react-demo-starter"

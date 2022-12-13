@@ -8,7 +8,7 @@ Rozšíriť mapu v komponente
 - `api` - Express server ako proxy pre dopyty na [Carbon Aware API](https://carbon-aware-api.azurewebsites.net/swagger/index.html), ktoré na základe súradníc používateľa React aplikácie vráti uhlíkovú intenzitu elektrickej energie regiónu Azure, ktorý je ku týmto súradniciam najbližšie
 
 ## Vývoj
-1. `npm install`
+1. `npm run setup`
 2. `npm start:client`
 3. `npm start:proxy` (ak nie je Carbon Aware API dostupné, `npm start:fake-proxy`)
 
