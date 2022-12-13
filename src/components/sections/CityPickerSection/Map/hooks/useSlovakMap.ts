@@ -40,7 +40,7 @@ function useSlovakMap({ topologyData, projection, width, height }: UseSlovakMapP
     projection.scale(scale);
     projection.translate([width / 2, height / 2]);
     return mapFeature;
-  }, [projection, height, width]);
+  }, [topologyData, projection, height, width]);
 }
 
 export default useSlovakMap;
