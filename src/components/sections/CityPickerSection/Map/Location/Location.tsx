@@ -6,13 +6,13 @@ import { ReactComponent as MapLocationIconSVG } from '../../../../../assets/icon
 
 interface LocationProps {
   projection: (coordinates: number[]) => number[];
-  data: { coordinates: number[]; name: string };
+  city: { coordinates: number[]; name: string };
   isHovered: boolean;
   index: number;
   onMouse: (isHovered: boolean, index: number) => void;
 }
 
-function Location({ onMouse, projection, data, index, isHovered }: LocationProps) {
+function Location({ onMouse, projection, city, index, isHovered }: LocationProps) {
   function handleMouse(isHovered: boolean) {
     return () => onMouse(isHovered, index);
   }
@@ -25,14 +25,14 @@ function Location({ onMouse, projection, data, index, isHovered }: LocationProps
           { 'fill-gray': isHovered, 'fill-white': !isHovered },
           'font-rustico-regular text-xxs'
         )}
-        x={projection(data.coordinates)[0] + 13}
-        y={projection(data.coordinates)[1] + 30}>
-        {data.name}
+        x={projection(city.coordinates)[0] + 13}
+        y={projection(city.coordinates)[1] + 30}>
+        {city.name}
       </text>
       <MapLocationIconSVG
         height={23}
-        x={projection(data.coordinates)[0] - 7}
-        y={projection(data.coordinates)[1]}
+        x={projection(city.coordinates)[0] - 7}
+        y={projection(city.coordinates)[1]}
       />
     </Link>
   );
