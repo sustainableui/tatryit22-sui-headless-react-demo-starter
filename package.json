@@ -21,6 +21,7 @@
   "scripts": {
     "start:client": "npm run watch:css && react-app-rewired start",
     "start:proxy": "cd api && node server",
+    "start:fake-proxy": "cd api && node fake-server",
     "build": "npm run build:css && react-app-rewired build",
     "postbuild": "rimraf build/**/*.map",
     "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
@@ -29,8 +30,8 @@
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "install:client": "npm i",
-    "install:server": "cd api && npm i",
-    "install": "npm run install:client && npm run install:server"
+    "install:proxy": "cd api && npm i",
+    "install": "npm run install:client && npm run install:proxy"
   },
   "eslintConfig": {
     "extends": "@sustainableui/tatryit22-sui-headless-react-demo-starter"

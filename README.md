@@ -10,7 +10,7 @@ Rozšíriť mapu v komponente
 ## Vývoj
 1. `npm install`
 2. `npm start:client`
-3. `npm start:proxy`
+3. `npm start:proxy` (ak nie je Carbon Aware API dostupné, `npm start:fake-proxy`)
 
 ## Postup
 
