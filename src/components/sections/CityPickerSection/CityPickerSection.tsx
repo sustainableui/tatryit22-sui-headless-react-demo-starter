@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import Headline from '../../elements/Headline';
 import Section from '../Section';
-import Map from './Map';
+import Map from './CarbonMap';
 import List from './List';
 import useCityHighlight from './hooks/useCityHighlight';
-
-import mapData from './mapData.json';
 
 interface CityPickerSectionProps {
   title: string;
@@ -16,12 +15,13 @@ function CityPickerSection({ title, cities }: CityPickerSectionProps) {
 
   return (
     <Section title={title}>
-      <Map
-        topologyData={mapData}
-        cities={cities}
-        onMouse={handleCityHighlight}
-        highlightedCityIndex={highlightedCityIndex}
-      />
+      <Suspense fallback={<Headline text="Mapa sa načítava" />}>
+        <Map
+          cities={cities}
+          onMouse={handleCityHighlight}
+          highlightedCityIndex={highlightedCityIndex}
+        />
+      </Suspense>
       <List
         cities={cities}
         onMouse={handleCityHighlight}

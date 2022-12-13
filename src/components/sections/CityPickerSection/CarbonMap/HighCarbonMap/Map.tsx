@@ -4,6 +4,8 @@ import { geoMercator, geoPath } from 'd3-geo';
 import Location from './Location';
 import useSlovakMap from './hooks/useSlovakMap';
 
+import mapData from './mapData.json';
+
 const projection = geoMercator();
 
 const MAP_WIDTH = 1000;
@@ -13,12 +15,11 @@ interface MapProps {
   cities: Array<{ name: string; coordinates: number[] }>;
   onMouse: (isHovered: boolean, index: number) => void;
   highlightedCityIndex: number;
-  topologyData: {};
 }
 
-function Map({ topologyData, cities, onMouse, highlightedCityIndex }: MapProps) {
+function Map({ cities, onMouse, highlightedCityIndex }: MapProps) {
   const geoFeature = useSlovakMap({
-    topologyData,
+    topologyData: mapData,
     projection,
     width: MAP_WIDTH,
     height: MAP_HEIGHT

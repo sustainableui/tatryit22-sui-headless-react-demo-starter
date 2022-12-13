@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import cns from 'classnames';
 
-import { ReactComponent as MapLocationIconSVG } from '../../../../../assets/icons/map_location.svg';
+import { ReactComponent as MapLocationIconSVG } from '../../../../../../assets/icons/map_location.svg';
 
 interface LocationProps {
   projection: (coordinates: number[]) => number[];
