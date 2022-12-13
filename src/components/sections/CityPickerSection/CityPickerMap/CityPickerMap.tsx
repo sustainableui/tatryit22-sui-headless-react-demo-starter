@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
-import { geoBounds, geoMercator, geoPath } from "d3-geo";
-import { feature } from "topojson-client";
-import PropTypes from "prop-types";
+import React, { useEffect, useState } from 'react';
+import { geoBounds, geoMercator, geoPath } from 'd3-geo';
+import { feature } from 'topojson-client';
+import PropTypes from 'prop-types';
 
-import CityPickerMapLocation from "./CityPickerMapLocation";
-import CityPickerMapLoader from "./CityPickerMapLoader";
+import CityPickerMapLocation from './CityPickerMapLocation';
+import CityPickerMapLoader from './CityPickerMapLoader';
 
 const projection = geoMercator();
 
 const slovakia = {
   arcs: [[-650, -1256, 1256, -955, 1257]],
-  type: "Polygon",
+  type: 'Polygon',
   properties: {
-    name: "Slovakia"
+    name: 'Slovakia'
   },
-  id: "703"
+  id: '703'
 };
 
 const width = 1000;
@@ -25,7 +25,7 @@ const MapComponent = (props) => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    fetch(process.env.PUBLIC_URL + "/data/countries.json").then((response) => {
+    fetch(process.env.PUBLIC_URL + '/data/countries.json').then((response) => {
       if (response.status !== 200) {
         console.error(`There was a problem: ${response.status}`);
         return;
@@ -66,8 +66,8 @@ const MapComponent = (props) => {
           <React.Fragment>
             <defs>
               <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" style={{ stopColor: "rgb(46, 102, 255)", stopOpacity: 1 }} />
-                <stop offset="100%" style={{ stopColor: "rgb(44, 235, 173)", stopOpacity: 1 }} />
+                <stop offset="0%" style={{ stopColor: 'rgb(46, 102, 255)', stopOpacity: 1 }} />
+                <stop offset="100%" style={{ stopColor: 'rgb(44, 235, 173)', stopOpacity: 1 }} />
               </linearGradient>
               <filter id="drop-shadow" height="130%">
                 <feGaussianBlur in="SourceAlpha" stdDeviation="6" />
@@ -92,7 +92,7 @@ const MapComponent = (props) => {
               {props.cities.map((city, i) => (
                 <CityPickerMapLocation
                   index={i}
-                  key={city.NAME}
+                  key={city.name}
                   projection={projection}
                   data={city}
                   hovered={props.hoveredCityIndex === i}

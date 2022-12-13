@@ -1,43 +1,43 @@
 {
-  "CITIES": [
+  "cities": [
     {
-      "NAME": "Poprad",
-      "COORDINATES": [
+      "name": "Poprad",
+      "coordinates": [
         20.2274,
         49.1887
       ]
     },
     {
-      "NAME": "Humenné",
-      "COORDINATES": [
+      "name": "Humenné",
+      "coordinates": [
         21.8694,
         49.0437
       ]
     },
     {
-      "NAME": "Piešťany",
-      "COORDINATES": [
+      "name": "Piešťany",
+      "coordinates": [
         17.7723,
         48.6002
       ]
     },
     {
-      "NAME": "Kysucké Nové Mesto",
-      "COORDINATES": [
+      "name": "Kysucké Nové Mesto",
+      "coordinates": [
         18.7771,
         49.3055
       ]
     },
     {
-      "NAME": "Prešov",
-      "COORDINATES": [
+      "name": "Prešov",
+      "coordinates": [
         21.2110,
         49.15
       ]
     },
     {
-      "NAME": "Trnava",
-      "COORDINATES": [
+      "name": "Trnava",
+      "coordinates": [
         17.5034,
         48.3746
       ]

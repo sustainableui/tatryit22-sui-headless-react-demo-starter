@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import CityPickerListItem from "./CityPickerListItem";
-import PropTypes from "prop-types";
+import CityPickerListItem from './CityPickerListItem';
+import PropTypes from 'prop-types';
 
 const CityPickerList = (props) => {
   return (
@@ -14,9 +14,9 @@ const CityPickerList = (props) => {
               (city, i) =>
                 i + 1 <= Math.ceil(props.cities.length / 2) && (
                   <CityPickerListItem
-                    key={city.NAME}
+                    key={city.name}
                     index={i}
-                    text={city.NAME}
+                    text={city.name}
                     hovered={props.hoveredCityIndex === i}
                     onMouse={props.onMouse}
                   />
@@ -30,9 +30,9 @@ const CityPickerList = (props) => {
               (city, i) =>
                 i + 1 > Math.ceil(props.cities.length / 2) && (
                   <CityPickerListItem
-                    key={city.NAME}
+                    key={city.name}
                     index={i}
-                    text={city.NAME}
+                    text={city.name}
                     hovered={props.hoveredCityIndex === i}
                     onMouse={props.onMouse}
                   />

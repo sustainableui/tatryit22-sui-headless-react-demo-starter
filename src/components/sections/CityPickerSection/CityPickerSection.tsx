@@ -1,37 +1,30 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Section from '../../elements/Section';
 import CityPickerMap from './CityPickerMap';
 import CityPickerList from './CityPickerList';
+import useCityHighlight from './hooks/useCityHighlight';
 
-import { CITIES } from './data.json';
+interface CityPickerSectionProps {
+  cities: Array<{ name: string; coordinates: number[] }>;
+}
 
-const INITIAL_HIGHLIGHTED_CITY_INDEX = -1;
-
-const CityPickerSection = () => {
-  const [highlightedCityIndex, setHighlightedCityIndex] = useState(INITIAL_HIGHLIGHTED_CITY_INDEX);
-
-  const handleCityHighlight = (isHovered, cityIndex) => {
-    if (isHovered) {
-      setHighlightedCityIndex(cityIndex);
-    } else {
-      setHighlightedCityIndex(INITIAL_HIGHLIGHTED_CITY_INDEX);
-    }
-  };
+function CityPickerSection({ cities }: CityPickerSectionProps) {
+  const { highlightedCityIndex, handleCityHighlight } = useCityHighlight();
 
   return (
     <Section title="Vyberte vaše mesto">
       <CityPickerMap
-        cities={CITIES}
+        cities={cities}
         onMouse={handleCityHighlight}
         hoveredCityIndex={highlightedCityIndex}
       />
       <CityPickerList
-        cities={CITIES}
+        cities={cities}
         onMouse={handleCityHighlight}
         hoveredCityIndex={highlightedCityIndex}
       />
     </Section>
   );
-};
+}
 
 export default CityPickerSection;
