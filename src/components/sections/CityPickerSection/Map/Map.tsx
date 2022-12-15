@@ -1,10 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { geoMercator, geoPath } from 'd3-geo';
 
 import Location from './Location';
 import useSlovakMap from './hooks/useSlovakMap';
-
-const projection = geoMercator();
 
 const MAP_WIDTH = 1000;
 const MAP_HEIGHT = 350;
@@ -17,6 +15,8 @@ interface MapProps {
 }
 
 function Map({ topologyData, cities, onMouse, highlightedCityIndex }: MapProps) {
+  const projection = useMemo(() => geoMercator(), []);
+
   const geoFeature = useSlovakMap({
     topologyData,
     projection,
