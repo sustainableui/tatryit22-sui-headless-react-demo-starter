@@ -3,7 +3,7 @@
   "version": "0.0.0-unversioned",
   "private": true,
   "dependencies": {
-    "@sustainableui/sui-headless-react": "^1.2.2",
+    "@sustainableui/sui-headless-react": "file:libs/@sustainableui/sui-headless-react",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "classnames": "^2.3.2",
@@ -26,9 +26,11 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "setup:client": "npm i",
+    "setup:client": "npm i --legacy-peer-deps",
     "setup:proxy": "cd api && npm i",
-    "setup": "npm run setup:client && npm run setup:proxy"
+    "setup": "npm run setup:client && npm run setup:proxy",
+    "postinstall": "npm link libs/@sustainableui/sui-headless-react",
+    "postupdate": "npm link libs/@sustainableui/sui-headless-react"
   },
   "eslintConfig": {
     "extends": "@sustainableui/tatryit22-sui-headless-react-demo-starter"
